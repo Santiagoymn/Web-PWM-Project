@@ -1,0 +1,257 @@
+html {
+    font-size: 100%; /* 100% = 16px */
+}
+.slide {
+    position: relative;
+    box-shadow: 0 0.06rem 0.38rem rgba(0, 0, 0, 0.64);
+    margin-top: 1.63rem;
+    top: 21.75rem;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 48.5rem;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    width: 100%;
+    height: 48.5rem;
+}
+
+.slide-control {
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    font-size: 6.25rem;
+    height: 5rem;
+    line-height: 3.75rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 5rem;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0.31rem;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 4.06rem;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador,
+li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador,
+li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador,
+li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+.categories{
+    position: absolute;
+    top: 77.81rem;
+    width: 100%;
+
+}
+h1{
+    justify-content: center;
+}
+
+.categoryImage{
+    position: relative;
+    width: 32.5%;
+    height: 34.38rem;
+}
+.imagesCategories{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.firstLine{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondLine{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img__wrap1 {
+    position: relative;
+    width: 100%;
+    height: 12.31rem;
+}
+
+.img__description1 {
+    position: absolute;
+    top: 11.25rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(196, 196, 196, 0.18);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap1:hover .img__description1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.headercategoria5Caption{
+    position: absolute;
+    width: 400px;
+    height: 56px;
+    left: 109px;
+    top: 18px;
+
+    font-family: Roboto, Helvetica, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.textocategoria5Caption{
+    position: absolute;
+    width: 565px;
+    height: 116px;
+    left: 37px;
+    top: 81px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+.sobreNosotros{
+    position: absolute;
+    width: 100%;
+    height: 43.75rem;
+    top: 169.65rem;
+    display: flex;
+    background-color: #C4C4C4;
+}
+
+.imagenSobreNosotros{
+    position: absolute;
+    width: 36.44rem;
+    height: 34.38rem;
+    left: 6.06rem;
+    top: 4.88rem;
+}
+.headersobreNosotros{
+    position: absolute;
+    width: 33.31rem;
+    height: 2.06rem;
+    left: 48.88rem;
+     top: 5.19rem;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+
+    color: #000000;
+}
+
+.textAboutUs{
+    margin-left: 52.94rem;
+    margin-right: 6.06rem;
+    margin-bottom: 13.06rem;
+    margin-top: 8.38rem;
+
+}
+
+.btnSaberMás{
+    position: absolute;
+    width: 13.88rem;
+    height: 4.69rem;
+    left: 50.94rem;
+    bottom: 6.31rem;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.25rem;
+    line-height: 2.63rem;
+    text-align: center;
+    background: #CEE0FC;
+    border-radius: 1rem;
+}
