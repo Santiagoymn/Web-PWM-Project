@@ -200,12 +200,15 @@ h1{
 }
 
 .sobreNosotros{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 43.75rem;
+    min-height: 43.75rem;
+    height: auto;
     top: 169.65rem;
     display: flex;
     background-color: #C4C4C4;
+    word-wrap: break-word;
+
 }
 
 .imagenSobreNosotros{
@@ -216,7 +219,7 @@ h1{
     top: 4.88rem;
 }
 .headersobreNosotros{
-    position: absolute;
+    position: relative;
     width: 33.31rem;
     height: 2.06rem;
     left: 48.88rem;
@@ -233,11 +236,8 @@ h1{
 }
 
 .textAboutUs{
-    margin-left: 52.94rem;
-    margin-right: 6.06rem;
-    margin-bottom: 13.06rem;
-    margin-top: 8.38rem;
-
+    position:relative;
+    margin: 9.38rem 6.06rem 13.06rem 52.94rem;
 }
 
 .btnSaberMás{
