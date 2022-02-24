@@ -1,0 +1,116 @@
+
+.fondoNegro{
+    position: absolute;
+    width: 100%;
+    height: 30.625rem;
+    left: 0rem;
+    top: 167.625rem;
+
+    background: #000000;
+}
+
+.imagenCorreo{
+    position: relative;
+    width: 3.75rem;
+    height: 3.25rem;
+    top: 175.125rem;
+}
+
+.etiquetaCorreo{
+    position: relative;
+    width: 18.5rem;
+    height: 2.5rem;
+    top: 174.0625rem;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.imagenTelefono{
+    position: relative;
+    width: 4.8125rem;
+    height: 5.1875rem;
+    top: 180.75rem;
+}
+
+
+
+.etiquetaTelefono{
+    position: relative;
+    width: 15.1875rem;
+    height: 2.1875rem;
+    top: 179.5625rem;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.imagenInstagram{
+    position: relative;
+    width: 3.2875rem;
+    height: 3.2875rem;
+    top: 175.125rem;
+}
+
+.imagenFacebook{
+    position: relative;
+    width: 3.6875rem;
+    height: 3.4375rem;
+    top: 175.125rem;
+}
+
+.imagenYouTube{
+    position: relative;
+    width: 4.1rem;
+    height: 3.1em;
+    top: 175.1rem;
+}
+
+.copyright{
+    position: relative;
+    width: 40rem;
+    height: 1rem;
+    top: 175rem;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 2.1875rem;
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.centarBloque{
+    width: 100%;
+    line-height: 6.25rem;
+    text-align: center;
+    display: block;
+}
+
+.todoAncho{
+    width: 100%;
+    text-align: center;
+}
+
+.localizacionCopyright{
+    width: 100%;
+    line-height: 6.25rem;
+    text-align: right;
+    display: block;
+}
