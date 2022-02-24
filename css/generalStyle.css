@@ -20,6 +20,16 @@ h2{
     text-align: center;
     color: #000000;
 }
+/*h3 subtitulos dentro de cada página*/
+h3{
+    font-family: "Helvetica", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 4.69rem;
+    text-align: center;
+
+}
 /*texto común*/
 p{
     font-family: "Helvetica", serif;
@@ -33,3 +43,4 @@ a{
     text-decoration: none;
     color:black;
 }
+
