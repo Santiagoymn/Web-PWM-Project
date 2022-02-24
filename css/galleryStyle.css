@@ -1,0 +1,114 @@
+
+.titulo{
+    position: absolute;
+    width: 12.5625rem;
+    height: 5.25rem;
+    left: 3.75rem;
+    top: 20.25rem;
+
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 5.25rem;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.imagen1{
+    position: relative;
+    width: 33.3125rem;
+    height: 30.875rem;
+}
+
+.imagen2{
+    position: relative;
+    width: 33.3125rem;
+    height: 30.875rem;
+}
+
+.imagen3{
+    position: relative;
+    width: 33.3125rem;
+    height: 30.875rem;
+}
+
+.imagen4{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen5{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen6{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen7{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen8{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen9{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen10{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen11{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen12{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.imagen13{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+}
+
+.distribucionImagenes{
+    display: flex;
+    flex-direction: column;
+}
+
+.fila{
+    align-items: center;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.fotos{
+    position: absolute;
+    top: 34rem;
+    width: 100%;
+}
