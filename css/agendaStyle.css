@@ -1,0 +1,39 @@
+.evento{
+    position: absolute;
+    display: flex;
+    width: 120rem;
+}
+
+.infoEvento{
+    position: absolute;
+    left: 19.37rem;
+    top: 30.06rem;
+}
+
+.nombreEvento{
+    position: relative;
+    font-weight: bold;
+    top: 1.25rem;
+}
+
+.textoEvento{
+    position: relative;
+    line-height: 0.99rem;
+    top: 1.88rem;
+}
+
+#evento1{
+    top: 27.68rem;
+}
+
+#evento2{
+    top: 48.25rem;
+}
+
+#evento3{
+    top: 69.44rem;
+}
+
+#evento4{
+    top: 90.63rem;
+}
