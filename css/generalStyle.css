@@ -34,6 +34,20 @@ h3{
     text-align: center;
 
 }
+
+
+h4{
+    position: relative;
+    width: 19.875rem;
+    height: 3.3125rem;
+    left: 8rem;
+    font-family: "Helvetica", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000000;
+}
+
 /*texto común*/
 p{
     font-family: "Helvetica", serif;
@@ -215,6 +229,7 @@ footer{
     width: 3.75rem;
     height: 3.25rem;
     vertical-align: middle;
+    margin-right: 1rem;
 }
 
 .imagenInstagram{
@@ -227,6 +242,8 @@ footer{
     position: relative;
     width: 3.6875rem;
     height: 3.4375rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .imagenYouTube{
