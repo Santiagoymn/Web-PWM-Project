@@ -17,83 +17,25 @@
 }
 
 
-.imagen1{
+.imagenesGrandes{
     position: relative;
     width: 33.3125rem;
     height: 30.875rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
 }
 
-.imagen2{
-    position: relative;
-    width: 33.3125rem;
-    height: 30.875rem;
-}
 
-.imagen3{
-    position: relative;
-    width: 33.3125rem;
-    height: 30.875rem;
-}
-
-.imagen4{
+.imagenenesPequeñas{
     position: relative;
     width: 14.125rem;
     height: 12.1875rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
-.imagen5{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen6{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen7{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen8{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen9{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen10{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen11{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen12{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
-
-.imagen13{
-    position: relative;
-    width: 14.125rem;
-    height: 12.1875rem;
-}
 
 .distribucionImagenes{
     display: flex;
@@ -111,4 +53,8 @@
     position: absolute;
     top: 34rem;
     width: 100%;
+}
+
+.footer{
+    bottom: -100rem;
 }

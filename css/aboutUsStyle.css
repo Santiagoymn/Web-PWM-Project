@@ -1,34 +1,29 @@
-.tituloPag {
-    position: absolute;
-    height: 5.25rem;
-    top: 20.19rem;
-    margin-left:2rem;
-}
+
 .imgNosotros{
-    position: absolute;
-    height: 15.06rem;
+    position: relative;
+    height: 14.06rem;
     left: 3.8rem;
-    top: 30.19rem;
+    top: 12.19rem;
 }
-.presentacion{
+.textoPresentacion{
     position: absolute;
-    width:66%;
     height: auto;
     left: 32.06rem;
-    top: 28.19rem;
+    top: 29.19rem;
+    margin-right: 3rem;
 }
 .apartadoQuienesSomos{
     width: 100%;
-    height: 37.63rem;
+    height: 40rem;
     background-color: #C4C4C4;
     position: relative;
-    top: 54.25rem;
+    top: 23.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .imgQuienesSomos{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 37.63rem;
     left: 0;
@@ -38,7 +33,7 @@
 }
 .subtitulo{
     position: absolute;
-    height:5.85rem;
+    height:3.85rem;
     top: 0;
 
 }
@@ -64,4 +59,8 @@
 
 .textoPersona{
     text-align: center;
+}
+
+.footer{
+    bottom: -40rem;
 }
