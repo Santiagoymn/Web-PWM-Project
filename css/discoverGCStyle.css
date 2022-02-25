@@ -1,32 +1,10 @@
 
-.cabecerah3{
-    position: relative;
-    width: 19.875rem;
-    height: 3.3125rem;
-    left: 8rem;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3rem;
-
-
-    color: #000000;
-}
-
 .descripcionMunicipio{
     position: relative;
     width: 47.3125rem;
     height: 26.25rem;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.875rem;
-
-    text-align: justify;
-
-    color: #000000;
 
     display: inline-block;
     vertical-align: top;
@@ -64,14 +42,18 @@
 .bloque{
     position: relative;
     width: 100%;
-    top: 23rem;
+    top: 20rem;
     text-align: center;
     display: block;
 }
 
-.enLinea{
+.fila{
     position: relative;
     width: 100%;
     display: block;
     text-align: center;
+}
+
+.footer{
+    bottom: -30rem;
 }
