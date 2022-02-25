@@ -1,49 +1,55 @@
-/* titulo de categoria */
-#categoryTitle{
-    position: relative;
-    text-align: left;
-    left: 2rem;
-    top: 21.75rem;
-}
 
 .actividades{
     position: relative;
-    top: 32rem;
+    top: 15rem;
+    text-align: center;
+    width: 100%;
 }
 
 .actividad{
     position: relative;
     width: 100%;
-    height: 25.8rem;
+    height: 3rem;
+    text-align: center;
 }
 
 .imagenActividad{
     position: relative;
     width: 100%;
     height: 25.8rem;
+    text-align: center;
 }
 
 .textoActividad{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
+    top: 9rem;
+    width: 18rem;
+    text-align: center;
     color: white;
 }
 
 #imagen1{
-    position: absolute;
+    position: relative;
     top: 0;
 }
 
 #imagen2{
-    position: absolute;
+    position: relative;
     top: 28rem;
 }
 
 #imagen3{
-    position: absolute;
+    position: relative;
     top: 56rem;
+}
+
+.footer{
+    bottom: -130rem;
+}
+
+.ejemplo4{
+    text-align: center;
 }
 
 
