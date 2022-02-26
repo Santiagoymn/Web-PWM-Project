@@ -1,7 +1,29 @@
+.eventos{
+    position: absolute;
+    bottom: 85rem;
+    width: 100%;
+}
+
 .evento{
     position: absolute;
+    width: 100%;
     display: flex;
-    width: 120rem;
+}
+
+.imagenEvento{
+    position: absolute;
+    width: 100%;
+    height: 17.63rem;
+    top: 31.25rem;
+    background: #C4C4C5;
+}
+
+.imagenCalendario{
+    position: absolute;
+    width: 12rem;
+    height: 13.06rem;
+    left: 4.31rem;
+    top: 33.94rem;
 }
 
 .infoEvento{
@@ -36,4 +58,8 @@
 
 #evento4{
     top: 90.63rem;
+}
+
+.footer{
+    bottom: -105rem;
 }
