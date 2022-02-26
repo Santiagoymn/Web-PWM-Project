@@ -1,18 +1,4 @@
 
-.actividades{
-    position: relative;
-    top: 15rem;
-    text-align: center;
-    width: 100%;
-}
-
-.actividad{
-    position: relative;
-    width: 100%;
-    height: 3rem;
-    text-align: center;
-}
-
 .imagenActividad{
     position: relative;
     width: 100%;
@@ -20,38 +6,39 @@
     text-align: center;
 }
 
-.textoActividad{
-    position: absolute;
-    left: 45%;
-    top: 9rem;
-    width: 18rem;
+.actividades{
+    position: relative;
+    width: 100%;
+    top: 15rem;
     text-align: center;
-    color: white;
+    display: block;
 }
 
-#imagen1{
+.articulo{
     position: relative;
-    top: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
 }
 
-#imagen2{
-    position: relative;
-    top: 28rem;
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#imagen3{
+.nombreActividadCategory{
     position: relative;
-    top: 56rem;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.9375rem);
 }
 
 .footer{
     bottom: -110rem;
 }
-
-.ejemplo4{
-    text-align: center;
-}
-
-
-
-
