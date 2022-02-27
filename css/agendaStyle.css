@@ -1,0 +1,129 @@
+#header {
+    position: absolute;
+    width: 100%;
+    height: 17.63rem;
+    top: 35rem;
+}
+
+.eventos{
+    position: absolute;
+    bottom: 85rem;
+    width: 100%;
+}
+
+.evento{
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.imagenEvento{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #C4C4C5
+}
+
+.paginaEvento{
+    height: 17.63rem;
+    width: 100%;
+    background: #C4C4C5;
+    z-index: 1;
+}
+
+.imagenCalendario{
+    position: absolute;
+    width: 12rem;
+    height: 13.06rem;
+    left: 4.31rem;
+    top: 2.54rem;
+}
+
+.infoEvento{
+    position: absolute;
+    left: 19.37rem;
+}
+
+.nombreEvento{
+    position: relative;
+    font-weight: bold;
+    top: 1.25rem;
+}
+
+.textoEvento {
+    position: relative;
+    line-height: 1.03rem;
+    top: 0.9rem;
+}
+
+.textoDescripcionEvento{
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 2.5rem;
+}
+
+#evento1{
+    top: 0rem;
+}
+
+#evento2{
+    top: 27.68rem;
+}
+
+#evento3{
+    top: 55.36rem;
+}
+
+#evento4{
+    top: 83.04rem;
+}
+
+.footer{
+    bottom: -150rem;
+}
+* {
+    padding:0px;
+}
+
+ul, ol {
+    list-style:none;
+    width: 100%;
+}
+
+.nav > li {
+    position: absolute;
+    float:left;
+    width: 100%;
+    height: 100%;
+}
+
+.nav li a {
+    height: 100%;
+    width: 100%;
+    text-decoration:none;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color: steelblue;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:8.75rem;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-8.75rem;
+}

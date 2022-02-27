@@ -1,388 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Descubre GC</title>
+
+    <link rel="stylesheet" href="../css/generalStyle.css">
+    <link rel="stylesheet" href="../css/discoverGCStyle.css">
 </head>
 <body>
 
     <header>
-        <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
-                 style="
-            position: absolute;
-            width: 213px;
-            height: 210px;
-            left: 72px;
-            top: -1px;">
+        <a href="index.html"><img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5" class="logo" alt="Página inicial"></a>
+        <h1 class="tituloPagina">TITULO PÁGINA</h1>
 
-        <p style="
-            position: absolute;
-             width: 764px;
-             height: 74px;
-             left: 275px;
-             top: -20px;
-
-             font-family: Roboto Condensed;
-             font-style: normal;
-             font-weight: bold;
-             font-size: 72px;
-             line-height: 84px;
-             text-align: center;
-
-             color: #000000;">TITULO PÁGINA</p>
-
-
-
-        <p style="position: absolute;
-            width: 194px;
-            height: 54.9px;
-            left: 357px;
-            top: 107px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            color: #000000;">Categorias
-        </p>
-
-        <p style="position: absolute;
-            width: 123px;
-            height: 49.06px;
-            left: 642px;
-            top: 107px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            color: #000000;">Agenda
-        </p>
-
-        <p style="position: absolute;
-            width: 113px;
-            height: 49.06px;
-            left: 877px;
-            top: 107px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            color: #000000;">Galeria
-        </p>
-
-        <p style="position: absolute;
-            width: 339px;
-            height: 49.06px;
-            left: 1081px;
-            top: 107px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            color: #000000;">Conoce Gran Canaria
-        </p>
-
-        <p style="position: absolute;
-            width: 245px;
-            height: 49.06px;
-            left: 1511px;
-            top: 107px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 42px;
-            text-align: center;
-            color: #000000;">Sobre nosotros
-        </p>
-
-        <img src="data:image/png;base64,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"
-             style="
-            position: absolute;
-            width: 30px;
-            height: 23.36px;
-            left: 1827px;
-            top: 152px;">
-
-
-
-        <img src="images/FlechaAbajo.png"
-             style="
-            position: absolute;
-            width: 15.18px;
-            height: 28px;
-            left: 1864px;
-            top: 147.84px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 28px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #000000;">
-
-        <rect style="
-            position: absolute;
-            width: 1920px;
-            height: 116.8px;
-            left: -4px;
-            top: 203.2px;
-            background: #CEE0FC;"></rect>
+        <!-- start nav -->
+        <nav id="menu">
+            <!-- start menu -->
+            <ul>
+                <li><a href="#">Categorias</a>
+                    <!-- start menu desplegable -->
+                    <ul class="dropdownCategorias">
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 1</p></a></li>
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 2</p></a></li>
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 3</p></a></li>
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 4</p></a></li>
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 5</p></a></li>
+                        <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 6</p></a></li>
+                    </ul>
+                </li>
+                <!-- end menu desplegable -->
+                <li><a href="AgendaPage.html">Agenda</a></li>
+                <li><a href="GalleryPage.html">Galeria</a></li>
+                <li><a href="DiscoverGCPage.html">Conoce Gran Canaria</a></li>
+                <li><a href="AboutUsPage.html">Sobre Nosotros</a></li>
+                <li><a><img src="data:image/png;base64,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" class="banderaPrincipal" alt="Español">
+                    <img src="images/FlechaAbajo.png" class="flechaAbajo" alt="Idiomas"></a>
+                    <ul class="banderas">
+                        <li><img src="data:image/png;base64,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" class="banderaSecundarias" alt="Español"></li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAS1BMVEX////PFCsAJH3NABPtu74AAHAAHHoAAHMAIXwAD3e3vNKEjLPk5u4AGHqBirJBUJEAFXnOAB6wtc1AT5EAAGXiiZD3+PsjOIbW2eVOXdaMAAAEqElEQVR4nO2da3PaMBRE1SaQkCehef3/X1pCOhHkwVrS3r1muudTZ9oa++ATbKNIpUA2t6vfVBZ7Gz8/+wU4O9/75wvunqzWG3z8k7heLJk7NhdFy8UdSdCWm/uLS96uzUPR5cX9Dc/Qlqslr7ZZKFrdXlEFvcGrbQaKqI1VaLWlK6I3VrnifLZlK4porEKpLVdRUGMVRm2ZigIbq4zXlqhotY5srDJaW5qi8MYqg7UlKZI0VhmqLUeRqrHKQG0ZioSNVfpr0ysSN1bprU2uSN9Ypa82saKUxipdtUkVpTVW6ahNqSj2fmwqd6216RRxGiM8vG2tTaWI09imUDbT9kxSpIjS2PbtL6STseWzTaKId1iFqHtqbQJFnMbeP4oKcYNTa4tXRH3Ty/s2pbVFKyIfTPkQz7hIn1ZbrCJmY4eKhLWFKuL/YC17W1fVFqgo4hDKwStoagtTRAphfRhCCXmR4/dtUYqCLl7K59cR1BajaLm4jtnxL4oEV5IRigJP/28UhdcWoCjyh+h3iqJroyuK3d3vFcXWRlYUfUH3k6LI2riKwi9UflQUePoyFXF28uiD0yOKwmrjKZLcNB1VFFQbTZHmZuC4opjaSIpUt5RIUURtFEW6BxNY0XZn/nBrYygSPkyeoIh+So8rkj4knaSI/KaNKqKf1hRF1PQHFam/sJmqiHlyDynSf+03XRHvMmREkeKR34AiVm0jirSNtSsi1fa89+dGRc+ft9VO87CxRkX0QXGNiobpGA7VrIg87EurqGtQXbsi7uBBqaK+oZk9ipi1CRX1DvDtU8SrTaaof5h4pyLW11YyRQO/bNCtiHQjoFE09CsrZTHA48vrKSh6fXkcOcrRlx9FfV10glgRxIogVgSxIogVQawIYkUQK4JYEeQUFJ3n8vSAFD08Je9iOcsFGto6St7Fgnfxf8eKIFYEsSKIFUGsCGJFECuCWBHEiiBWBLEiiBVBrAhiRRArglgRxIogVgSxIogVQawIYkUQK4JYEcSKIFYEsSKIFUGsCGJFECuCeAgWxAP5IOlDLU9gOGgyVgSxIogVQawIYkUQK4JYEcSKIFYEOQVFnhADTojhaVXgtCq9/9GT8wA8xRPCE4UBPN0cwJMWIjz1JcATqAI8DS/CkzkDPCU4wBPLI7w8AcCLXAC8VArCC+6Av/eyTV78a3DxLy8hBxR5IUKgyMtZIkVeFBUo8tK6QJEXaEaKvMw3UOTF4oGi6MYCFYWd/oeKNJerUYpYb/D68A3eV6S66QlTFHMIVZHu1jlQUURtH4o0jcUr4v84/adI+hgvVhH9YApR/ITGJIrItRX2BmehiFpbSfhiSqCIWVvRNqZTxIujbCibafqSXKSIVBtB0PFHdpmKuIPF+ukYsKNTRKptiK5hX0pF5EF17fQNHpQqyq2tdwiqWBF98OFk+gcyyxUl1TYwHF6vKKO2oV+qyFCkrq2/sURF0toGGstUpKttqLFcRZraBhvLViSobbSxdEXRtY03tiNXUeR9G6OxHdmKwmqjNLYjXVFMbW3PFY8zA0X82miN7ZiFInJtvMZ2zEMRs7YN53OsMhdFb1eSE55M/wXf5dr/ZN18vAAAAABJRU5ErkJggg==" class="banderaSecundarias" alt="English"></li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/270px-Flag_of_France.svg.png" class="banderaSecundarias" alt="Français"></li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACTCAMAAADSiocKAAAACVBMVEUAAADdAAD/zgDGIigcAAAAiElEQVR4nO3PAQEAIAzAoGv/0ObYhQbMAAAAAAAAAAAAAPCvs5hclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXNXcxeSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5Krkqh6p735V06ByEQAAAABJRU5ErkJggg==" class="banderaSecundarias" alt="Deutsch"></li></ul>
+                </li>
+            </ul>
+            <!-- end menu -->
+        </nav>
+        <!-- end nav -->
     </header>
+    <rect class="rectanguloAzul"></rect>
 
-    <h1>Conoce Gran Canaria</h1>
+    <h2>Conoce Gran Canaria</h2>
+    <div class="bloque">
+        <div class="fila">
+            <h4>Municipio 1</h4>
+            <p class="descripcionMunicipio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</p>
+            <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
+                 class="imagenIzquierdaMunicipio" alt="Imagen de Municipio 1">
+        </div>
 
-    <div>
-        <h2 style="
-        position: absolute;
-        width: 318px;
-        height: 53px;
-        left: 144px;
-        top: 541px;
+        <div class="fila">
+            <h4>Municipio 2</h4>
+            <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
+                 class="imagenDerechaMunicipio" alt="Imagen de Municipio 2">
+            <p class="descripcionMunicipio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</p>
+        </div>
 
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 56px;
-        text-align: center;
-
-        color: #000000;">Municipio 1</h2>
-
-        <p style="
-        position: absolute;
-        width: 757px;
-        height: 420px;
-        left: 180px;
-        top: 616px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: justify;
-
-        color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.
-        </p>
-
-        <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
-             style="
-            position: absolute;
-            width: 630px;
-            height: 420px;
-            left: 1110px;
-            top: 616px;
-
-            background: #C4C4C4;">
+        <div class="fila">
+            <h4>Municipio N</h4>
+            <p class="descripcionMunicipio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</p>
+            <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
+                 class="imagenIzquierdaMunicipio" alt="Imagen de Municipio N">
+        </div>
     </div>
-
-    <div>
-        <h2 style="
-        position: absolute;
-        width: 250px;
-        height: 68px;
-        left: 180px;
-        top: 1195px;
-
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 56px;
-        text-align: center;
-
-        color: #000000;">Municipio 2</h2>
-
-        <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
-             style="
-            position: absolute;
-            width: 630px;
-            height: 420px;
-            left: 180px;
-            top: 1308px;">
-
-        <p style="
-        position: absolute;
-        width: 767px;
-        height: 448px;
-        left: 975px;
-        top: 1308px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: justify;
-
-        color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.
-        </p>
-    </div>
-
-
-    <div>
-        <h2 style="
-        position: absolute;
-        width: 318px;
-        height: 53px;
-        left: 144px;
-        top: 1893px;
-
-        font-family: Roboto Condensed;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 56px;
-        text-align: center;
-
-        color: #000000;">Municipio N</h2>
-
-        <p style="
-        position: absolute;
-        width: 760px;
-        height: 420px;
-        left: 182px;
-        top: 1966px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 42px;
-        text-align: justify;
-
-        color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.
-        </p>
-
-        <img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5"
-             style="
-            position: absolute;
-            width: 630px;
-            height: 420px;
-            left: 1110px;
-            top: 1966px;">
-    </div>
-
-
-    <style>
-        h1{
-            position: absolute;
-            width: 630px;
-            height: 85px;
-            left: 180px;
-            top: 330px;
-
-            font-family: Roboto Condensed;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 72px;
-            line-height: 84px;
-            /* identical to box height */
-            text-align: center;
-
-            color: #000000;
-        }
-
-    </style>
-
-    <footer>
-        <img style="position: absolute;
-        width: 1920px;
-        height: 490px;
-        left: 0px;
-        top: 2682px;
-        background: #000000;"
-        >
-        <label style="position: absolute;
-        width: 296px;
-        height: 40px;
-        left: 871px;
-        top: 2811px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-        color: #FFFFFF;">
-            XXXX@XXX.XXX
-        </label>
-
-        <p style="position: absolute;
-        width: 243px;
-        height: 35px;
-        left: 898px;
-        top: 2900px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-        color: #FFFFFF;"
-        >+34XXXXXXXXX
-        </p>
-
-        <img src="images/correo.png" style="
-        position: absolute;
-        width: 60px;
-        height: 52px;
-        left: 801px;
-        top: 2802px;">
-
-        <img src="images/telefono.png"
-             style="position: absolute;
-        width: 77px;
-        height: 83px;
-        left: 795px;
-        top: 2892px;">
-
-        <img src="images/instagram.png", style="
-        position: absolute;
-        width: 46.06px;
-        height: 45.12px;
-        left: 853px;
-        top: 3042px;">
-
-        <img src="images/facebook.png", style="
-        position: absolute;
-        width: 59px;
-        height: 55px;
-        left: 926px;
-        top: 3037px;">
-
-        <img src="images/youTube.png", style="
-        position: absolute;
-        width: 59px;
-        height: 41px;
-        left: 1009px;
-        top: 3044px;">
-
-        <p style="position: absolute;
-            width: 381px;
-            height: 50px;
-            left: 1539px;
-            top: 3081px;
-
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 35px;
-            text-align: center;
-
-            color: #FFFFFF;">© 2022 MPS, SRH, SAYM</p>
-
-    </footer>
 </body>
+<footer class="footer">
+    <div class="divFooter">
+        <div class="infoTexto">
+            <img src="images/correo.png" class="imagenDatos" alt="Correo">
+            <span class="textoDatos">XXXX@XXX.XXX</span>
+        </div>
+
+        <div class="infoTexto">
+            <img src="images/telefono.png" class="imagenDatos" alt="Teléfono">
+            <span class="textoDatos">+34XXXXXXXXX</span>
+        </div>
+        <div class="redesSociales">
+            <a title="Instagram" href="https://www.instagram.com/"><img src="images/instagram.png" class="imagenInstagram" alt="Instagram" /></a>
+            <a title="Facebook" href="https://www.facebook.com/"><img src="images/facebook.png" class="imagenFacebook" alt="Facebook" /></a>
+            <a title="YouTube" href="https://www.youtube.com/"><img src="images/youTube.png" class="imagenYouTube" alt="YouTube" /></a>
+        </div>
+
+        <span class="copyright">© Todos los derechos reservados MPS SRH SAYM</span>
+    </div>
+</footer>
 </html>

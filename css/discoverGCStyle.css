@@ -1,0 +1,59 @@
+
+.descripcionMunicipio{
+    position: relative;
+    width: 47.3125rem;
+    height: 26.25rem;
+
+    font-size: 1.875rem;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.imagenIzquierdaMunicipio{
+    position: relative;
+    width: 39.375rem;
+    height: 26.25rem;
+
+    align-items: center;
+    text-align: center;
+
+    float: left;
+    margin-left: 10rem;
+
+    background: #C4C4C4;
+}
+
+.imagenDerechaMunicipio{
+    position: relative;
+    width: 39.375rem;
+    height: 26.25rem;
+
+    align-items: center;
+    text-align: center;
+
+    float: right;
+    margin-right: 11.875rem;
+
+    background: #C4C4C4;
+}
+
+.bloque{
+    position: relative;
+    width: 100%;
+    top: 20rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.fila{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer{
+    bottom: -30rem;
+}
