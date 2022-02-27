@@ -9,7 +9,7 @@
 .actividades{
     position: relative;
     width: 100%;
-    top: 15rem;
+    top: 5rem;
     text-align: center;
     display: block;
 }
@@ -40,5 +40,5 @@
 }
 
 .footer{
-    bottom: -30rem;
+    bottom: -20rem;
 }
