@@ -274,7 +274,7 @@ footer{
     line-height: 6.25rem;
     text-align: center;
     display: inline-block;
-    align: "center";
+    text-align: center;
 }
 
 .redesSociales{
