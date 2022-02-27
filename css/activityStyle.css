@@ -6,34 +6,11 @@
     text-align: center;
 }
 
-.nombreActividad{
-    position: absolute;
-    width: 33.375rem;
-    height: 4.6875rem;
-    left: 55.1875rem;
-    top: 41.1875rem;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 4.6875rem;
-    /* identical to box height */
-    text-align: center;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(0.9375rem);
-}
-
-
 .descripcionActividad {
     position: relative;
 
     margin-left: 6.25rem;
     margin-right: 6.25rem;
-
 
     text-align: justify;
 
@@ -48,10 +25,12 @@
     width: 2.6875rem;
     height: 8.6875rem;
     float: left;
+    margin-right: 2rem;
 }
 
 .empresas{
     position: relative;
+    top: 2rem;
     vertical-align: middle;
     text-align: left;
 
@@ -60,67 +39,50 @@
 
 .informacionEmpresas{
     position: relative;
-    width: 100%;
-
-    text-align: justify;
-    display: flex;
-
-    float: left;
-    margin-left: 10rem;
-
-    vertical-align: middle;
-
-    color: #000000;
+    width: 45%;
+    font-size: 1.875rem;
+    display: inline-block;
 }
 
 .imagenActividad{
     position: relative;
     width: 45.4375rem;
     height: 36.75rem;
-    top: 12rem;
+    top: 14rem;
 
-    margin-left: 32rem;
+    float: right;
+    margin-right: 6.25rem;
+    text-align: center;
 
+    background: #C4C4C4;
 }
-
-.fotoCabecera{
-    position: relative;
-    width: 100%;
-    height: 32.375rem;
-    top: 27.375rem;
-}
-
 
 .tituloActividad{
     position: relative;
 
     color: #FFFFFF;
 
-    text-shadow: 0rem 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(0.9375);
 }
 
 .separacionBloque{
     position: relative;
-    display: flex;
+    width: 100%;
+    display: block;
     flex-direction: column;
     margin-top: 5rem;
+
+    top: 3rem;
+    text-align: center;
 }
 
-.bloqueTexto{
-    position: relative;
-    top: 320rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.bloque{
+.AreaDeInformación{
     position: relative;
     width: 100%;
     top: 10rem;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .footer{
@@ -144,15 +106,15 @@
 
 .localizacionEmpresas{
     position: relative;
-    top: 8rem;
+    top: 3rem;
     margin-left: 7rem;
 }
 
 .localizacionInformacion{
     position: relative;
-    top: 8rem;
-
+    width: 100%;
+    display: block;
     text-align: center;
+    margin-top: 8rem;
 }
-
 
