@@ -19,7 +19,7 @@ h2{
     line-height: 5.25rem;   /* 5.25 * 16px = 84 px */
     color: #000000;
     position: relative;
-    top: 12.19rem;
+    top: 0;
     text-align: left;
     left: 3.8rem;
     width:50rem;
@@ -34,6 +34,19 @@ h3{
     text-align: center;
 
 }
+
+
+h4{
+    position: relative;
+    width: 19.875rem;
+    height: 3.3125rem;
+    font-family: "Helvetica", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #000000;
+}
+
 /*texto común*/
 p{
     font-family: "Helvetica", serif;
@@ -48,21 +61,34 @@ a{
     color:black;
 }
 
+.nombreActividadImagen{
+    position: relative;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.9375rem);
+
+}
+
 /*header*/
 .tituloPagina{
     position: relative;
-    width: 47.75rem;
+    width: 50.75rem;
     height: 4.625rem;
-    left: 13.75rem;
-    top: -1.25rem;
+    top: 1.5rem;
+    text-align: left;
+    margin-left: 2rem;
+    display: inline;
 }
 
 .logo{
-    position: absolute;
+    position: relative;
     width: 13.3125rem;
     height: 13.2rem;
-    left: 3.75rem;
-    top: -0.0625rem;
+    top: -0.4rem;
+    float: left;
+    margin-left: 2rem;
 }
 
 .banderaPrincipal{
@@ -79,8 +105,8 @@ a{
 .flechaAbajo{
     position: absolute;
     height: 1.25rem;
-    left: 5.225rem;
-    top: 1.5625rem;
+    left: 4.80rem;
+    top: 1.85rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -90,26 +116,25 @@ a{
 
 
 .rectanguloAzul{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 7.3rem;
-    left: -0.25rem;
-    top: 13.3rem;
-    z-index: -1;
+    top: -0.35rem;
+    display: inline-block;
+    left: -0.50rem;
     background: #CEE0FC;
 }
 
 .fuenteCategorias{
-    font-size: 1.25rem;
-    text-align: center;
-    margin-left: 2.1875rem;
+    font-size: 1.55rem;
+    margin-left: 1.1875rem;
 }
 
 #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-    position: absolute;
+    position: relative;
     height: 3.43125rem;
-    left: 15%;
-    top: 7rem;
+    top: 1rem;
+    display: inline;
 }
 
 
@@ -120,7 +145,7 @@ a{
 }
 
 #menu ul li{ /* Es el fondo del dropdown */
-    background-color: white;
+    background-color: transparent;
 }
 
 #menu ul a { /* Le da formato al texto del dropdown */
@@ -143,16 +168,14 @@ a{
 }
 
 #menu ul li:hover { /* efecto al pasar el ratón por los items del menu */
-    background: white;
+    background: none;
 }
 
 #menu ul ul { /* items del menu desplegable */
     display:none;
     position:absolute;
     top:100%;
-    left:0;
     background: white;
-    padding:0;
     font-family: "Helvetica", serif;
     z-index: 4;
 }
@@ -168,7 +191,7 @@ a{
 .banderas{
     align-items: center;
     float:none;
-    width:4rem;
+    width:4.5rem;
 }
 
 #menu ul ul a {  /* items del menu desplegable al pasar el ratón */
@@ -215,6 +238,7 @@ footer{
     width: 3.75rem;
     height: 3.25rem;
     vertical-align: middle;
+    margin-right: 1rem;
 }
 
 .imagenInstagram{
@@ -227,6 +251,8 @@ footer{
     position: relative;
     width: 3.6875rem;
     height: 3.4375rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .imagenYouTube{
@@ -238,7 +264,7 @@ footer{
 .copyright{
     position: relative;
     height: 1rem;
-    bottom: -2rem;
+    bottom: -3rem;
     margin-right: 1rem;
 
     font-family: "Helvetica", serif;
@@ -257,12 +283,9 @@ footer{
     line-height: 6.25rem;
     text-align: center;
     display: inline-block;
-    align: "center";
 }
 
 .redesSociales{
     position: relative;
     bottom: -1rem;
 }
-
-
