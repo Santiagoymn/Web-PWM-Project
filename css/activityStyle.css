@@ -80,13 +80,13 @@
 .AreaDeInformación{
     position: relative;
     width: 100%;
-    top: 10rem;
+    top: 5rem;
     text-align: center;
     display: inline-block;
 }
 
 .footer{
-    bottom: -30rem;
+    bottom: -20rem;
 }
 
 .centrado{
