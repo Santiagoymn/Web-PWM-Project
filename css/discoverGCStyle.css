@@ -42,7 +42,7 @@
 .bloque{
     position: relative;
     width: 100%;
-    top: 20rem;
+    top: 0;
     text-align: center;
     display: inline-block;
 }
@@ -55,5 +55,5 @@
 }
 
 .footer{
-    bottom: -30rem;
+    bottom: -15rem;
 }
