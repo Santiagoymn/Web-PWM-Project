@@ -44,13 +44,13 @@
     width: 100%;
     top: 20rem;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .fila{
     position: relative;
     width: 100%;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
