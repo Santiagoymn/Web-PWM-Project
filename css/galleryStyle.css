@@ -1,0 +1,43 @@
+
+.imagenesGrandes{
+    position: relative;
+    width: 33.3125rem;
+    height: 30.875rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.imagenenesPequeñas{
+    position: relative;
+    width: 14.125rem;
+    height: 12.1875rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+
+.distribucionImagenes{
+    display: flex;
+    flex-direction: column;
+}
+
+.fila{
+    align-items: center;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.fotos{
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer{
+    bottom: -20rem;
+}
