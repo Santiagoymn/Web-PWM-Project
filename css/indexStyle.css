@@ -5,7 +5,7 @@ html {
     position: relative;
     box-shadow: 0 0.06rem 0.38rem rgba(0, 0, 0, 0.64);
     margin-top: 1.63rem;
-    top: 12.75rem;
+    top: 1rem;
 }
 
 .slide-inner {
@@ -59,8 +59,8 @@ html {
 }
 
 .slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    background: rgb(183, 182, 182, 0.8);
+    color: black;
 }
 
 #slide-1:checked ~ .control-1,
@@ -87,7 +87,7 @@ html {
 }
 
 .slide-circulo {
-    color: #828282;
+    color: #B7B6B6;
     cursor: pointer;
     display: block;
     font-size: 4.06rem;
@@ -103,7 +103,7 @@ li:nth-child(1) .slide-circulo,
 li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador,
 li:nth-child(3) .slide-circulo {
-    color: #428bca;
+    color: #B7B6B6;
 }
 
 .categories{
@@ -196,7 +196,7 @@ h1{
     width: 100%;
     min-height: 43.75rem;
     height: auto;
-    top: 115.65rem;
+    top: 109.65rem;
     display: flex;
     background-color: #C4C4C4;
     word-wrap: break-word;
@@ -207,7 +207,7 @@ h1{
     position: absolute;
     width: 36.44rem;
     height: 34.38rem;
-    left: 6.06rem;
+    left: 6.25rem;
     top: 4.88rem;
 }
 .headersobreNosotros{
@@ -229,7 +229,7 @@ h1{
 
 .textAboutUs{
     position:relative;
-    margin: 9.38rem 6.06rem 13.06rem 52.94rem;
+    margin: 9.38rem 6.25rem 13.06rem 52.94rem;
 }
 
 .btnSaberMás{
