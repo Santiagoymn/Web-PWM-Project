@@ -1,22 +1,4 @@
 
-.titulo{
-    position: absolute;
-    width: 12.5625rem;
-    height: 5.25rem;
-    left: 3.75rem;
-    top: 20.25rem;
-
-    font-family: Roboto Condensed;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 4.5rem;
-    line-height: 5.25rem;
-    text-align: center;
-
-    color: #000000;
-}
-
-
 .imagenesGrandes{
     position: relative;
     width: 33.3125rem;
@@ -50,11 +32,12 @@
 }
 
 .fotos{
-    position: absolute;
-    top: 34rem;
+    position: relative;
+    top: 15rem;
     width: 100%;
+    display: inline-block;
 }
 
 .footer{
-    bottom: -100rem;
+    bottom: -30rem;
 }
