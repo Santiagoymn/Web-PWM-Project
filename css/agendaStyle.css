@@ -1,0 +1,65 @@
+.eventos{
+    position: absolute;
+    bottom: 85rem;
+    width: 100%;
+}
+
+.evento{
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.imagenEvento{
+    position: absolute;
+    width: 100%;
+    height: 17.63rem;
+    top: 31.25rem;
+    background: #C4C4C5;
+}
+
+.imagenCalendario{
+    position: absolute;
+    width: 12rem;
+    height: 13.06rem;
+    left: 4.31rem;
+    top: 33.94rem;
+}
+
+.infoEvento{
+    position: absolute;
+    left: 19.37rem;
+    top: 30.06rem;
+}
+
+.nombreEvento{
+    position: relative;
+    font-weight: bold;
+    top: 1.25rem;
+}
+
+.textoEvento{
+    position: relative;
+    line-height: 0.99rem;
+    top: 1.88rem;
+}
+
+#evento1{
+    top: 27.68rem;
+}
+
+#evento2{
+    top: 48.25rem;
+}
+
+#evento3{
+    top: 69.44rem;
+}
+
+#evento4{
+    top: 90.63rem;
+}
+
+.footer{
+    bottom: -105rem;
+}
