@@ -1,10 +1,8 @@
 
 .descripcionMunicipio{
     position: relative;
-    width: 47.3125rem;
+    width: 60rem;
     height: 26.25rem;
-
-    font-size: 1.875rem;
 
     display: inline-block;
     vertical-align: top;
@@ -20,7 +18,7 @@
     text-align: center;
 
     float: left;
-    margin-left: 10rem;
+    margin-left: 6.25rem;
 
     background: #C4C4C4;
 }
@@ -34,7 +32,7 @@
     text-align: center;
 
     float: right;
-    margin-right: 11.875rem;
+    margin-right: 6.25rem;
 
     background: #C4C4C4;
 }
@@ -42,18 +40,22 @@
 .bloque{
     position: relative;
     width: 100%;
-    top: 20rem;
+    top: 0;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 .fila{
     position: relative;
     width: 100%;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
 .footer{
-    bottom: -30rem;
+    bottom: -15rem;
+}
+
+h4{
+    margin-left: 6.25rem;
 }
