@@ -20,9 +20,8 @@ h2{
     color: #000000;
     position: relative;
     top: 0;
-    text-align: left;
-    left: 3.8rem;
     width:50rem;
+    margin-left: 6.25rem;
 }
 /*h3 subtitulos dentro de cada página*/
 h3{
