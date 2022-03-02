@@ -1,4 +1,7 @@
-
+/* Margen para el nombre de cada municip*/
+h4{
+    margin-left: 4.65rem;
+}
 /* Disposición de los municipios en la página */
 .municipio{
     width: 100%;
@@ -8,7 +11,7 @@
 
 /* Cuadro de texto para la descripción del municipio */
 .descripcionMunicipio{
-    width: 47.3125rem;
+    width: 60rem;
     height: 26.25rem;
     font-size: 1.875rem;
     display: inline-block;
@@ -19,7 +22,7 @@
     width: 39.375rem;
     height: 26.25rem;
     float: left;
-    margin-left: 10rem;
+    margin-left: 6.25rem;
 }
 
 /* Poscicionamiento de la imagen a la derecha de la descripción del municipio */
@@ -27,7 +30,7 @@
     width: 39.375rem;
     height: 26.25rem;
     float: right;
-    margin-right: 11.875rem;
+    margin-right: 6.25rem;
 }
 
 /* Posicionamiento del footer en la página*/
