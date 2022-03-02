@@ -1,11 +1,12 @@
-.actividades{
+/*////////// ACTIVIDADES //////////*/
+.actividades{ /* Contenedor de actividades */
     position: relative;
     width: 100%;
     top: 5rem;
     text-align: center;
 }
 
-.articulo{
+.articulo{ /* Contenedor de actividad */
     position: relative;
     width: 100%;
     margin-top: 3rem;
@@ -17,14 +18,15 @@
     background-color: #C4C4C5;
 }
 
-/* Texto centrado */
-.centrado{
+/*////////// TEXTO //////////*/
+.centrado{ /* Texto centrado */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/*////////// FOOTER //////////*/
 .footer{
     bottom: -20rem;
 }
