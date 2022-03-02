@@ -1,29 +1,22 @@
-.conjuntoEventos {
+/*////////// EVENTOS //////////*/
+.conjuntoEventos { /* Contenedor de eventos */
     position: relative;
     width: 100%;
     top:-2rem;
 }
 
-.conjuntoEvento{
-    background: #C4C4C5;
-    height: 17.63rem;
-}
-
-.apartadoEvento{
+.evento{ /* Contenedor de evento */
     position: absolute;
     width: 100%;
     height: 17.63rem;
 }
 
-.paginaEvento{
+.conjuntoEvento{ /* Contenedor cabecera evento*/
+    background: #C4C4C5;
     height: 17.63rem;
-    width: 100%;
-    z-index: 4;
-    position:relative;
-    top:-22rem;
 }
 
-.imagenCalendario{
+.imagenCalendario{ /* Fecha del evento */
     position: absolute;
     width: 12rem;
     height: 13.06rem;
@@ -31,7 +24,7 @@
     top: 2.54rem;
 }
 
-.infoEvento{
+.infoEvento{ /* Informacion basica evento */
     position: absolute;
     left: 19.37rem;
 }
@@ -48,7 +41,31 @@
     top: 0.9rem;
 }
 
-.textoDescripcionEvento{
+.flechaAbajoEvento{ /* Desplega descripcion evento */
+    width: 5.25rem;
+    height: 6.20rem;
+}
+
+.apartadoDescripcionEvento { /* Contenedor descripcion evento */
+    display:none;
+    position:absolute;
+    top:16.6rem;
+    z-index: 5;
+}
+
+.imagenDescripcion{ /* Imagen evento */
+    width: 100%;
+    height: 30.63rem;
+}
+
+.paginaEvento{ /* Contenedor informacion detallada evento */
+    height: 17.63rem;
+    width: 100%;
+    position:relative;
+    top:-22rem;
+}
+
+.textoDescripcionEvento{ /* Descripcion evento */
     position: absolute;
     color: white;
     text-align: center;
@@ -73,9 +90,7 @@
     top: 90rem;
 }
 
-.footer{
-    bottom: -140rem;
-}
+/*////////// DROPDOWN EVENTO //////////*/
 * {
     padding:0;
 }
@@ -86,35 +101,17 @@ ul, ol {
 }
 
 .eventos > li {
-    position: absolute;
     float:left;
     width: 100%;
     height: 100%;
 }
 
-.apartadoDescripcionEvento {
-    display:none;
-    position:absolute;
-    top:16.6rem;
-    z-index: 5;
-}
-.imagenDescripcion{
-    width: 100%;
-    height: 30.63rem;
-}
-
-.apartadoEvento:hover > ul {
+.evento:hover > ul {
     display:block;
 }
 
-.flechaAbajoEvento{
-    position: relative;
-    width: 5.25rem;
-    height: 6.20rem;
-}
-
 .btn {
-    padding: 16px;
+    padding: 1rem;
     border: none;
     position: relative;
     background-color: #C4C4C5;
@@ -122,4 +119,9 @@ ul, ol {
     vertical-align: middle;
     top:25%;
     margin-right: 2rem;
+}
+
+/*////////// FOOTER //////////*/
+.footer{
+    bottom: -140rem;
 }

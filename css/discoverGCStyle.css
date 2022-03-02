@@ -1,61 +1,39 @@
-
-.descripcionMunicipio{
-    position: relative;
-    width: 60rem;
-    height: 26.25rem;
-
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-.imagenIzquierdaMunicipio{
-    position: relative;
-    width: 39.375rem;
-    height: 26.25rem;
-
-    align-items: center;
-    text-align: center;
-
-    float: left;
-    margin-left: 6.25rem;
-
-    background: #C4C4C4;
-}
-
-.imagenDerechaMunicipio{
-    position: relative;
-    width: 39.375rem;
-    height: 26.25rem;
-
-    align-items: center;
-    text-align: center;
-
-    float: right;
-    margin-right: 6.25rem;
-
-    background: #C4C4C4;
-}
-
-.bloque{
-    position: relative;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    display: inline-block;
-}
-
-.fila{
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.footer{
-    bottom: -15rem;
-}
-
+/* Margen para el nombre de cada municip*/
 h4{
     margin-left: 4.65rem;
+}
+/* Disposición de los municipios en la página */
+.municipio{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Cuadro de texto para la descripción del municipio */
+.descripcionMunicipio{
+    width: 60rem;
+    height: 26.25rem;
+    font-size: 1.875rem;
+    display: inline-block;
+}
+
+/* Poscicionamiento de la imagen a la izquierda de la descripción del municipio */
+.imagenIzquierdaMunicipio{
+    width: 39.375rem;
+    height: 26.25rem;
+    float: left;
+    margin-left: 6.25rem;
+}
+
+/* Poscicionamiento de la imagen a la derecha de la descripción del municipio */
+.imagenDerechaMunicipio{
+    width: 39.375rem;
+    height: 26.25rem;
+    float: right;
+    margin-right: 6.25rem;
+}
+
+/* Posicionamiento del footer en la página*/
+.footer{
+    bottom: -15rem;
 }
