@@ -1,113 +1,81 @@
 
-.imagenFondo {
-    position: relative;
+.AreaDeInformación{ /* Área en donde se encuentra toda la información */
+    display: inline-block;
+}
+
+
+
+/*////////// IMAGEN Y NOMBRE DE LA ACTIVIDAD //////////*/
+.posicionamientoImagenFondo{
+    position: relative; /* Posicionamiento de la imagen de fondo principal */
+}
+
+.imagenFondo { /* Tamaño de la imagen de fondo principal */
     width: 100%;
     height: 32.375rem;
-    text-align: center;
 }
 
-.descripcionActividad {
-    position: relative;
-
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
-
-    text-align: justify;
-    display: flex;
-}
-
-.imagenPin {
-    position: relative;
-    width: 1.6875rem;
-    height: 4.6875rem;
-    float: left;
-    margin-right: 2rem;
-}
-
-.empresas{
-    position: relative;
-    top: 0.75rem;
-    vertical-align: middle;
-    text-align: left;
-
-    color: #000000;
-}
-
-.informacionEmpresas{
-    position: relative;
-    width: 45%;
-    font-size: 1.875rem;
-    display: inline-block;
-}
-
-.imagenActividad{
-    position: relative;
-    width: 45.4375rem;
-    height: 36.75rem;
-    top: 14rem;
-
-    float: right;
-    margin-right: 6.25rem;
-    text-align: center;
-
-    background: #C4C4C4;
-}
-
-.tituloActividad{
-    position: relative;
-
-    color: #FFFFFF;
-
-    text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(0.9375);
-}
-
-.separacionBloque{
-    position: relative;
-    width: 100%;
-    display: block;
-    flex-direction: column;
-    margin-top: 5rem;
-
-    top: 3rem;
-    text-align: center;
-}
-
-.AreaDeInformación{
-    position: relative;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-}
-
-.footer{
-    bottom: -20rem;
-}
-
-.centrado{
+.centrado{ /* Centrado del nombre de la actividad en la imagen */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.localizacionImagenFondo{
-    position: relative;
-    width: 100%;
-    display: block;
-    text-align: center;
+
+
+/*////////// DESCRIPCIÓN DE LA ACTIVIDAD//////////*/
+.separacionBloque{ /* Para separar los bloques de información */
+    margin-top: 5rem;
 }
 
-.localizacionEmpresas{
+.descripcionActividad { /* Márgenes del texto de la descripción de la actividad */
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+}
+
+
+/*////////// INFORMACIÓN DE LAS EMPRESAS //////////*/
+.localizacionCabeceraEmpresas{
     position: relative;
-    top: 3rem;
+    width: 100%;
+    font-size: 1.875rem;
+    display: block;
+}
+
+.imagenPin { /* Imagen del pin en la cabecera de empresas */
+    width: 1.6875rem;
+    height: 4.6875rem;
+    float: left;
     margin-left: 7rem;
+    margin-right: 2rem;
 }
 
-.localizacionInformacion{
-    position: relative;
-    width: 100%;
-    display: block;
+.empresas{ /* Alineamiento del título de cabeceras */
+    text-align: left;
+}
+
+.localizacionInformacion{ /* Localización de la información de las empresas */
     text-align: center;
 }
 
+.informacionEmpresas{ /* Información de las empresas*/
+    width: 45%;
+    font-size: 1.875rem;
+    display: inline-block;
+}
+
+.imagenActividad{ /* Imagen de la actividad */
+    position: relative;
+    width: 45.4375rem;
+    height: 36.75rem;
+    top: 14rem;
+    float: right;
+    margin-right: 6.25rem;
+}
+
+
+/*////////// FOOTER //////////*/
+.footer{
+    bottom: -20rem;
+}
