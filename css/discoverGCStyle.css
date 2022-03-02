@@ -20,14 +20,14 @@ h4{ /* Margen para el nombre de cada municipio */
     display: inline-block;
 }
 
-.imagenIzquierdaMunicipio{ /* Poscicionamiento de la imagen a la izquierda de la descripción del municipio */
+.imagenIzquierdaMunicipio{ /* Posicionamiento de la imagen a la izquierda de la descripción del municipio */
     width: 39.375rem;
     height: 26.25rem;
     float: left;
     margin-left: 6.25rem;
 }
 
-.imagenDerechaMunicipio{ /* Poscicionamiento de la imagen a la derecha de la descripción del municipio */
+.imagenDerechaMunicipio{ /* Posicionamiento de la imagen a la derecha de la descripción del municipio */
     width: 39.375rem;
     height: 26.25rem;
     float: right;
