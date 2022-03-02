@@ -1,24 +1,41 @@
+/* Grupo de eventos en la página */
 .conjuntoEventos {
     position: relative;
     width: 100%;
     top:-2rem;
 }
 
-.conjuntoEvento{
-    background: #C4C4C5;
-    height: 17.63rem;
-}
-
-.apartadoEvento{
+/* Evento */
+.evento{
     position: absolute;
     width: 100%;
     height: 17.63rem;
 }
 
+/* Cabecera Evento */
+.conjuntoEvento{
+    background: #C4C4C5;
+    height: 17.63rem;
+}
+
+/* Contenedor Informacion Evento */
+.apartadoDescripcionEvento {
+    display:none;
+    position:absolute;
+    top:16.6rem;
+    z-index: 5;
+}
+
+/* Informacion de Evento */
+.infoEvento{
+    position: absolute;
+    left: 19.37rem;
+}
+
+/* Información Evento */
 .paginaEvento{
     height: 17.63rem;
     width: 100%;
-    z-index: 4;
     position:relative;
     top:-22rem;
 }
@@ -29,11 +46,6 @@
     height: 13.06rem;
     left: 4.31rem;
     top: 2.54rem;
-}
-
-.infoEvento{
-    position: absolute;
-    left: 19.37rem;
 }
 
 .nombreEvento{
@@ -73,9 +85,6 @@
     top: 90rem;
 }
 
-.footer{
-    bottom: -140rem;
-}
 * {
     padding:0;
 }
@@ -86,35 +95,27 @@ ul, ol {
 }
 
 .eventos > li {
-    position: absolute;
     float:left;
     width: 100%;
     height: 100%;
 }
 
-.apartadoDescripcionEvento {
-    display:none;
-    position:absolute;
-    top:16.6rem;
-    z-index: 5;
-}
 .imagenDescripcion{
     width: 100%;
     height: 30.63rem;
 }
 
-.apartadoEvento:hover > ul {
+.evento:hover > ul {
     display:block;
 }
 
 .flechaAbajoEvento{
-    position: relative;
     width: 5.25rem;
     height: 6.20rem;
 }
 
 .btn {
-    padding: 16px;
+    padding: 1rem;
     border: none;
     position: relative;
     background-color: #C4C4C5;
@@ -122,4 +123,9 @@ ul, ol {
     vertical-align: middle;
     top:25%;
     margin-right: 2rem;
+}
+
+/* Posicionamiento del footer en la página*/
+.footer{
+    bottom: -140rem;
 }
