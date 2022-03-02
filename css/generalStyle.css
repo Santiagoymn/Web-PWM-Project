@@ -15,6 +15,7 @@ h1{ /*h1 es el titulo del header*/
 h2{ /*h2 es el titulo de cada página*/
     font-family: "Helvetica", serif;
     font-size: 4.5em;
+    font-weight: normal;
     line-height: 5.25rem;
     color: #000000;
     position: relative;
