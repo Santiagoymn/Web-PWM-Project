@@ -1,6 +1,6 @@
 
-/* Tamaño de las imágenes grandes */
-.imagenesGrandes{
+/*////////// IMÁGENES //////////*/
+.imagenesGrandes{ /* Tamaño de las imágenes grandes */
     width: 33.3125rem;
     height: 30.875rem;
     margin-right: 2rem;
@@ -8,27 +8,27 @@
     margin-bottom: 3rem;
 }
 
-/* Tamaño de las imágenes pequeñas */
-.imagenenesPequeñas{
+.imagenenesPequeñas{ /* Tamaño de las imágenes pequeñas */
     width: 14.125rem;
     height: 12.1875rem;
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 2rem;
 }
-/* Alineamiento de las  imágenes */
-.alinear{
+
+.alinear{ /* Alineamiento de las  imágenes */
     text-align: center;
 }
 
-/* Posicionamiento del conjunto de imágenes */
-.posicionamiento{
+.posicionamiento{ /* Posicionamiento del conjunto de imágenes */
     position: relative;
     top: 5rem;
     width: 100%;
 }
 
-/* Posicionamiento del footer en la página*/
-.footer{
+
+
+/*////////// FOOTER //////////*/
+.footer{ /* Posicionamiento del footer en la página */
     bottom: -20rem;
 }
