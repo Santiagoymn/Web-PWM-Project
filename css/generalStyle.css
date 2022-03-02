@@ -20,9 +20,8 @@ h2{
     color: #000000;
     position: relative;
     top: 0;
-    text-align: left;
-    left: 3.8rem;
     width:50rem;
+    margin-left: 6.25rem;
 }
 /*h3 subtitulos dentro de cada página*/
 h3{
@@ -40,7 +39,6 @@ h4{
     position: relative;
     width: 19.875rem;
     height: 3.3125rem;
-    left: 8rem;
     font-family: "Helvetica", serif;
     font-style: normal;
     font-weight: bold;
@@ -53,13 +51,23 @@ p{
     font-family: "Helvetica", serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.25em;    /* 4.5 * 16px = 36 px */
+    font-size: 1.875rem;
     line-height: 2.63rem;  /* 2.63 * 16px = 42 px */
     text-align: justify;
 }
 a{
     text-decoration: none;
     color:black;
+}
+
+.nombreActividadImagen{
+    position: relative;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(0.9375rem);
+
 }
 
 /*header*/
@@ -96,8 +104,8 @@ a{
 .flechaAbajo{
     position: absolute;
     height: 1.25rem;
-    left: 5.225rem;
-    top: 1.5625rem;
+    left: 4.80rem;
+    top: 1.85rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -117,9 +125,8 @@ a{
 }
 
 .fuenteCategorias{
-    font-size: 1.25rem;
-    text-align: center;
-    margin-left: 2.1875rem;
+    font-size: 1.55rem;
+    margin-left: 1.1875rem;
 }
 
 #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
@@ -167,9 +174,7 @@ a{
     display:none;
     position:absolute;
     top:100%;
-    left:0;
     background: white;
-    padding:0;
     font-family: "Helvetica", serif;
     z-index: 4;
 }
@@ -185,7 +190,7 @@ a{
 .banderas{
     align-items: center;
     float:none;
-    width:4rem;
+    width:4.5rem;
 }
 
 #menu ul ul a {  /* items del menu desplegable al pasar el ratón */
@@ -258,7 +263,7 @@ footer{
 .copyright{
     position: relative;
     height: 1rem;
-    bottom: -2rem;
+    bottom: -3rem;
     margin-right: 1rem;
 
     font-family: "Helvetica", serif;

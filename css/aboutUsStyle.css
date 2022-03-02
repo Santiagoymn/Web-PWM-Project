@@ -1,23 +1,26 @@
-
+.apartadoInformacion{
+    display: flex;
+    margin-left: 6.25rem;
+    margin-right: 6.25rem;
+}
 .imgNosotros{
     position: relative;
     height: 14.06rem;
-    left: 3.8rem;
-    top: 8.19rem;
 }
+
 .textoPresentacion{
-    position: absolute;
+    position: relative;
     height: auto;
-    left: 32.06rem;
-    top: 39.19rem;
-    margin-right: 3rem;
+    margin-left: 3rem;
+    top:-1.75rem;
+
 }
 .apartadoQuienesSomos{
     width: 100%;
     height: 40rem;
     background-color: #C4C4C4;
     position: relative;
-    top: 23.25rem;
+    top: 10.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,5 +65,5 @@
 }
 
 .footer{
-    bottom: -40rem;
+    bottom: -29rem;
 }
