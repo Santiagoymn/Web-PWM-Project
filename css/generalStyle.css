@@ -1,58 +1,47 @@
+/*////////// GENERAL //////////*/
 html {
-    font-size: 100%; /* 100% = 16px */
+    font-size: 100%;
 }
-/*h1 es el titulo del header*/
-h1{
+
+/*////////// TIPOGRAFÍA //////////*/
+h1{ /*h1 es el titulo del header*/
     font-family: "Helvetica", serif;
-    font-style: normal;
     font-weight: bold;
-    font-size: 4.5em;   /* 4.5 * 16px = 72 px */
-    line-height: 5.25rem;  /* 5.25 * 16px = 84 px */
+    font-size: 4.5em;
+    line-height: 5.25rem;
     text-align: center;
+    text-transform: uppercase;
 }
-/*h2 es el titulo de cada página*/
-h2{
+h2{ /*h2 es el titulo de cada página*/
     font-family: "Helvetica", serif;
-    font-style: normal;
+    font-size: 4.5em;
     font-weight: normal;
-    font-size: 4.5em;       /* 4.5 * 16px = 72 px */
-    line-height: 5.25rem;   /* 5.25 * 16px = 84 px */
+    line-height: 5.25rem;
     color: #000000;
     position: relative;
     top: 0;
     width:50rem;
     margin-left: 6.25rem;
 }
-/*h3 subtitulos dentro de cada página*/
-h3{
+h3{ /*h3 subtitulos dentro de cada página*/
     font-family: "Helvetica", serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 4rem;
     line-height: 4.69rem;
     text-align: center;
-
 }
-
-
-h4{
+h4{ /*h4 subtitulos más pequeño dentro de cada página*/
     position: relative;
     width: 19.875rem;
     height: 3.3125rem;
     font-family: "Helvetica", serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 3rem;
     color: #000000;
 }
-
-/*texto común*/
-p{
+p{ /*texto común*/
     font-family: "Helvetica", serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.875rem;
-    line-height: 2.63rem;  /* 2.63 * 16px = 42 px */
+    line-height: 2.63rem;
     text-align: justify;
 }
 a{
@@ -60,17 +49,21 @@ a{
     color:black;
 }
 
-.nombreActividadImagen{
+span{
+    font-family: "Helvetica", serif;
+    color: #FFFFFF;
+}
+
+.nombreActividadImagen{ /*título de nombre de actividad en Category Page y Activity Page*/
     position: relative;
     text-transform: uppercase;
     color: #FFFFFF;
     font-size: 4rem;
     text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(0.9375rem);
-
 }
 
-/*header*/
+/*////////// HEADER //////////*/
 .tituloPagina{
     position: relative;
     width: 50.75rem;
@@ -80,7 +73,6 @@ a{
     margin-left: 2rem;
     display: inline;
 }
-
 .logo{
     position: relative;
     width: 13.3125rem;
@@ -89,30 +81,6 @@ a{
     float: left;
     margin-left: 2rem;
 }
-
-.banderaPrincipal{
-    height: 1.25rem;
-    left: 3.125rem;
-    top: 1.5625rem;
-}
-
-.banderaSecundarias{
-    height: 1.25em;
-    margin-left: 0.3125rem;
-}
-
-.flechaAbajo{
-    position: absolute;
-    height: 1.25rem;
-    left: 4.80rem;
-    top: 1.85rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #000000;
-}
-
 
 .rectanguloAzul{
     position: relative;
@@ -124,61 +92,58 @@ a{
     background: #CEE0FC;
 }
 
+/*////Tipografía////*/
 .fuenteCategorias{
     font-size: 1.55rem;
     margin-left: 1.1875rem;
 }
-
+/*////Dropdown definición////*/
 #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
     position: relative;
     height: 3.43125rem;
     top: 1rem;
     display: inline;
 }
-
-
 #menu ul{ /* Quita los puntos de la lista del dropdown */
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 #menu ul li{ /* Es el fondo del dropdown */
     background-color: transparent;
 }
-
-#menu ul a { /* Le da formato al texto del dropdown */
+#menu ul a { /* Le da formato al texto del navegador */
     display:block;
     color: black;
-    text-decoration:none;
     font-weight:normal;
     font-size:1.875rem;
     padding:1.375rem;
     text-transform:uppercase;
     font-family: "Helvetica", serif;
 }
-
-
 #menu ul li { /* Hace que el dropdown se vea en una fila y no en una columna */
     position:relative;
     float:left;
     margin:0.9375rem;
     padding:0;
 }
-
-#menu ul li:hover { /* efecto al pasar el ratón por los items del menu */
-    background: none;
-}
-
-#menu ul ul { /* items del menu desplegable */
+#menu ul ul { /* Items del menu desplegable */
     display:none;
     position:absolute;
     top:100%;
     background: white;
-    font-family: "Helvetica", serif;
     z-index: 4;
 }
+#menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
+    line-height: 0;
+    padding:0.125rem;
+}
+#menu ul li:hover > ul {
+    display:block;
+}
 
+
+/*////Dropdown categorías////*/
 .dropdownCategorias {
     float:none;
     width:14.375rem;
@@ -187,23 +152,31 @@ a{
     align-items: center;
 }
 
+
+/*////Dropdown banderas////*/
 .banderas{
     align-items: center;
     float:none;
     width:4.5rem;
 }
-
-#menu ul ul a {  /* items del menu desplegable al pasar el ratón */
-    line-height: 0;
-    padding:0.125rem;
+.banderaPrincipal{
+    height: 1.25rem;
+    left: 3.125rem;
+    top: 1.5625rem;
+}
+.banderaSecundarias{
+    height: 1.25em;
+    margin-left: 0.3125rem;
+}
+.flechaAbajo{
+    position: absolute;
+    height: 1.25rem;
+    left: 4.80rem;
+    top: 1.85rem;
+    display: flex;
 }
 
-#menu ul li:hover > ul {
-    display:block;
-}
-
-
-/*footer*/
+/*////////// FOOTER //////////*/
 footer{
     background-color: black;
     position: relative;
@@ -217,13 +190,16 @@ footer{
     top: 8rem;
     gap: 10rem;
 }
+.datoContacto{
+    width: 100%;
+    line-height: 6.25rem;
+    text-align: center;
+    display: inline-block;
+}
 
-.textoDatos{
+/*////Texto////*/
+.datoContacto span{
     position: relative;
-
-    font-family: "Helvetica", serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1.875rem;
     line-height: 2.1875rem;
     vertical-align: middle;
@@ -231,21 +207,34 @@ footer{
 
     color: #FFFFFF;
 }
+.copyright{
+    position: relative;
+    height: 1rem;
+    bottom: -3rem;
+    margin-right: 1rem;
 
-.imagenDatos{
+    font-size: 1.475rem;
+    line-height: 2.1875rem;
+    text-align: right;
+    display: block;
+}
+
+/*////Imágenes////*/
+.datoContacto img{
     position: relative;
     width: 3.75rem;
     height: 3.25rem;
-    vertical-align: middle;
     margin-right: 1rem;
+    top: 1rem;
 }
-
-.imagenInstagram{
+.redesSociales{
     position: relative;
+    bottom: -2rem;
+}
+.imagenInstagram{
     width: 3.2875rem;
     height: 3.2875rem;
 }
-
 .imagenFacebook{
     position: relative;
     width: 3.6875rem;
@@ -253,38 +242,7 @@ footer{
     margin-left: 2rem;
     margin-right: 2rem;
 }
-
 .imagenYouTube{
-    position: relative;
     width: 4.1rem;
     height: 3.1em;
-}
-
-.copyright{
-    position: relative;
-    height: 1rem;
-    bottom: -3rem;
-    margin-right: 1rem;
-
-    font-family: "Helvetica", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.475rem;
-    line-height: 2.1875rem;
-    text-align: right;
-    display: block;
-
-    color: #FFFFFF;
-}
-
-.infoTexto{
-    width: 100%;
-    line-height: 6.25rem;
-    text-align: center;
-    display: inline-block;
-}
-
-.redesSociales{
-    position: relative;
-    bottom: -1rem;
 }
