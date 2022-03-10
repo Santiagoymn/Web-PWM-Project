@@ -1,49 +1,34 @@
 /*////////// EVENTOS //////////*/
-.conjuntoEventos { /* Contenedor de eventos */
+.eventos { /* Contenedor de eventos */
     position: relative;
     width: 100%;
-    top:-2rem;
 }
 
 .evento{ /* Contenedor de evento */
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 17.63rem;
-}
-
-.conjuntoEvento{ /* Contenedor cabecera evento*/
     background: #C4C4C5;
-    height: 17.63rem;
 }
 
 .imagenCalendario{ /* Fecha del evento */
     position: absolute;
-    width: 12rem;
-    height: 13.06rem;
-    left: 4.31rem;
-    top: 2.54rem;
 }
 
 .infoEvento{ /* Informacion basica evento */
     position: absolute;
-    left: 19.37rem;
 }
 
 .nombreEvento{
     position: relative;
     font-weight: bold;
-    top: 1.25rem;
 }
 
 .textoEvento {
     position: relative;
-    line-height: 1.03rem;
-    top: 0.9rem;
 }
 
 .flechaAbajoEvento{ /* Desplega descripcion evento */
-    width: 5.25rem;
-    height: 6.20rem;
+
 }
 
 .apartadoDescripcionEvento { /* Contenedor descripcion evento */
@@ -55,23 +40,29 @@
 
 .imagenDescripcion{ /* Imagen evento */
     width: 100%;
-    height: 30.63rem;
 }
 
 .paginaEvento{ /* Contenedor informacion detallada evento */
-    height: 17.63rem;
+    position:absolute;
     width: 100%;
-    position:relative;
-    top:-22rem;
 }
 
 .textoDescripcionEvento{ /* Descripcion evento */
     position: absolute;
     color: white;
     text-align: center;
-    margin-left: 10rem;
-    margin-right: 10rem;
     background-color: rgba(196, 196, 197, 0.7);
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    position: relative;
+    background-color: #C4C4C5;
+    float:right;
+    vertical-align: middle;
+    top:25%;
+    margin-right: 2rem;
 }
 
 #evento1{
@@ -110,18 +101,98 @@ ul, ol {
     display:block;
 }
 
-.btn {
-    padding: 1rem;
-    border: none;
-    position: relative;
-    background-color: #C4C4C5;
-    float:right;
-    vertical-align: middle;
-    top:25%;
-    margin-right: 2rem;
-}
-
 /*////////// FOOTER //////////*/
 .footer{
     bottom: -140rem;
+}
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px) {
+
+    .evento{
+        height: 17.63rem;
+    }
+
+    .imagenCalendario{ /* Fecha del evento */
+        width: 12rem;
+        height: 13.06rem;
+        left: 4.31rem;
+        top: 2.54rem;
+    }
+
+    .infoEvento{ /* Informacion basica evento */
+        position: absolute;
+        left: 19.37rem;
+    }
+
+    .nombreEvento{
+        position: relative;
+        font-weight: bold;
+        top: 1.25rem;
+    }
+
+    .textoEvento {
+        position: relative;
+        line-height: 1.03rem;
+        top: 0.9rem;
+    }
+
+    .flechaAbajoEvento{ /* Desplega descripcion evento */
+        width: 5.25rem;
+        height: 6.20rem;
+    }
+
+    .apartadoDescripcionEvento { /* Contenedor descripcion evento */
+        display:none;
+        top:16.6rem;
+    }
+
+    .imagenDescripcion{ /* Imagen evento */
+        height: 30.63rem;
+    }
+
+    .paginaEvento{ /* Contenedor informacion detallada evento */
+        height: 17.63rem;
+        width: 100%;
+    }
+
+    .textoDescripcionEvento{ /* Descripcion evento */
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+}
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+
+    .evento{
+        height: 15.63rem;
+    }
+
+    .imagenCalendario{ /* Fecha del evento */
+        width: 9.94rem;
+        height: 10.63rem;
+        left: 4.31rem;
+        top: 2.54rem;
+    }
+
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+
+    .evento{
+        height: 10.5rem;
+    }
+
 }
