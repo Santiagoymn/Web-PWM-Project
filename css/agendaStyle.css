@@ -1,6 +1,7 @@
 /*////////// EVENTOS //////////*/
 .eventos { /* Contenedor de eventos */
     position: relative;
+    display: block;
     width: 100%;
 }
 
@@ -8,6 +9,7 @@
     position: relative;
     width: 100%;
     background: #C4C4C5;
+    margin-bottom: 3rem;
 }
 
 .imagenCalendario{ /* Fecha del evento */
@@ -66,22 +68,6 @@
     margin-right: 2rem;
 }
 
-#evento1{
-    top: 0;
-}
-
-#evento2{
-    top: 30rem;
-}
-
-#evento3{
-    top: 60rem;
-}
-
-#evento4{
-    top: 90rem;
-}
-
 /*////////// DROPDOWN EVENTO //////////*/
 * {
     padding:0;
@@ -104,7 +90,7 @@ ul, ol {
 
 /*////////// FOOTER //////////*/
 .footer{
-    bottom: -140rem;
+    bottom: -15rem;
 }
 
 /*/////////// MEDIA QUERY ///////////*/
@@ -119,34 +105,28 @@ ul, ol {
     }
 
     .imagenCalendario{ /* Fecha del evento */
-        width: 12rem;
-        height: 13.06rem;
+        width: 11.4rem;
+        height: 12.04rem;
     }
 
     .infoEvento{ /* Informacion basica evento */
-        position: absolute;
         left: 19.37rem;
     }
 
     .nombreEvento{
-        position: relative;
-        font-weight: bold;
         top: 1.25rem;
+        font-size: 2rem;
     }
 
     .textoEvento {
-        position: relative;
         line-height: 1.03rem;
         top: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .flechaAbajoEvento{ /* Desplega descripcion evento */
         width: 5.25rem;
         height: 6.20rem;
-    }
-
-    .apartadoDescripcionEvento { /* Contenedor descripcion evento */
-
     }
 
     .paginaEvento{ /* Contenedor informacion detallada evento */
@@ -160,10 +140,9 @@ ul, ol {
     }
 
     .textoDescripcionEvento{ /* Descripcion evento */
-        font-size: 2rem;
-        position: absolute;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        font-size: 1.9rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
         top: 0;
     }
 }
@@ -188,11 +167,13 @@ ul, ol {
 
     .nombreEvento{
         top: 0.85rem;
+        font-size: 1.5rem;
     }
 
     .textoEvento {
-        line-height: 0.86rem;
+        line-height: 1.5rem;
         top: 0.5rem;
+        font-size: 1.25rem;
     }
 
     .flechaAbajoEvento{ /* Desplega descripcion evento */
@@ -215,11 +196,10 @@ ul, ol {
 
     .textoDescripcionEvento{ /* Descripcion evento */
         font-size: 1rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
         top: 0;
     }
-
 }
 
 /*
@@ -243,11 +223,13 @@ ul, ol {
 
     .nombreEvento{
         top: 0;
+        font-size: 1.10rem;
     }
 
     .textoEvento {
         line-height: 0.35rem;
         top: 0.25rem;
+        font-size: 1rem;
     }
 
     .flechaAbajoEvento{ /* Desplega descripcion evento */
@@ -269,9 +251,10 @@ ul, ol {
     }
 
     .textoDescripcionEvento{ /* Descripcion evento */
-        font-size: 0.6rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        line-height: 1.5rem;
         top: 0;
     }
 }
