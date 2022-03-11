@@ -15,11 +15,6 @@
 
 
 
-
-
-
-
-
 /*////////// MEDIA QUERY //////////*/
 /*
   ##Device = Desktops
@@ -81,23 +76,23 @@
         position: relative;
         width: 45.4375rem;
         height: 36.75rem;
-        top: 4rem;
+        top: 15rem;
         float: right;
         margin-right: 3rem;
+        margin-bottom: 15rem;
     }
 
     .localizacionInformacion{ /* Localización de la información de las empresas */
         position: relative;
         margin-left: 12rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
+        float: left;
     }
 
     /*////////// FOOTER //////////*/
     .footer{
         bottom: -20rem;
     }
-
-
 }
 
 
@@ -109,7 +104,7 @@
   ##Screen = 640px to 960px
 */
 
-@media (min-width: 800px) and (max-width: 960px) {
+@media (min-width: 640px) and (max-width: 960px) {
 
     h2{
         font-size: 4rem;
@@ -141,6 +136,7 @@
     /*////////// DESCRIPCIÓN DE LA ACTIVIDAD//////////*/
     .separacionBloque{ /* Para separar los bloques de información */
         margin-top: 6rem;
+        text-align: center;
     }
 
     .descripcionActividad { /* Márgenes del texto de la descripción de la actividad */
@@ -200,7 +196,7 @@
   ##Screen = 640px to minimal resolution
 */
 
-@media (max-width: 800px) {
+@media (max-width: 640px) {
 
     h2{
         width: 12rem;
@@ -233,6 +229,7 @@
     /*////////// DESCRIPCIÓN DE LA ACTIVIDAD//////////*/
     .separacionBloque{ /* Para separar los bloques de información */
         margin-top: 6rem;
+        text-align: center;
     }
 
     .descripcionActividad { /* Márgenes del texto de la descripción de la actividad */
@@ -272,6 +269,7 @@
 
     .localizacionInformacion{ /* Localización de la información de las empresas */
         margin-left: 7rem;
+        margin-right: 2rem;
         margin-top: 4rem;
     }
 
