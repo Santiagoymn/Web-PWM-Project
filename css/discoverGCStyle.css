@@ -1,16 +1,16 @@
 
 .municipios{
     position: relative;
-    top: 5rem;
     width: 100%;
+    top: 6rem;
     text-align: center;
 }
 
 .descripcionMunicipio{
-    position:absolute;
+    position:relative;
     display:none;
-    background: yellowgreen;
-    z-index: 1;
+    right: 2.5rem;
+    top: -1.3rem;
 }
 
 .paginaMunicipio{
@@ -25,6 +25,7 @@
     height: 24.06rem;
     width: 100rem;
     margin-left: 5rem;
+    margin-right: 5rem;
 
     text-align: center;
     line-height: 4rem;
@@ -45,9 +46,11 @@
 }
 
 .flechaAbajoMunicipio{ /* Desplega descripcion evento */
-    position: relative;
+    position: absolute;
     width: 5.25rem;
     height: 6.20rem;
+    right: 1rem;
+    top: -1rem;
     align-items: center;
 }
 
@@ -57,7 +60,6 @@
     border: none;
     float:right;
     margin-right: 2rem;
-    top: -12.5rem;
     background: transparent;
 }
 
@@ -77,24 +79,21 @@
     font-weight: bold;
     font-size: 3rem;
     color: #FFFFFF;
-    background: yellowgreen;
 }
 
 .municipio{
     position: relative;
-    height: auto;
 }
 
 .imagenMunicipio{
     width: 100%;
-    height: 18rem;
-    z-index: 1;
+    height: 20rem;
 }
 
 .evento{ /* Contenedor de evento */
     position: relative;
     width: 100%;
-    height: 17.63rem;
+    margin-top: 3rem;
 }
 
 .evento:active > ul {
@@ -107,5 +106,5 @@ ul, ol {
 
 /*////////// FOOTER //////////*/
 .footer{ /* Posicionamiento del footer en la página*/
-    bottom: -130rem;
+    bottom: -20rem;
 }
