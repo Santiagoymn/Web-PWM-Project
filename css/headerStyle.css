@@ -1,16 +1,16 @@
 
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
 @media (min-width: 960px) {
     /*////////// HEADER //////////*/
     .tituloPagina{
-        position: relative;
-        width: 50.75rem;
-        height: 4.625rem;
-        top: 1.5rem;
-        text-align: left;
-        margin-left: 2rem;
-        display: inline;
-
-
         position: relative;
         width: 50.75rem;
         height: 4.625rem;
@@ -61,7 +61,7 @@
         position: absolute;
         height: 1.25rem;
         left: 3rem;
-        top: 0.7rem;
+        top: 0;
     }
 
     .tresRayas{
@@ -85,23 +85,28 @@
         margin-right: 2rem;
         margin-top: 2rem;
         height: 5rem;
+
     }
 
     .prueba2 {
-        display:block;
+        position: relative;
+        display: inline-flex;
         color: black;
         font-weight:normal;
         font-size:1.875rem;
         padding:1.375rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin-right: 2rem;
+        margin-right: 2.1rem;
+        top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .banderas2{
         position: relative;
+        display: inline-flex;
         right: 2rem;
-        top: 1rem;
+        top: 2rem;
         margin-left: 2rem;
         text-align: center;
         align-items: center;
@@ -114,10 +119,11 @@
 
     .prueba3 {
         position: relative;
-        left: -0.3rem;
+        left: -2.5rem;
         display: none;
         background: white;
         width: 3rem;
+        top: 3rem;
     }
 
     .banderas3{
@@ -127,19 +133,29 @@
     }
 
     .dropdown{
-        top: 1rem;
+        position: relative;
+        display: inline-flex;
         width: auto;
+        height: 100%;
+        margin-right: 2.5rem;
     }
 
     .textoCategorias{
+        position: relative;
+        font-size: 1.875rem;
         text-transform: uppercase;
-        height: 2.5rem;
+        height: 2.1rem;
+        font-family: "Helvetica", serif;
+        color: black;
     }
 
     .botonCategorias{
+        position: relative;
         background: transparent;
         border: none;
-        margin-right: 2rem;
+        width: auto;
+        top: 2rem;
+        padding: 1.4rem;
     }
 
     .dropdownSubCategorias{
@@ -156,13 +172,10 @@
         color: black;
     }
 
-    a{
-        text-decoration: none;
-    }
 
     .dropdown-menu {
         position: absolute;
-        top: 3rem;
+        top: 6rem;
         box-shadow: none;
         border: none;
         width: 100%;
@@ -170,9 +183,22 @@
         min-width: 0.625rem;
     }
 
-    a:hover{
-        text-decoration: none;
-        color: black;
+
+
+
+    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
+        position: relative;
+        height: 3.43125rem;
+        top: 1rem;
+        display: flex;
+    }
+
+    .loginRegister{
+        position: relative;
+        float: right;
+        top: 2.2rem;
+        margin-right: 2.5rem;
+        font-size: 1.2rem;
     }
 
 }
@@ -190,11 +216,10 @@
         font-size: 3rem;
         width: 50.75rem;
         height: 4.625rem;
-        top: -0.5rem;
+        top: 0rem;
         text-align: left;
         margin-left: 1rem;
         display: inline;
-        background: yellowgreen;
     }
     .logo{
         position: relative;
@@ -209,7 +234,7 @@
         position: relative;
         width: 100%;
         height: 4.3rem;
-        top: -0.35rem;
+        top: -0.8rem;
         display: inline-block;
         left: -0.50rem;
         background: #CEE0FC;
@@ -242,20 +267,20 @@
     }
 
     .banderaPrincipal{
-        height: 1.25rem;
-        left: 3.125rem;
+        height: 0.85rem;
+        left: 3rem;
         top: 1.5625rem;
     }
     .banderaSecundarias{
-        height: 1.25rem;
+        height: 0.85rem;
         margin-left: 0.3125rem;
         margin-top: 0.5rem;
     }
     .flechaAbajo{
         position: relative;
-        height: 1.25rem;
-        left: 3rem;
-        top: -1.5rem;
+        height: 1rem;
+        left: 2rem;
+        top: -0.9rem;
     }
 
     .tresRayas{
@@ -287,7 +312,7 @@
     }
 
     .prueba2 {
-        display:block;
+        display:inline-flex;
         color: black;
         font-weight:normal;
         font-size:1.1rem;
@@ -295,17 +320,16 @@
         text-transform:uppercase;
         font-family: "Helvetica", serif;
         margin-right: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .banderas2{
-        visibility: hidden;
-        position: relative;
+        position: absolute;
         right: 2rem;
-        top: 1rem;
+        top: 3rem;
         margin-left: 2rem;
         text-align: center;
         align-items: center;
-        width:0rem;
     }
 
     .banderas2:hover > div {
@@ -352,6 +376,57 @@
 
     .banderas3:hover > div {
         display: block;
+    }
+
+    .dropdown{
+        position: relative;
+        display: inline-flex;
+        width: auto;
+        height: 100%;
+        margin-right: 0rem;
+    }
+
+    .botonCategorias{
+        background: transparent;
+        border: none;
+        margin-right: 1rem;
+    }
+
+    .textoCategorias{
+        position: relative;
+        font-size: 1rem;
+        text-transform: uppercase;
+        height: 1.5rem;
+        font-family: "Helvetica", serif;
+        color: black;
+    }
+
+    .loginRegister{
+        position: relative;
+        float: right;
+        top: 1.2rem;
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 1.5rem;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        background: white;
+        min-width: 0.625rem;
+    }
+
+    .dropdown:hover > div{
+        display: block;
+    }
+
+    .centrarSubCategorias{
+        font-size: 1rem;
+        text-align: center;
+        color: black;
     }
 
 }
