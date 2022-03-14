@@ -1,8 +1,16 @@
 
-
 @media (min-width: 960px) {
     /*////////// HEADER //////////*/
     .tituloPagina{
+        position: relative;
+        width: 50.75rem;
+        height: 4.625rem;
+        top: 1.5rem;
+        text-align: left;
+        margin-left: 2rem;
+        display: inline;
+
+
         position: relative;
         width: 50.75rem;
         height: 4.625rem;
@@ -31,23 +39,6 @@
         z-index: -1;
     }
 
-    /*////Tipografía////*/
-    .fuenteCategorias{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    /*////Dropdown categorías////*/
-    .dropdownCategorias {
-        position: relative;
-        width:12rem;
-        top: -5rem;
-        display: none;
-        align-items: center;
-        text-align: center;
-        text-transform:uppercase;
-        background: white;
-    }
 
 
     /*////Dropdown banderas////*/
@@ -86,11 +77,6 @@
         width: 0;
     }
 
-
-    .quitaPuntoLista{
-        list-style: none;
-        text-align: left;
-    }
 
     .prueba {
         display: inline-flex;
@@ -134,26 +120,60 @@
         width: 3rem;
     }
 
-    .quitaPuntoLista2{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .quitaPuntoLista2:hover > ul {
-        display: block;
-    }
-    ul { /* Quita los puntos de la lista del dropdown */
-        list-style: none;
-        line-height: 0.02rem;
-    }
-
     .banderas3{
         width: 0;
         height: 0;
         visibility: hidden;
     }
 
+    .dropdown{
+        top: 1rem;
+        width: auto;
+    }
+
+    .textoCategorias{
+        text-transform: uppercase;
+        height: 2.5rem;
+    }
+
+    .botonCategorias{
+        background: transparent;
+        border: none;
+        margin-right: 2rem;
+    }
+
+    .dropdownSubCategorias{
+        background: #FFFFFF;
+    }
+
+    .dropdown:hover > div{
+        display: block;
+    }
+
+    .centrarSubCategorias{
+        font-size: 1.5rem;
+        text-align: center;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 3rem;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        background: white;
+        min-width: 0.625rem;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: black;
+    }
 
 }
 
@@ -174,6 +194,7 @@
         text-align: left;
         margin-left: 1rem;
         display: inline;
+        background: yellowgreen;
     }
     .logo{
         position: relative;
