@@ -1,78 +1,63 @@
-html {
-    font-size: 100%; /* 100% = 16px */
-}
-.slide {
+/*////////// CARRUSEL DE IMÁGENES //////////*/
+.carrusel {
     position: relative;
     box-shadow: 0 0.06rem 0.38rem rgba(0, 0, 0, 0.64);
     margin-top: 1.63rem;
-    top: 1rem;
 }
 
-.slide-inner {
+.carrusel_interno {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 48.5rem;
 }
 
-.slide-open:checked + .slide-item {
+.imagenActual:checked + .imagenCarrusel {
     position: static;
     opacity: 100;
 }
 
-.slide-item {
+.imagenCarrusel {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 
-.slide-item img {
+.imagenCarrusel img {
     display: block;
     width: 100%;
-    height: 48.5rem;
 }
 
-.slide-control {
+.btnControl {
     border-radius: 50%;
     color: #000;
     cursor: pointer;
     display: none;
-    font-size: 6.25rem;
-    height: 5rem;
-    line-height: 3.75rem;
     position: absolute;
     top: 50%;
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
-    width: 5rem;
     z-index: 10;
 }
 
-.slide-control.prev {
+.btnControl.prev {
     left: 2%;
 }
 
-.slide-control.next {
+.btnControl.next {
     right: 2%;
 }
 
-.slide-control:hover {
-    background: rgb(183, 182, 182, 0.8);
-    color: black;
-}
-
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
+#imagen-1:checked ~ .control-1,
+#imagen-2:checked ~ .control-2,
+#imagen-3:checked ~ .control-3 {
     display: block;
 }
 
-.slide-indicador {
+.imagen_indicador {
     list-style: none;
     margin: 0;
-    padding: 0;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -81,172 +66,458 @@ html {
     z-index: 10;
 }
 
-.slide-indicador li {
+.imagen_indicador li {
     display: inline-block;
-    margin: 0.31rem;
 }
 
-.slide-circulo {
+.circulo {
     color: #B7B6B6;
     cursor: pointer;
     display: block;
-    font-size: 4.06rem;
 }
 
-.slide-circulo:hover {
+.circulo:hover {
     color: #aaaaaa;
 }
 
-#slide-1:checked ~ .control-1 ~ .slide-indicador,
-li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador,
-li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador,
-li:nth-child(3) .slide-circulo {
+#slide-1:checked ~ .control-1 ~ .imagen_indicador,
+li:nth-child(1) .circulo,
+#slide-2:checked ~ .control-2 ~ .imagen_indicador,
+li:nth-child(2) .circulo,
+#slide-3:checked ~ .control-3 ~ .imagen_indicador,
+li:nth-child(3) .circulo {
     color: #B7B6B6;
 }
 
-.categories{
-    position: absolute;
-    top: 80.81rem;
-    width: 100%;
-
-}
-h1{
-    justify-content: center;
-}
-
-.imagesCategories{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.firstLine{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.secondLine{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img__wrap {
+/*////////// APARTADO DE CATEGORÍAS //////////*/
+.apartadoCategorias{
     position: relative;
-    width: 50%;
+    width: 100%;
+
 }
 
-.categoryImage {
-    display: block;
-    width: 97%;
-    height: 34.38rem;
+.imagenesCategorias{
+    display:inline-block;
+    justify-content: space-between;
+    object-fit: cover;
+
 }
 
-.overlay {
+.conjuntoImagenDescripcion{
+    position: relative;
+    display:inline-block;
+}
+
+.conjuntoImagenDescripcion img {
+    object-fit: cover;
+    display:inline-block;
+}
+
+.descripcion {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 97%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(196, 196, 196, 0.5);
 }
 
-.img__wrap:hover .overlay {
-    opacity: 1;
-}
 
-.img__description {
+.textoDescripcion {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
     font-family: "Helvetica", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.88rem;
-    line-height: 2.19rem;
-
     color: #FFFFFF;
 }
 
-.headerCategoriaCaption{
-    font-family: "Helvetica", serif;
-    font-style: normal;
+.tituloCategoria{
     font-weight: bold;
-    font-size: 2.38rem;
-    line-height: 2.81rem;
-    text-align: center;
     text-decoration-line: underline;
-    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
-
-.sobreNosotros{
+/*////////// APARTADO DE SOBRE NOSOTROS //////////*/
+.apartadoSobreNosotros{
     position: relative;
     width: 100%;
-    min-height: 43.75rem;
     height: auto;
-    top: 109.65rem;
-    display: flex;
     background-color: #C4C4C4;
-    word-wrap: break-word;
-
+    display:flex;
+    flex-direction: column;
 }
 
-.imagenSobreNosotros{
-    position: absolute;
-    width: 36.44rem;
-    height: 34.38rem;
-    left: 6.25rem;
-    top: 4.88rem;
+.tituloApartadoSobreNosotros{
+    text-transform: uppercase;
+    align-self: center;
 }
-.headersobreNosotros{
-    position: relative;
-    width: 33.31rem;
-    height: 2.06rem;
-    left: 48.88rem;
-     top: 5.19rem;
 
-    font-family: Helvetica, serif;
+.textoapartadoSobreNosotros{
+    font-family: "Helvetica", serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    text-align: center;
-
-    color: #000000;
-}
-
-.textAboutUs{
-    position:relative;
-    margin: 9.38rem 6.25rem 13.06rem 52.94rem;
+    font-weight: normal;
+    font-size: 1.875rem;
+    line-height: 2.63rem;  /* 2.63 * 16px = 42 px */
+    text-align: justify;
 }
 
 .btnSaberMás{
-    position: absolute;
-    width: 13.88rem;
-    height: 4.69rem;
-    left: 50.94rem;
-    bottom: 6.31rem;
+    position: relative;
     font-family: Helvetica, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.25rem;
-    line-height: 2.63rem;
     text-align: center;
     background: #CEE0FC;
-    border-radius: 1rem;
+    align-self: center;
 }
 
-.footer{
-    bottom: -132rem;
+/*////////// MEDIA QUERY //////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+
+@media (min-width: 960px) {
+    /*////////// CARRUSEL DE IMÁGENES //////////*/
+    .carrusel {
+        margin-top: 1.63rem;
+        top: 1rem;
+    }
+
+    .carrusel_interno {
+        height: 48.5rem;
+    }
+
+    .imagenCarrusel img {
+        height: 48.5rem;
+    }
+
+    .btnControl {
+        font-size: 6.25rem;
+        height: 5rem;
+        line-height: 4.75rem;
+        width: 5rem;
+    }
+
+    .imagen_indicador li {
+        margin: 0.31rem;
+    }
+
+    .circulo {
+        font-size: 4.06rem;
+    }
+
+    .btnControl:hover {
+        background: rgb(183, 182, 182, 0.8);
+        color: black;
+    }
+
+    /*////////// APARTADO DE CATEGORÍAS //////////*/
+    .apartadoCategorias{
+        width: 100%;
+        margin-top: 15rem;
+    }
+
+    .descripcion {
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(196, 196, 196, 0.5);
+        height: 100%;
+        width: 100%;
+    }
+
+    .conjuntoImagenDescripcion:hover .descripcion {
+        opacity: 1;
+    }
+
+    .conjuntoImagenDescripcion img {
+        width: 32.5vw;
+        height: 34.38rem;
+    }
+
+    .textoDescripcion {
+        font-size: 1.88rem;
+        line-height: 2.19rem;
+        width: 90%;
+    }
+
+    .tituloCategoria{
+        font-size: 2.38rem;
+        line-height: 2.81rem;
+    }
+
+    /*////////// APARTADO DE SOBRE NOSOTROS //////////*/
+    .apartadoSobreNosotros{
+        min-height: 43.75rem;
+        height: auto;
+        margin-top: 18rem;
+    }
+
+    .imagenSobreNosotros{
+        width: 30rem;
+        height: 28rem;
+        margin-right: 3rem;
+        margin-bottom:2rem;
+        float:left;
+        vertical-align: center;
+        align-self: center;
+
+    }
+    .tituloApartadoSobreNosotros{
+        width: 33.31rem;
+    }
+
+    .fotoTextosBoton{
+        display:flex;
+        flex-direction: column;
+        align-content:center;
+        justify-content: center;
+    }
+
+    .fotoTexto {
+        margin-right: 6.25rem;
+        margin-left: 6.25rem;
+    }
+    .btnSaberMás{
+        width: 13.88rem;
+        height: 4.69rem;
+        font-size: 2.25rem;
+        border-radius: 1rem;
+        margin-top: 2.5rem;
+        clear: none;
+        margin-bottom: 5rem;
+    }
+    /*////////// FOOTER //////////*/
+    .footer{
+        margin-top: 18rem;
+    }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+
+@media (min-width: 640px) and (max-width: 959px) {
+    /*////////// CARRUSEL DE IMÁGENES //////////*/
+    .carrusel {
+        margin-top: 1.63rem;
+        top: 1rem;
+    }
+
+    .carrusel_interno {
+        height: 25rem;
+    }
+
+    .imagenCarrusel img {
+        height: 25rem;
+    }
+
+    .btnControl {
+        font-size: 4.25rem;
+        height: 4rem;
+        line-height: 3.75rem;
+        width: 4rem;
+    }
+
+    .imagen_indicador li {
+        margin: 0.31rem;
+    }
+
+    .circulo {
+        font-size: 3.06rem;
+    }
+
+    /*////////// APARTADO DE CATEGORÍAS //////////*/
+    .apartadoCategorias{
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .descripcion {
+        height: 100%;
+        width: 100%;
+    }
+
+    .infoDescripcion{
+        display:none;
+    }
+
+    .conjuntoImagenDescripcion img {
+        width: 48.5vw;
+        height: 40.38vw;
+    }
+
+    .textoDescripcion {
+        font-size: 1.88rem;
+        line-height: 2.19rem;
+    }
+
+    .tituloCategoria {
+        font-size: 3.5vw;
+        line-height: 1.81rem;
+        width: 30rem;
+    }
+
+    /*////////// APARTADO DE SOBRE NOSOTROS //////////*/
+    .apartadoSobreNosotros{
+        min-height: 43.75rem;
+        height: auto;
+        margin-top: 12rem;
+    }
+
+    .imagenSobreNosotros{
+        width: 25rem;
+        height: 23rem;
+        margin-right: 3rem;
+        margin-bottom:2rem;
+        float:left;
+        vertical-align: center;
+        align-self: center;
+
+    }
+    .tituloApartadoSobreNosotros{
+        width: 33.31rem;
+    }
+
+    .fotoTextosBoton{
+        display:flex;
+        flex-direction: column;
+        align-content:center;
+        justify-content: center;
+    }
+
+    .fotoTexto {
+        margin-right: 3.25rem;
+        margin-left: 3.25rem;
+    }
+
+    .btnSaberMás{
+        width: 12.88rem;
+        height: 4.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+        margin-top: 2.5rem;
+        clear: none;
+        margin-bottom: 5rem;
+    }
+    /*////////// FOOTER //////////*/
+    .footer{
+        margin-top: 12rem;
+    }
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+
+@media (max-width: 640px) {
+    /*////////// CARRUSEL DE IMÁGENES //////////*/
+    .carrusel {
+        margin-top: 1.63rem;
+        top: 1rem;
+    }
+
+    .carrusel_interno {
+        height: 26rem;
+    }
+
+    .imagenCarrusel img {
+        height: 26rem;
+    }
+
+    .btnControl {
+        font-size: 4.25rem;
+        height: 3rem;
+        line-height: 2.75rem;
+        width: 3rem;
+    }
+
+    .imagen_indicador li {
+        margin: 0.25rem;
+    }
+
+    .circulo {
+        font-size: 3rem;
+    }
+
+    /*////////// APARTADO DE CATEGORÍAS //////////*/
+    .apartadoCategorias{
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .descripcion {
+        height: 100%;
+        width: 100%;
+    }
+
+    .infoDescripcion{
+        display:none;
+    }
+
+    .conjuntoImagenDescripcion{
+        width: 100%;
+    }
+
+    .conjuntoImagenDescripcion img {
+        width: 100%;
+        height: 20rem;
+        margin-top:1rem;
+    }
+
+    .textoDescripcion {
+        font-size: 1.88rem;
+        line-height: 2.19rem;
+    }
+
+    .tituloCategoria {
+        font-size: 2rem;
+        line-height: 1.81rem;
+        width: 30rem;
+    }
+
+    /*////////// APARTADO DE SOBRE NOSOTROS //////////*/
+    .apartadoSobreNosotros{
+        min-height: 43.75rem;
+        height: auto;
+        margin-top: 12rem;
+    }
+
+    .imagenSobreNosotros{
+        width: 20rem;
+        height: 18rem;
+        margin-bottom:2rem;
+        margin-top:1rem;
+        vertical-align: center;
+        align-self: center;
+        justify-content: center;
+    }
+    .tituloApartadoSobreNosotros{
+        width: 25rem;
+    }
+
+    .fotoTexto{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .fotoTextosBoton{
+        display:flex;
+        flex-direction: column;
+        align-content:center;
+        justify-content: center;
+        margin-right: 1.75rem;
+        margin-left: 1.75rem;
+    }
+
+    .btnSaberMás{
+        width: 10.88rem;
+        height: 3.69rem;
+        font-size: 1.75rem;
+        border-radius: 1rem;
+        margin-top: 2.5rem;
+        margin-bottom: 5rem;
+    }
+    /*////////// FOOTER //////////*/
+    .footer{
+        margin-top: 12rem;
+    }
 }
