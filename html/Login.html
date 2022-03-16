@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Titulo Página</title>
+
+    <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/loginStyle.css" type="text/css">
+
+</head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $(function(){
+        $("#header").load("Header.html");
+        $("#footer").load("Footer.html");
+    });
+</script>
+<div id="header"></div>
+
+<body>
+<div class="login">
+    <img src="https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg" class="imagenFondo">
+    <div class="contenedorForm">
+        <h2 class="tituloInicioSesion">Inicio de Sesión</h2>
+        <form>
+            <label for="user">Usuario</label>
+            <div class="conjuntoInput">
+                <img src="images/icono-usuario.png" class="icono">
+                <input type="text" id="user" name="user">
+            </div>
+            <label for="passwd">Contraseña</label>
+            <div class="conjuntoInput">
+                <img src="images/icono-contraseña.png" class="icono">
+                <input type="password" id="passwd" name="passwd">
+            </div>
+            <div class="botonForm">
+                <button>Iniciar Sesión</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<div id="footer"></div>
+</html>
