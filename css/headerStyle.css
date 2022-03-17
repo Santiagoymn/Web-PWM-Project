@@ -227,6 +227,7 @@ a{
         font-size:1.875rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
+        margin-top: 1.3rem;
     }
 
 
@@ -266,6 +267,12 @@ a{
     .loginRegisterMovil{
         width: 0;
         height: 0;
+        visibility: hidden;
+    }
+
+    .banderasMovil{
+        height: 0;
+        width: 0;
         visibility: hidden;
     }
 }
@@ -499,6 +506,12 @@ a{
         height: 0;
         visibility: hidden;
     }
+
+    .banderasMovil{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
 }
 
 
@@ -544,9 +557,11 @@ a{
 
     /*////Tipografía////*/
     .fuenteCategorias {
-        width: 0;
-        height: 0;
-        font-size: 0rem;
+        position: relative;
+        font-size: 1rem;
+        line-height: normal;
+        width: 20rem;
+        text-align: left;
     }
 
 
@@ -563,8 +578,8 @@ a{
         position: relative;
         width: 1.5rem;
         float: right;
-        top: 2rem;
-        margin-right: 1rem;
+        top: 0.8rem;
+        margin-right: 2rem;
     }
 
 
@@ -574,7 +589,7 @@ a{
         width: 3rem;
         height: 3rem;
 
-        left: 40%;
+        left: 33%;
     }
 
 
@@ -583,7 +598,7 @@ a{
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 0.1rem;
+        height: 0.15rem;
         background: #000000;
     }
 
@@ -597,7 +612,11 @@ a{
         float: right;
         width: 1rem;
         height: 1rem;
-        margin-right: 2rem;
+        margin-top: 1rem;
+
+        left: 4rem;
+
+        vertical-align: middle;
     }
 
 
@@ -608,8 +627,10 @@ a{
     }
 
     .lineaHeaderOculto{
+        position: relative;
         display: none;
-
+        top: -4.2rem;
+        background: white;
     }
 
     .botonBanderasTablet{
@@ -632,7 +653,11 @@ a{
         visibility: hidden;
     }
 
-    .lineaHeader:hover > div{
+    .lineaHeader:hover > .lineaHeaderOculto{
+        display: block;
+    }
+
+    #menu:hover > ul{
         display: block;
     }
 
@@ -649,15 +674,15 @@ a{
     }
 
     .banderaPrincipal{
-        width: 0;
-        height: 0;
-        visibility: hidden;
-
+        width: 2.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
     }
 
     .textoDropDown {
         position: relative;
-        display: inline-flex;
+        display: inline-block;
         color: black;
         height: auto;
         font-weight:normal;
@@ -666,37 +691,33 @@ a{
 
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin: auto;
         margin-left: 2rem;
     }
 
     .categoriasDropdown{
         position: relative;
-        width: auto;
-        display: inline-flex;
+        width: 100%;
+        display: block;
         color: black;
         font-weight:normal;
         font-size:0.875rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
         margin-left: 1rem;
+        margin-top: 1rem;
     }
 
     .banderaPrincipalActual{
         width: 0;
-        height: 0rem;
+        height: 0;
         visibility: hidden;
     }
 
     #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-        position: relative;
-        display: inline-flex;
-        top: 0.3rem;
-        width: 5rem;
-
-        vertical-align: middle;
-        height: 3rem;
-        margin-right: 2rem;
+        position: absolute;
+        display: inline;
+        width: 90%;
+        height: auto;
     }
 
     .imagenFlechaAbajo{
@@ -705,5 +726,29 @@ a{
         visibility: hidden;
     }
 
+    .banderasMovil{
+        position: relative;
+        display: flex;
+        margin-left: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .borrar {
+        position: relative;
+        width:100%;
+        height: auto;
+
+        z-index: 1;
+    }
+
+    .prueba3{
+        position: relative;
+        width: 100%;
+    }
+
+    .prueba4{
+        position: relative;
+        width: 100%;
+    }
 
 }
