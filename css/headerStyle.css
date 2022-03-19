@@ -282,6 +282,10 @@ a{
         display:block;
     }
 
+    .simboloMenos{
+        display: none;
+    }
+
 
 }
 
@@ -558,6 +562,10 @@ a{
         background: transparent;
         border: none;
     }
+
+    .simboloMenos{
+        display: none;
+    }
 }
 
 
@@ -655,6 +663,19 @@ a{
         vertical-align: middle;
     }
 
+    .simboloMenos{
+        display: none;
+        position: relative;
+        float: right;
+        width: 1rem;
+        height: 1rem;
+        margin-top: 1rem;
+
+        left: 4rem;
+
+        vertical-align: middle;
+    }
+
 
     .lineaHeaderOculto{
         position: relative;
@@ -675,10 +696,11 @@ a{
     .loginRegister{
         display: none;
     }
-
+    /*
     .lineaHeader:hover > .lineaHeaderOculto{
         display: block;
     }
+     */
 
 
 
@@ -720,7 +742,7 @@ a{
         font-size:1rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-top: 1rem;
     }
 
@@ -741,7 +763,7 @@ a{
     }
 
     .borrar {
-        display: none;
+        display: block;
         position: relative;
         width:100%;
         height: 30rem;
@@ -789,7 +811,7 @@ a{
         background-color: transparent;
     }
     #menu ul ul { /* Items del menu desplegable */
-        display:block;
+        display:none;
         width: 100%;
         position:absolute;
         text-align: center;
@@ -800,7 +822,10 @@ a{
         line-height: 0;
         padding:0.125rem;
     }
+
+    /*
     #menu ul li:hover > ul {
         display:block;
     }
+     */
 }
