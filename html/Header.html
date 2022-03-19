@@ -16,7 +16,7 @@
 
     <div class="lineaHeader">
 
-        <img src="images/tresRayas.png" class="tresRayas">
+        <img src="images/tresRayas.png" class="tresRayas" alt="Tres rayas">
 
         <script src="scripts/jquery-1.6.9.min.js"></script>
         <script>
@@ -50,7 +50,7 @@
 
             <a href="index.html"><img src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5" class="logo2" alt="Página inicial"></a>
 
-            <img src="images/tresRayas.png" class="tresRayas2">
+            <img src="images/tresRayas.png" class="tresRayas2" alt="Tres rayas">
             <script>
                 $(document).ready(function () {
                     $(".tresRayas2").click(function (){
@@ -74,36 +74,38 @@
             <div id="menu">
                 <ul>
                     <li><p class="categoriasDropdown">Categorias</p>
-                        <ul class="borrar">
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 1</p></a></li>
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 2</p></a></li>
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 3</p></a></li>
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 4</p></a></li>
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 5</p></a></li>
-                            <li><a href="CategoryPage.html"><p class="fuenteCategorias">Categoría 6</p></a></li>
+                        <ul class="submenuCategorias">
+                            <script src="scripts/jquery-1.6.9.min.js"></script>
+                            <script>
+                                $.getJSON("json/categorias.json", function (json) {
+                                    $.each(json.categorias, function (){
+                                        var categoria = '<li><a href="CategoryPage.html"><p class="fuenteCategorias">' + this['categoria'] + '</p></a></li>';
+                                        $('.submenuCategorias').append(categoria);
+                                    });
+                                });
+                            </script>
                         </ul>
                     </li>
                 </ul>
             </div>
 
-            <img src="images/mas.png" class="simboloMas">
-            <img src="images/menos.png" class="simboloMenos">
+            <img src="images/mas.png" class="simboloMas" alt="Simbolo más">
+            <img src="images/menos.png" class="simboloMenos" alt="simbolo menos">
             <script>
                 $(document).ready(function () {
                     $(".simboloMas").click(function (){
-                        $(".borrar").show();
+                        $(".submenuCategorias").show();
                         $(".simboloMas").toggle();
                         $(".simboloMenos").toggle();
                     });
 
                     $(".simboloMenos").click(function (){
-                        $(".borrar").hide();
+                        $(".submenuCategorias").hide();
                         $(".simboloMenos").toggle();
                         $(".simboloMas").toggle();
                     });
                 });
             </script>
-
 
             <rect class="rectanguloSeparacionDropdown"></rect>
             <a href="AgendaPage.html" class="textoDropDown">Agenda</a>
@@ -136,7 +138,5 @@
 </header>
 
 <body>
-
-
 </body>
 </html>
