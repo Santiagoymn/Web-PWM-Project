@@ -1,0 +1,187 @@
+.login{
+    padding: 5rem;
+    background-image: url("https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg");
+    background-size: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.contenedorForm{
+    background-color: white;
+}
+
+.conjuntoInput{
+    display: flex;
+}
+
+.tituloInicioSesion{
+    position: relative;
+    text-align: center;
+}
+
+.icono{
+    position: relative;
+}
+
+form{
+    text-align: left;
+}
+
+form input{
+    width: 100%;
+    border: 0;
+}
+
+form input{
+    margin-bottom: 3rem;
+    border: 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+input:valid {
+    border-color: black; }
+input:focus {
+    outline: none;
+    border-color: lightblue; }
+
+.botonForm{
+    text-align: center;
+}
+
+.botonForm button{
+    background-color: #CEE0FC;
+    border-radius: 10%;
+    border: none;
+}
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px){
+    .icono{
+        margin-top: 3rem;
+        height: 2.95rem;
+        width: 3.18rem;
+        bottom: 2.8rem;
+        margin-right: 1.5rem;
+    }
+
+    form{
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .tituloInicioSesion{
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    form label{
+        font-size: 2rem;
+    }
+
+    .botonForm{
+
+    }
+
+    .botonForm button{
+        width: 8rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer{
+        bottom: -10rem;
+    }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+    .icono{
+        margin-top: 1.5rem;
+        height: 2rem;
+        width: 2.3rem;
+        bottom: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+    form{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    form label{
+        font-size: 2rem;
+    }
+
+
+    .tituloInicioSesion{
+        font-size: 2rem;
+
+    }
+
+    .botonForm{
+
+    }
+
+    .botonForm button{
+        width: 8rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer{
+        bottom: -12rem;
+    }
+
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+
+    .icono{
+        margin-top: 0.9rem;
+        height: 1.2rem;
+        width: 1.4rem;
+        bottom: 0.4rem;
+        margin-right: 0.89rem;
+    }
+
+    form{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    form label{
+        font-size: 1rem;
+    }
+
+
+    .tituloInicioSesion{
+        font-size: 1rem;
+    }
+
+    .botonForm{
+
+    }
+
+    .botonForm button{
+        width: 6rem;
+        height: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer{
+        bottom: -14rem;
+    }
+
+}
