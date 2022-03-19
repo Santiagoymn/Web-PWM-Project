@@ -311,6 +311,10 @@
     }
 
     /*////////// APARTADO DE CATEGORÍAS //////////*/
+    .tituloCategorias{
+        font-size: 2.5em;
+        width: auto;
+    }
     .apartadoCategorias{
         width: 100%;
         margin-top: 3rem;
@@ -365,6 +369,7 @@
     }
     .tituloApartadoSobreNosotros{
         width: 25rem;
+        font-size: 2.5em;
     }
 
     .fotoTexto{
