@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/indexStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/indexStyle.css" type="text/css">
+    <link rel="stylesheet" href="../bxslider/jquery.bxslider.css">
 </head>
+<body>
+</body>
+</html>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
     $(function(){
@@ -15,45 +19,21 @@
 </script>
 <div id="header"></div>
 <body>
-<div class="carrusel">
-    <div class="carrusel_interno">
-        <input class="imagenActual" type="radio" id="imagen-1" name="imagen" aria-hidden="true" hidden="" checked="checked">
-        <div class="imagenCarrusel">
-            <img src="https://ssl.tzoo-img.com/images/tzoo.20775.0.570822.GranCanaria.jpg" alt="Dunas de Maspalomas">
-        </div>
-
-        <input class="imagenActual" type="radio" id="imagen-2" name="imagen" aria-hidden="true" hidden="">
-        <div class="imagenCarrusel">
-            <img src="https://www.clickferry.com/blog/wp-content/uploads/2016/05/Arco2.jpg" alt="Ventana del Roque Nublo">
-        </div>
-
-        <input class="imagenActual" type="radio" id="imagen-3" name="imagen" aria-hidden="true" hidden="">
-        <div class="imagenCarrusel">
-            <img src="https://c1.wallpaperflare.com/preview/372/464/29/gran-canaria-beach-amadores-canary-islands.jpg" alt="Playa de Amadores">
-        </div>
-
-        <label for="imagen-3" class="btnControl prev control-1">‹</label>
-        <label for="imagen-2" class="btnControl next control-1">›</label>
-        <label for="imagen-1" class="btnControl prev control-2">‹</label>
-        <label for="imagen-3" class="btnControl next control-2">›</label>
-        <label for="imagen-2" class="btnControl prev control-3">‹</label>
-        <label for="imagen-1" class="btnControl next control-3">›</label>
-        <ol class="imagen_indicador">
-            <li>
-                <label for="imagen-1" class="circulo">•</label>
-            </li>
-            <li>
-                <label for="imagen-2" class="circulo">•</label>
-            </li>
-            <li>
-                <label for="imagen-3" class="circulo">•</label>
-            </li>
-        </ol>
-    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../bxslider/jquery.bxslider.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').bxSlider();
+    });
+</script>
+<div class="slider">
+    <div class="imagenCarrusel"> <img src="https://ssl.tzoo-img.com/images/tzoo.20775.0.570822.GranCanaria.jpg" alt="Dunas de Maspalomas"> </div>
+    <div class="imagenCarrusel"> <img src="https://www.clickferry.com/blog/wp-content/uploads/2016/05/Arco2.jpg" alt="Ventana del Roque Nublo"> </div>
+    <div class="imagenCarrusel"> <img src="https://c1.wallpaperflare.com/preview/372/464/29/gran-canaria-beach-amadores-canary-islands.jpg" alt="Playa de Amadores"></div>
 </div>
 
 <article class="apartadoCategorias">
-    <h1>CATEGORÍAS</h1>
+    <h2 class="tituloCategorias">CATEGORÍAS</h2>
     <section class="imagenesCategorias">
         <div class="conjuntoImagenDescripcion">
             <img class="categoryImage" src="https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg" alt="Flyboard">
@@ -125,7 +105,7 @@
 </article>
 <article class="apartadoSobreNosotros">
     <div class="fotoTextosBoton">
-        <h4 class="tituloApartadoSobreNosotros"> SOBRE NOSOTROS...</h4>
+        <h2 class="tituloApartadoSobreNosotros"> SOBRE NOSOTROS...</h2>
         <div class="fotoTexto">
             <img class="imagenSobreNosotros" src="https://www.publicdomainpictures.net/pictures/280000/nahled/dusky-grey-sky-background.jpg" alt="Logo">
             <div class ="textoapartadoSobreNosotros"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</div>
