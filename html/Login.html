@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Titulo Página</title>
+    <title>Iniciar Sesión</title>
 
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/loginStyle.css" type="text/css">
@@ -16,67 +16,99 @@
         $("#footer").load("Footer.html");
     });
 </script>
-<div id="header"></div>
+<!--<script>
+    var user, passwd;
+    function initiate(){
+        user = document.getElementById("user");
+        passwd = document.getElementById("passwd");
+        user.addEventListener("input", validation);
+        passwd.addEventListener("input", validation);
+        validationUser();
+        //validationPassword();
+    }
+    function validationUser(){
+        if(user.value === '') {
+            user.setCustomValidity('Debe introducir el usuario');
+            user.style.background = '#FFDDDD';
+        } else{
+            user.setCustomValidity('');
+            user.style.background = '#FFFFFF';
+        }
+    }
+    function validationPassword(){
+        if(passwd.value === ''){
+            passwd.setCustomValidity('Debe introducir la contraseña');
+            passwd.style.background = '#FFDDDD';
+        } else{
+            passwd.setCustomValidity('');
+            passwd.style.background = '#FFFFFF';
+        }
+    }
+    addEventListener("load", initiate);
+</script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" >
+    $(document).ready(function() {
+        $('#inicio').click( function(){
+            $.getJSON("json/users.json", function(data) {
+                for(var i = 0; i < data.user.length; i++) {
+                    var userJson = data.user[i].usuario;
+                    var passwordJson = data.user[i].password;
+                    var userInput = $('#user').val();
+                    var passwordInput = $('#passwd').val();
+                    if (userJson === userInput){
+                        if(passwordJson===passwordInput){
+                            alert("Coinciden");
+                            break;
+                        }
+                        else{
+                            var userMatch=true;
+                        }
+                    }
+                }
+                if (userMatch ===true){
+                    alert("La contraseña introducida es incorrecta. Vuelva a intentarlo");
+                }
+            });
+        });
+    });
+</script>
 
+<div id="header"></div>
 <body>
-<!--<div class="login">
-    <div class="row" style="width: 100%">
-        <div class="col-1" style="background-color: yellow"></div>
-        <div class="col-10">
+<div class="login">
+    <div class="row align-items-center">
+        <div class="col-1 col-md-2 col-lg-3">
+        </div>
+        <div class="col-10 col-md-8 col-lg-6">
             <div class="contenedorForm">
+                <h2 class="tituloInicioSesion">Inicio de Sesión</h2>
                 <form>
-                    <p class="tituloInicioSesion">Inicio de Sesión</p>
                     <label for="user">Usuario</label>
                     <div class="conjuntoInput">
-                        <img src="images/icono-usuario.png" class="icono">
-                        <input type="text" id="user" name="user">
+                        <img src="images/icono-usuario.png" class="icono" alt="Usuario">
+                        <input type="text" id="user" name="user" required>
                     </div>
                     <label for="passwd">Contraseña</label>
                     <div class="conjuntoInput">
-                        <img src="images/icono-contraseña.png" class="icono">
-                        <input type="password" id="passwd" name="passwd">
+                        <img src="images/icono-contraseña.png" class="icono" alt="Contraseña">
+                        <input type="password" id="passwd" name="passwd" required>
                     </div>
                     <div class="botonForm">
-                        <button>Iniciar Sesión</button>
+                        <button type="button" value="Iniciar Sesión" id="inicio" onclick="InicioSesion">
+                            Iniciar Sesión
+                        </button>
                     </div>
                 </form>
+                <p class="accesoRegistro">
+                    ¿No tienes cuenta? <a href="Register.html">Regístrate</a>
+                </p>
             </div>
         </div>
-        <div class="col-1" style="background-color: blue"></div>
-    </div>
-</div>-->
-<div class="login">
-        <div class="row align-items-center">
-            <div class="col-1 col-md-2 col-lg-3">
-            </div>
-            <div class="col-10 col-md-8 col-lg-6">
-                <div class="contenedorForm">
-                    <form>
-                        <p class="tituloInicioSesion">Inicio de Sesión</p>
-                        <label for="user">Usuario</label>
-                        <div class="conjuntoInput">
-                            <img src="images/icono-usuario.png" class="icono">
-                            <input type="text" id="user" name="user">
-                        </div>
-                        <label for="passwd">Contraseña</label>
-                        <div class="conjuntoInput">
-                            <img src="images/icono-contraseña.png" class="icono">
-                            <input type="password" id="passwd" name="passwd">
-                        </div>
-                        <div class="botonForm">
-                            <button>Iniciar Sesión</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-1 col-md-2 col-lg-3">
-            </div>
+        <div class="col-1 col-md-2 col-lg-3">
         </div>
     </div>
 </div>
-
-
-
 </body>
 <div id="footer"></div>
 </html>
