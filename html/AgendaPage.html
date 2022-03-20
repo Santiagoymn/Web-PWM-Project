@@ -9,7 +9,7 @@
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
     $(function(){
-        $("#header").load("Header.html");
+        $("#header").load("Header.html",);
         $("#footer").load("Footer.html");
     });
 </script>
@@ -17,7 +17,9 @@
 <body>
 <h2>Agenda</h2>
 <div class="eventos">
-    <div class="evento">
+    <ul style="display: block">
+    </ul>
+<!--    <div class="evento">
         <img class="imagenCalendario" src="images/calendario.png" alt="imagen calendario">
         <div class="infoEvento">
             <p class="nombreEvento">Nombre Evento</p>
@@ -28,7 +30,7 @@
         <button type="button" class="btn" data-toggle="dropdown">
             <img src="images/FlechaAbajo.png" class="flechaAbajoEvento" alt="Información Evento">
         </button>
-        <ul class="apartadoDescripcionEvento">
+        <ul class="apartadoDescripcionEvento" id="apartadoDescripcionEvento1">
             <li class="paginaEvento">
                 <img src="https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg" class="imagenDescripcion" alt="Imagen">
                 <p class="textoDescripcionEvento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo.</p>
@@ -88,8 +90,55 @@
                 <p class="textoDescripcionEvento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo.</p>
             </li>
         </ul>
-    </div>
+    </div>-->
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        function getJsonEvents(){
+            $.getJSON("../json/agenda.json", function (json){
+                $.each(json.events, function (i){
+                    var event = "<li class='eventoLista'><div class=\"evento\" id=evento" + i +">\n" +
+                        "        <img class=\"imagenCalendario\" src=\"images/calendario.png\" alt=\"imagen calendario\">\n" +
+                        "        <div class=\"infoEvento\">\n" +
+                        "            <p class=\"nombreEvento\">" + this.name + "</p>\n" +
+                        "            <p class=\"textoEvento\">" + this.day + "</p>\n" +
+                        "            <p class=\"textoEvento\">" + this.place + "</p>\n" +
+                        "            <p class=\"textoEvento\">" + this.municipality + "\n" +
+                        "        </div>\n" +
+                        "        <button type=\"button\" class=\"btn\" data-toggle=\"dropdown\">\n" +
+                        "            <img src=\"images/FlechaAbajo.png\" class=\"flechaAbajoEvento\" alt=\"Información Evento\">\n" +
+                        "        </button>\n" +
+                        "    </div></li>"
+                    $(".eventos ul").append(event);
+                });
+            })
+        }
+
+        getJsonEvents();
+
+        $(".eventos ul").on("click", ".btn", function (){
+            var id = $(this).attr("id");
+            alert(id);
+            var description = "<ul class='apartadoDescripcionEvento'>" +
+                "                   <li class='paginaEvento'>" +
+                "                       <img src=https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg class=\"imagenDescripcion\" alt=\"Imagen\">" +
+                "                       <p class=\"textoDescripcionEvento\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo.</p>" +
+                "                   </li>" +
+                "              </ul>";
+            $(this).after(description);
+        })
+
+        $(document).mouseup(function (e) {
+            if ($(e.target).closest(".apartadoDescripcionEvento").length === 0) {
+                $(".apartadoDescripcionEvento").hide();
+            }
+        });
+
+    });
+
+
+</script>
 </body>
 <div id="footer"></div>
 </html>

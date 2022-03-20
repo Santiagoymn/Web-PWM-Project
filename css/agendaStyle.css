@@ -1,8 +1,6 @@
 /*////////// EVENTOS //////////*/
 .eventos { /* Contenedor de eventos */
-    position: relative;
     display: block;
-    width: 100%;
 }
 
 .evento{ /* Contenedor de evento */
@@ -31,14 +29,11 @@
     position: relative;
 }
 
-.flechaAbajoEvento{ /* Desplega descripcion evento */
-
-}
-
 .apartadoDescripcionEvento { /* Contenedor descripcion evento */
-    display:none;
-    position:absolute;
+    position:relative;
     z-index: 5;
+    width: 100%;
+    height: 100%;
 }
 
 .imagenDescripcion{ /* Imagen evento */
@@ -69,6 +64,7 @@
 }
 
 /*////////// DROPDOWN EVENTO //////////*/
+
 * {
     padding:0;
 }
@@ -80,17 +76,12 @@ ul, ol {
 
 .eventos > li {
     float:left;
-    width: 100%;
-    height: 100%;
-}
 
-.evento:hover > ul {
-    display:block;
 }
 
 /*////////// FOOTER //////////*/
 .footer{
-    bottom: -15rem;
+    bottom: -30rem;
 }
 
 /*/////////// MEDIA QUERY ///////////*/
