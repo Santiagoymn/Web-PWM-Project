@@ -2,5 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{baguettebox.js, bootstrap, jquery-1.10.2}" />
+    <file url="PROJECT" libraries="{baguettebox.js, bootstrap, jquery-1.10.2, jquery-3.3.1, jquery-validate, jquery.bxslider}" />
+    <file url="PROJECT" libraries="{bootstrap, jquery-1.10.2}" />
   </component>
 </project>
