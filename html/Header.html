@@ -79,7 +79,7 @@
                             <script>
                                 $.getJSON("json/categorias.json", function (json) {
                                     $.each(json.categorias, function (){
-                                        var categoria = '<li id=' + this.name + '><a href="CategoryPage.html"><p class="fuenteCategorias">' + this['titulo'] + '</p></a></li>';
+                                        var categoria = '<li id=' + this['titulo'] + '><a href="CategoryPage.html"><p class="fuenteCategorias">' + this['titulo'] + '</p></a></li>';
                                         $('.submenuCategorias').append(categoria);
                                     });
                                 });
