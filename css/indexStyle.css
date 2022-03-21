@@ -119,6 +119,7 @@
     .conjuntoImagenDescripcion{
         width:33%;
         margin-top:0.5rem;
+        margin-left: 0.20rem;
     }
 
     .conjuntoImagenDescripcion:hover .descripcion {
