@@ -29,7 +29,7 @@
                     $.each(json.categorias, function (i, v){
                         if(v.titulo == localStorage.getItem("category")){
                             var intro = "<h2>" + this.titulo + "</h2>" +
-                                "<p class='descripcionCategorias>'" + this.descripcion + "</p>" +
+                                "<p class='descripcionCategorias'>" + this.descripcion + "</p>" +
                                 "<div class='actividades'></div>"
 
                             $(".categoryWrapper").append(intro);
@@ -47,7 +47,8 @@
             }
             getJsonActivities();
 
-            $(".actividades").on("click","a", function (){
+
+            $(".categoryWrapper").on("click","a", function (){
                 var id = $(this).children("article").attr("id");
                 localStorage.setItem('activityName', id);
             })
