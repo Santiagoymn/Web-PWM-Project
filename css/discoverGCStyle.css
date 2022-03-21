@@ -10,9 +10,9 @@
 
     .descripcionMunicipio {
         position: relative;
-        display: none;
-        right: 2.5rem;
         top: -1.3rem;
+        background: blue;
+        display: block;
     }
 
     .paginaMunicipio {
@@ -48,7 +48,7 @@
     }
 
     .flechaAbajoMunicipio { /* Desplega descripcion evento */
-        position: absolute;
+        position: relative;
         width: 5.25rem;
         height: 6.20rem;
         right: 1rem;
@@ -98,14 +98,7 @@
         margin-top: 3rem;
     }
 
-    .evento:active > ul {
-        display: block;
-    }
 
-    ul, ol {
-        list-style: none;
-        width: 100%;
-    }
 
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
