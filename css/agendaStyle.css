@@ -30,6 +30,7 @@
 }
 
 .apartadoDescripcionEvento { /* Contenedor descripcion evento */
+    display: none;
     position:relative;
     z-index: 5;
     width: 100%;
