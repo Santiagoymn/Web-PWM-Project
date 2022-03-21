@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/registerStyle.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $(function(){
+        $("#header").load("Header.html");
+        $("#footer").load("Footer.html");
+    });
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" >
+    $(document).ready(function() {
+        $('#registro').click( function(){
+            $.getJSON("json/users.json", function(data) {
+                var errorVariable;
+                for(var i = 0; i < data.user.length; i++) {
+                    var userJson = data.user[i].usuario;
+                    var emailJson = data.user[i].email;
+                    var userInput = $('#user').val();
+                    var emailInput = $('#email').val();
+                    if (userJson === userInput && emailJson !== emailInput){
+                        errorVariable = true;
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("ocultar");
+                        document.getElementById("errorUsuario").classList.add("mostrar");
+                    }
+                    else if (emailJson === emailInput && userJson !== userInput){
+                        errorVariable = true;
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("ocultar");
+                        document.getElementById("errorEmail").classList.add("mostrar");
+                    }
+                    else if (emailJson === emailInput && userJson === userInput){
+                        errorVariable = true;
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmailUsuario").classList.remove("ocultar");
+                        document.getElementById("errorEmailUsuario").classList.add("mostrar");
+                    }
+                    else{
+                        errorVariable = false;
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                    }
+                }
+                if(errorVariable !== true){
+                    var passwordInput = $('#passwd').val();
+                    var repeatPasswdInput = $('#repeatPasswd').val();
+                    var nombreInput = $('#nombre').val();
+                    var apellidosInput = $('#apellidos').val();
+                    if (passwordInput==="" || nombreInput==="" || apellidosInput==="" || repeatPasswdInput==="" ||
+                        userInput==="" || emailInput===""){
+                        document.getElementById("errorCamposNoRellenos").classList.remove("ocultar");
+                        document.getElementById("errorCamposNoRellenos").classList.add("mostrar");
+                    }
+                    if (passwordInput === repeatPasswdInput){
+                        /*ar usuarioInput = {"usuario": userInput, "email": emailInput, "nombre": nombreInput,
+                            "apellidos": apellidosInput, "password": passwordInput};
+                        var usuarioInput = {"usuario": userInput, "email": emailInput, "nombre": nombreInput,
+                            "apellidos": apellidosInput, "password": passwordInput};
+                        localStorage.setItem('json/users.json', JSON.stringify(usuarioInput));
+                        data.user.push(usuarioInput);
+                        alert(data.user[2].usuario);*/
+                        document.getElementById("mensajeOK").classList.remove("ocultar");
+                        document.getElementById("mensajeOK").classList.add("mostrar");
+                        document.getElementById("cuadroRegistro").classList.add("ocultar");
+                        document.getElementById("errorContraseña").classList.remove("mostrar");
+                    }
+                    else{
+                        document.getElementById("errorContraseña").classList.remove("ocultar");
+                        document.getElementById("errorContraseña").classList.add("mostrar");
+                    }
+                }
+            });
+        });
+    });
+</script>
+<div id="header"></div>
+<body>
+<div class="register" id="cuadroRegistro">
+    <div class="row align-items-center">
+        <div class="col-1 col-md-2 col-lg-3">
+        </div>
+        <div class="col-10 col-md-8 col-lg-6">
+            <div class="contenedorFormRegistro">
+                <h2 class="tituloRegistro">Registro</h2>
+                <form>
+                    <label for="user">Usuario</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/icono-usuario.png" class="iconoR" alt="Usuario">
+                        <input type="text" id="user" name="user" required>
+                    </div>
+                    <label for="email">Email</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/arroba.png" class="iconoR" alt="Email">
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <label for="nombre">Nombre</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/icono-usuario.png" class="iconoR" alt="Nombre">
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <label for="apellidos">Apellidos</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/icono-usuario.png" class="iconoR" alt="Apellidos">
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                    <label for="passwd">Contraseña</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/icono-contraseña.png" class="iconoR" alt="Contraseña">
+                        <input type="password" id="passwd" name="passwd" required>
+                    </div>
+                    <label for="repeatPasswd">Repite contraseña</label>
+                    <div class="conjuntoInputRegistro">
+                        <img src="images/icono-contraseña.png" class="iconoR" alt="Repetición contraseña">
+                        <input type="password" id="repeatPasswd" name="repeatPasswd" required>
+                    </div>
+                    <div class="botonFormRegistro">
+                        <button type="button" value="Registrarse" id="registro" onclick="validarRegistro()">
+                            Registrarse
+                        </button>
+                    </div>
+                </form>
+                <div id="errorContraseña" class="alertaError" role="alert">
+                    <p>Las contraseñas deben coincidir. Por favor vuelva a intentarlo.</p>
+                </div>
+                <div id="errorUsuario" class="alertaError" role="alert">
+                    <p>Debe de escoger otro usuario, ya existe este usuario.</p>
+                </div>
+                <div id="errorEmailUsuario" class="alertaError" role="alert">
+                    <p>El email ya está registrado y el usuario ya existe.</p>
+                </div>
+                <div id="errorEmail" class="alertaError" role="alert">
+                    <p>El email ya está registrado.</p>
+                </div>
+                <div id="errorCamposNoRellenos" class="alertaError" role="alert">
+                    <p>Debe rellenar todos los campos.</p>
+                </div>
+                <p class="accesoRegistro">
+                    ¿Ya tienes cuenta? <a href="Login.html">Inicia sesión</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-1 col-md-2 col-lg-3">
+        </div>
+    </div>
+</div>
+<div class="mensajeRegistrado" id="mensajeOK">
+    <div class="row align-items-center">
+        <div class="col-1 col-md-2 col-lg-3">
+        </div>
+        <div class="col-10 col-md-8 col-lg-6">
+            <div class="contenedorMensaje">
+                <h2 class="tituloRegistroSuccess">Registro realizado</h2>
+                <p> Se ha realizado correctamente su registro</p>
+                <button type="submit" class="btnInicioSesion" ><a href="Login.html">Inicia sesión</a></button>
+            </div>
+        </div>
+        <div class="col-1 col-md-2 col-lg-3">
+        </div>
+    </div>
+</div>
+</body>
+<div id="footer"></div>
+</html>
