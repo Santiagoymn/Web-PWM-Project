@@ -1,0 +1,54 @@
+{
+  "categorias": [
+    {
+      "titulo": "Categoria1",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
+      "alt": "Flyboard",
+      "activities": [
+        {
+          "name": "activity 11",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        },
+        {
+          "name": "activity 12",
+          "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        },
+        {
+          "name": "activity 13",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Categoria2",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.lugaresdeaventura.com/sites/default/files/inline-images/senderismo-gran-canaria-roque-nublo-circular-foto-ivan-sanz-5.jpeg",
+      "alt": "Senderismo"
+    },
+    {
+      "titulo": "Categoria3",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.viajes-carrefour.com/blog/wp-content/uploads/2018/06/papas-mojo-canario.jpg",
+      "alt": "Gastronomía"
+    },
+    {
+      "titulo": "Categoria4",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://sense.hdhotels.com/cms/uploads/webp/cobi_media_hdhotels.com_storage_media_uploads_2019_06_05_teatro_perez_galdos-900-r3c1ru.webp",
+      "alt": "Teatro Pérez Galdós"
+    },
+    {
+      "titulo": "Categoria5",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://media.manawa.com/cache/activity_gallery_zoom_770x500/media/2020/03/06d358c3a52daae1a430f84b7ae71800.jpeg",
+      "alt": "Parepente"
+    },
+    {
+      "titulo": "Categoria6",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg",
+      "alt": "Carnaval"
+    }
+  ]
+}

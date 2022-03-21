@@ -11,6 +11,7 @@
 .empresas{ /* Alineamiento del título de cabeceras */
     text-align: left;
     font-size: 3rem;
+    margin-left: 3rem;
 }
 
 
@@ -60,9 +61,28 @@
     .imagenPin { /* Imagen del pin en la cabecera de empresas */
         width: 1.6875rem;
         height: 4.6875rem;
-        float: left;
-        margin-left: 7rem;
-        margin-right: 2rem;
+        margin-left: 8rem;
+    }
+
+    .imagenEuro{
+        position: relative;
+        width: 2.6875rem;
+        height: 3.1875rem;
+        margin-left: 8rem;
+    }
+
+    .imagenTelefono{
+        position: relative;
+        width: 3.6875rem;
+        height: 4rem;
+        margin-left: 8rem;
+    }
+
+    .imagenWeb{
+        position: relative;
+        width: 4.6875rem;
+        height: 4.3875rem;
+        margin-left: 8rem;
     }
 
 
@@ -72,26 +92,40 @@
         margin-left: 10rem;
     }
 
-    .imagenActividad{ /* Imagen de la actividad */
-        position: relative;
-        width: 45.4375rem;
-        height: 36.75rem;
-        top: 15rem;
-        float: right;
-        margin-right: 3rem;
-        margin-bottom: 15rem;
-    }
 
     .localizacionInformacion{ /* Localización de la información de las empresas */
         position: relative;
-        margin-left: 12rem;
         margin-top: 3rem;
-        float: left;
+        text-align: center;
+    }
+
+    .empresaOrganizadora{
+        position: relative;
+        width: 25rem;
+        margin-left: 15rem;
+        font-size: 2rem;
     }
 
     /*////////// FOOTER //////////*/
     .footer{
         bottom: -20rem;
+    }
+
+
+    .empresa span{
+        font-size: 2rem;
+        line-height: 1.75rem;
+        color: black;
+    }
+
+    .empresa{
+        position: relative;
+        margin-bottom: 8rem;
+        margin-right: 6.25rem;
+    }
+
+    .informacionEspecifica{
+        display: inline;
     }
 }
 
@@ -154,13 +188,6 @@
         display: block;
     }
 
-    .imagenPin { /* Imagen del pin en la cabecera de empresas */
-        width: 1.6875rem;
-        height: 4.0875rem;
-        float: left;
-        margin-left: 7rem;
-        margin-right: 2rem;
-    }
 
 
 
@@ -169,14 +196,7 @@
         margin-left: 10rem;
     }
 
-    .imagenActividad{ /* Imagen de la actividad */
-        position: relative;
-        width: 40rem;
-        height: 22rem;
-    }
-
     .localizacionInformacion{ /* Localización de la información de las empresas */
-        margin-left: 10rem;
         margin-top: 4rem;
     }
 
@@ -184,6 +204,58 @@
     /*////////// FOOTER //////////*/
     .footer{
         bottom: -10rem;
+    }
+
+    .empresa{
+        margin-bottom: 8rem;
+        margin-right: 6.25rem;
+    }
+
+    .imagenPin { /* Imagen del pin en la cabecera de empresas */
+        width: 1.2875rem;
+        height: 3.6875rem;
+    }
+
+    .imagenEuro{
+        position: relative;
+        width: 2rem;
+        height: 2.5875rem;
+        margin-left: 2rem;
+    }
+
+    .imagenTelefono{
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    .imagenWeb{
+        position: relative;
+        width: 3.6875rem;
+        height: 3.3875rem;
+        margin-left: 2rem;
+    }
+
+    .empresa span{
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+        color: black;
+        margin-left: 6.25rem;
+    }
+
+    .empresaOrganizadora{
+        width: 25rem;
+        font-size: 1.5rem;
+        margin-left: 6.25rem;
+    }
+
+    .informacion{
+        display: inline-block;
+    }
+
+    .informacionEspecifica{
+        display: inline;
     }
 }
 
@@ -247,29 +319,13 @@
         display: block;
     }
 
-    .imagenPin { /* Imagen del pin en la cabecera de empresas */
-        width: 1.6875rem;
-        height: 4.0875rem;
-        float: left;
-        margin-left: 4rem;
-        margin-right: 1rem;
-    }
-
 
     .informacionEmpresas{ /* Información de las empresas*/
         font-size: 1.875rem;
         margin-left: 10rem;
     }
 
-    .imagenActividad{ /* Imagen de la actividad */
-        position: relative;
-        width: 30rem;
-        height: 22rem;
-    }
-
     .localizacionInformacion{ /* Localización de la información de las empresas */
-        margin-left: 7rem;
-        margin-right: 2rem;
         margin-top: 4rem;
     }
 
@@ -279,7 +335,60 @@
         bottom: -10rem;
     }
 
+    .empresa{
+        margin-bottom: 8rem;
+    }
 
+    .imagenPin { /* Imagen del pin en la cabecera de empresas */
+        width: 1.2875rem;
+        height: 3.6875rem;
+        margin-left: 2rem;
+    }
+
+    .imagenEuro{
+        position: relative;
+        width: 2rem;
+        height: 2.5875rem;
+        margin-left: 2rem;
+    }
+
+    .imagenTelefono{
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 2rem;
+    }
+
+    .imagenWeb{
+        position: relative;
+        width: 3.6875rem;
+        height: 3.3875rem;
+        margin-left: 2rem;
+    }
+
+    .empresa span{
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+        color: black;
+    }
+
+    .empresaOrganizadora{
+        width: 12rem;
+        font-size: 1.5rem;
+        margin-left: 3.5rem;
+    }
+
+    .informacion{
+        display: block;
+        float: left;
+        margin-left: 3rem;
+    }
+
+    .informacionEspecifica{
+        display: block;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
 }
 
 
