@@ -27,90 +27,62 @@
     });
 </script>
 <div class="slider">
-    <div class="imagenCarrusel"> <img src="https://ssl.tzoo-img.com/images/tzoo.20775.0.570822.GranCanaria.jpg" alt="Dunas de Maspalomas"> </div>
-    <div class="imagenCarrusel"> <img src="https://www.clickferry.com/blog/wp-content/uploads/2016/05/Arco2.jpg" alt="Ventana del Roque Nublo"> </div>
-    <div class="imagenCarrusel"> <img src="https://c1.wallpaperflare.com/preview/372/464/29/gran-canaria-beach-amadores-canary-islands.jpg" alt="Playa de Amadores"></div>
+    <script>
+        $(document).ready(function(){
+            $.getJSON("json/categorias.json", function (json) {
+                $.each(json.imagenesCarrusel, function (){
+                    var ctg = "<div class=\"imagenCarrusel\"> <img src=\"" + this.url + "\" alt=\"" + this.alt + "\"> </div>\n";
+                    $('.slider').append(ctg);
+                });
+            });
+        });
+    </script>
 </div>
 
 <article class="apartadoCategorias">
     <h2 class="tituloCategorias">CATEGORÍAS</h2>
     <section class="imagenesCategorias">
-        <div class="conjuntoImagenDescripcion">
-            <img class="categoryImage" src="https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg" alt="Flyboard">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="conjuntoImagenDescripcion">
-            <img class="categoryImage" src="https://www.lugaresdeaventura.com/sites/default/files/inline-images/senderismo-gran-canaria-roque-nublo-circular-foto-ivan-sanz-5.jpeg" alt="Senderismo">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="conjuntoImagenDescripcion">
-            <img class="categoryImage" src="https://www.viajes-carrefour.com/blog/wp-content/uploads/2018/06/papas-mojo-canario.jpg" alt="Gastronomía">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="conjuntoImagenDescripcion">
-            <img class="categoryImage" src="https://sense.hdhotels.com/cms/uploads/webp/cobi_media_hdhotels.com_storage_media_uploads_2019_06_05_teatro_perez_galdos-900-r3c1ru.webp" alt="Teatro Pérez Galdós">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="conjuntoImagenDescripcion">
-            <img class="categoryImage" src="https://media.manawa.com/cache/activity_gallery_zoom_770x500/media/2020/03/06d358c3a52daae1a430f84b7ae71800.jpeg" alt="Parepente">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="conjuntoImagenDescripcion">
-            <img src="https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg" alt="Carnaval">
-            <a href="CategoryPage.html">
-                <div class="descripcion">
-                    <div class="textoDescripcion">
-                        <div class="tituloCategoria"> TITULO DE CATEGORÍA </div>
-                        <div class="infoDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+        <script src="scripts/jquery-1.6.9.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.getJSON("json/categorias.json", function (json) {
+                    $.each(json.categorias, function (){
+                        var ctg = "<div class=\"conjuntoImagenDescripcion\">\n" +
+                            "            <img class=\"categoryImage\" src=\"" + this.url + "\" alt=\"" + this.alt + "\">\n" +
+                            "            <a href=\"CategoryPage.html\">\n" +
+                            "                <div class=\"descripcion\">\n" +
+                            "                    <div class=\"textoDescripcion\">\n" +
+                            "                        <div class=\"tituloCategoria\">" + this.titulo + "</div>\n" +
+                            "                        <div class=\"infoDescripcion\"> " + this.descripcion + "</div>\n" +
+                            "                    </div>\n" +
+                            "                </div>\n" +
+                            "            </a>\n" +
+                            "        </div>";
+                        $('.imagenesCategorias').append(ctg);
+                    });
+                });
+            });
+        </script>
+    </section>
     </section>
 </article>
 <article class="apartadoSobreNosotros">
     <div class="fotoTextosBoton">
         <h2 class="tituloApartadoSobreNosotros"> SOBRE NOSOTROS...</h2>
         <div class="fotoTexto">
-            <img class="imagenSobreNosotros" src="https://www.publicdomainpictures.net/pictures/280000/nahled/dusky-grey-sky-background.jpg" alt="Logo">
-            <div class ="textoapartadoSobreNosotros"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</div>
+            <script>
+                $(document).ready(function(){
+                    $.getJSON("json/categorias.json", function (json) {
+                        $.each(json.sobreNosotrosGeneral, function () {
+                            var au = "<img class=\"imagenSobreNosotros\" src=\"" + this.logo + "\" alt=\"" + this.alt + "\">\n" +
+                                " <div class =\"textoapartadoSobreNosotros\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</div>"
+                            $('.fotoTexto').append(au);
+                        });
+                    });
+                });
+            </script>
         </div>
-        <button type="submit" class="btnSaberMás" ><a href="AboutUsPage.html">Saber más</a></button>
+        <button type="submit" class="btnSaberMás" onclick="$(location).attr('href','AboutUsPage.html')">Saber más</button>
     </div>
 </article>
 </body>
