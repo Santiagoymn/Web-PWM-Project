@@ -9,46 +9,6 @@ a{
     color: black;
 }
 
-/*////Dropdown definición////*/
-#menu ul{ /* Quita los puntos de la lista del dropdown */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#menu ul li{ /* Es el fondo del dropdown */
-    background-color: transparent;
-}
-#menu ul a { /* Le da formato al texto del navegador */
-    display:block;
-    color: black;
-    font-weight:normal;
-    font-size:1.875rem;
-    padding:1.375rem;
-    text-transform:uppercase;
-    font-family: "Helvetica", serif;
-}
-#menu ul li { /* Hace que el dropdown se vea en una fila y no en una columna */
-    position:relative;
-    float:left;
-    margin:0.9375rem;
-    padding:0;
-}
-#menu ul ul { /* Items del menu desplegable */
-    display:none;
-    position:absolute;
-    top: 4.9rem;
-    text-align: center;
-    background: white;
-
-}
-#menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
-    line-height: 0;
-    padding:0.125rem;
-}
-#menu ul li:hover > ul {
-    display:block;
-}
-
 
 @media (min-width: 960px) {
     /*////////// HEADER //////////*/
@@ -81,26 +41,22 @@ a{
         z-index: -1;
     }
 
-    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-        position: relative;
-        display: flex;
-        top: -1rem;
-        width: 13rem;
-    }
-
     .tresRayas{
-        width: 0;
+        display: none;
     }
     .tresRayas2 {
-        width: 0;
+        display: none;
     }
     .logo2 {
-        width: 0;
+        display: none;
     }
     .simboloMas {
-        width: 0;
+        display: none;
     }
 
+    .simboloMenos{
+        display: none;
+    }
 
     .textoDropDown {
         position: relative;
@@ -117,47 +73,6 @@ a{
         margin-left: 5rem;
     }
 
-    .dropdown-Categoria{
-        position: relative;
-        display: inline-flex;
-        width: auto;
-        margin-right: 0.775rem;
-    }
-
-    .textoCategorias{
-        position: relative;
-        font-size: 1.875rem;
-        text-transform: uppercase;
-        font-family: "Helvetica", serif;
-        color: black;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    .botonCategorias{
-        position: relative;
-        background: transparent;
-        border: none;
-        height: auto;
-        vertical-align: middle;
-        text-align: center;
-        align-self: center;
-    }
-
-    .dropdownSubCategorias{
-        background: #FFFFFF;
-    }
-
-    .dropdown-Categoria:hover > div{
-        display: block;
-    }
-
-    .centrarSubCategorias{
-        font-size: 1.5rem;
-        text-align: center;
-        color: black;
-    }
-
     .loginRegister{
         position: relative;
         float: right;
@@ -165,7 +80,7 @@ a{
         top: -4.2rem;
         font-size: 1.25rem;
         margin: 0;
-
+        margin-right: 2rem;
     }
 
     .lineaHeaderOculto{
@@ -175,7 +90,7 @@ a{
         vertical-align: middle;
         justify-content: center;
         margin-top: 2.5rem;
-
+        margin-left: 1rem;
     }
 
     /* //////// BANDERAS //////// */
@@ -187,21 +102,20 @@ a{
     .botonBanderas{
         background-color: transparent;
         border:none;
-        text-align: center;
+        margin-top: 1rem;
     }
 
     .dropdown-menu {
-        position: relative;
+        position: absolute;
         top: 70%;
-        left: -5.5rem;
+        left: 94.8rem;
         height: auto;
         z-index: 1000;
         display: none;
-        min-width: 0rem;
-        min-height: 12rem;
+        min-width: 0;
+        min-height: 1rem;
         margin-top:0.75rem;
         font-size: 14px;
-        text-align: left;
         list-style: none;
         background-color: #fff;
         border: 1px solid #ccc;
@@ -227,18 +141,14 @@ a{
         font-size:1.875rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
+        margin-top: 1.3rem;
     }
 
-
-    .quitaPuntoLista{
-        list-style: none;
-    }
 
     /*////Dropdown categorías////*/
-    .borrar {
+    .submenuCategorias {
         position: absolute;
         float:none;
-        top: 30rem;
         width:auto;
         display: flex;
         align-items: center;
@@ -253,20 +163,67 @@ a{
     .fuenteCategorias{
         font-size: 1.5rem;
         text-align: center;
-        margin-left: 2rem;
         line-height: normal;
-    }
-
-    .botonBanderasTablet{
-        width: 0;
-        height: 0;
-        visibility: hidden;
     }
 
     .loginRegisterMovil{
         width: 0;
         height: 0;
         visibility: hidden;
+    }
+
+    .banderasMovil{
+        display: none;
+    }
+
+    .botonBanderasDropLeft{
+        display: none;
+    }
+
+    /*////Dropdown definición////*/
+    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
+        position: relative;
+        display: flex;
+        top: -1rem;
+        width: 13rem;
+    }
+    #menu ul{ /* Quita los puntos de la lista del dropdown */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menu ul li{ /* Es el fondo del dropdown */
+        background-color: transparent;
+    }
+    #menu ul a { /* Le da formato al texto del navegador */
+        display:block;
+        color: black;
+        font-weight:normal;
+        font-size:1.875rem;
+        padding:1.375rem;
+        text-transform:uppercase;
+        font-family: "Helvetica", serif;
+    }
+    #menu ul li { /* Hace que el dropdown se vea en una fila y no en una columna */
+        position:relative;
+        float:left;
+        margin:0.9375rem;
+        padding:0;
+    }
+    #menu ul ul { /* Items del menu desplegable */
+        display:none;
+        position:absolute;
+        top: 4.9rem;
+        text-align: center;
+        background: white;
+
+    }
+    #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
+        line-height: 0;
+        padding:0.125rem;
+    }
+    #menu ul li:hover > ul {
+        display:block;
     }
 }
 
@@ -301,7 +258,7 @@ a{
         position: relative;
         width: 100%;
         height: 4.3rem;
-        top: -0.8rem;
+        top: -1.2rem;
         display: inline-block;
         left: -0.50rem;
         background: #CEE0FC;
@@ -310,19 +267,11 @@ a{
 
     /*////Tipografía////*/
     .fuenteCategorias{
-        font-size: 1rem;
+        font-size: 0.925rem;
         text-align: center;
-    }
-
-    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-        position: relative;
-        display: flex;
-        top: 0.3rem;
-        width: 5rem;
-
-        vertical-align: middle;
-        height: 3rem;
-        margin-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom:1rem;
+        line-height: normal;
     }
 
     /*////Dropdown categorías////*/
@@ -338,44 +287,25 @@ a{
     }
 
     .tresRayas{
-        width: 0;
+        display: none;
     }
     .tresRayas2 {
-        width: 0;
+        display: none;
     }
     .logo2 {
-        width: 0;
+        display: none;
     }
     .simboloMas {
-        width: 0;
+        display: none;
     }
 
-
-    .quitaPuntoLista{
-        list-style: none;
-        text-align: left;
-    }
-
-    .dropdown{
-        position: relative;
-        display: inline-flex;
-        width: auto;
-        height: 100%;
-        margin-right: 0rem;
+    .simboloMenos{
+        display: none;
     }
 
     .botonCategorias{
         background: transparent;
         border: none;
-    }
-
-    .textoCategorias{
-        position: relative;
-        font-size: 1rem;
-        text-transform: uppercase;
-        height: 1.5rem;
-        font-family: "Helvetica", serif;
-        color: black;
     }
 
     .loginRegister{
@@ -386,29 +316,11 @@ a{
         font-size: 0.9rem;
     }
 
-    .dropdown-menu {
-        position: absolute;
-        top: 1.5rem;
-        box-shadow: none;
-        border: none;
-        width: 100%;
-        min-width: 0.625rem;
-    }
-
-    .dropdown:hover > div{
-        display: block;
-    }
-
-    .centrarSubCategorias{
-        font-size: 1rem;
-        text-align: center;
-        color: black;
-    }
-
     .lineaHeaderOculto{
         position: relative;
         display: inline-flex;
-        height: 5rem;
+        height: auto;
+        margin-top: 0.7rem;
         vertical-align: middle;
         justify-content: center;
     }
@@ -417,43 +329,32 @@ a{
     /* //////// BANDERAS //////// */
 
     .botonBanderas{
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: -15rem;
+        z-index: 1000;
+        display: none;
+        padding: 0.75rem 0;
+        margin: -3.75rem 0 0;
+        list-style: none;
+        background-color: white;
+
     }
 
     .imagenFlechaAbajo{
         position:relative;
         height: 1.25rem;
     }
-    .botonBanderasTablet{
-        position: relative;
-        float: right;
-        right: -4rem;
+    .btn{
         background-color: transparent;
-        border:none;
-        text-align: center;
-        width: 2rem;
+        outline: none;
+        width: 1rem;
     }
 
-    .dropdown-menu {
-        position: relative;
-        top: 70%;
-        left: -5.5rem;
-        height: auto;
-        z-index: 1000;
-        display: none;
-        min-width: 0rem;
-        min-height: 12rem;
-        margin-top:0.75rem;
-        font-size: 14px;
-        text-align: left;
-        list-style: none;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    }
     .banderaPrincipal{
         height: 1rem;
         margin-left: 0.5rem;
@@ -463,14 +364,13 @@ a{
         height: 1rem;
     }
 
-
     .categoriasDropdown{
         position: relative;
         width: auto;
         display: inline-flex;
         color: black;
         font-weight:normal;
-        font-size:0.875rem;
+        font-size:1.3rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
     }
@@ -481,7 +381,7 @@ a{
         color: black;
         height: auto;
         font-weight:normal;
-        font-size:0.875rem;
+        font-size:1.3rem;
         text-align: center;
 
         text-transform:uppercase;
@@ -495,17 +395,69 @@ a{
     }
 
     .loginRegisterMovil{
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
+    }
+
+    .banderasMovil{
+        display: none;
+    }
+
+    .botonBanderasDropDown{
+        display: none;
+    }
+
+    /*////Dropdown definición////*/
+    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
+        position: relative;
+        display: flex;
+        top: 0.45rem;
+        width: 10rem;
+    }
+
+    #menu ul{ /* Quita los puntos de la lista del dropdown */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menu ul li{ /* Es el fondo del dropdown */
+        background-color: transparent;
+    }
+    #menu ul a { /* Le da formato al texto del navegador */
+        display:block;
+        color: black;
+        font-weight:normal;
+        font-size:1.875rem;
+        padding:1.375rem;
+        text-transform:uppercase;
+        font-family: "Helvetica", serif;
+    }
+    #menu ul li { /* Hace que el dropdown se vea en una fila y no en una columna */
+        position:relative;
+        margin:0.9375rem;
+        padding:0;
+    }
+    #menu ul ul { /* Items del menu desplegable */
+        display:none;
+        position:absolute;
+        top: 2rem;
+        text-align: center;
+        background: white;
+
+    }
+    #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
+        line-height: 1.2rem;
+        padding:0.125rem;
+    }
+    #menu ul li:hover > ul {
+        display:block;
+    }
+
+    .botonBanderasDropLeft{
+        position: relative;
+        float: right;
+        left:6rem;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -523,6 +475,7 @@ a{
         display: inline;
 
         font-size: 1.6rem;
+
     }
 
     .logo {
@@ -536,60 +489,44 @@ a{
 
     .rectanguloAzul {
         position: relative;
-        width: 102%;
+        width: 100%;
         height: 2.3rem;
+        margin-top: -0.4rem;
         display: inline-flex;
         background: #CEE0FC;
     }
 
     /*////Tipografía////*/
     .fuenteCategorias {
-        width: 0;
-        height: 0;
-        font-size: 0rem;
+        position: relative;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: left;
+        margin-left: 5rem;
+        margin-top:  1rem;
     }
-
-
-    /*////Dropdown categorías////*/
-    .dropdownCategorias {
-        width: 0rem;
-        height: 0rem;
-        visibility: hidden;
-    }
-
-
 
     .tresRayas {
         position: relative;
         width: 1.5rem;
         float: right;
-        top: 2rem;
-        margin-right: 1rem;
+        top: 0.8rem;
+        margin-right: 2rem;
     }
-
-
 
     .logo2 {
         position: relative;
         width: 3rem;
         height: 3rem;
-
-        left: 40%;
+        left: 33%;
     }
-
-
 
     .rectanguloSeparacionDropdown {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 0.1rem;
+        height: 0.15rem;
         background: #000000;
-    }
-
-    ul { /* Quita los puntos de la lista del dropdown */
-        list-style: none;
-        line-height: 0.02rem;
     }
 
     .simboloMas {
@@ -597,25 +534,27 @@ a{
         float: right;
         width: 1rem;
         height: 1rem;
-        margin-right: 2rem;
+        margin-top: 1rem;
+        left: 4rem;
+        vertical-align: middle;
     }
 
-
-    .botonCategorias{
-        background: transparent;
-        border: none;
-        margin-right: 1rem;
+    .simboloMenos{
+        display: none;
+        position: relative;
+        float: right;
+        width: 1rem;
+        height: 1rem;
+        margin-top: 1rem;
+        left: 4rem;
+        vertical-align: middle;
     }
 
     .lineaHeaderOculto{
+        position: relative;
         display: none;
-
-    }
-
-    .botonBanderasTablet{
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        top: -2.2rem;
+        background: white;
     }
 
     .loginRegisterMovil{
@@ -627,37 +566,27 @@ a{
     }
 
     .loginRegister{
-        width: 0;
-        height: 0;
-        visibility: hidden;
-    }
-
-    .lineaHeader:hover > div{
-        display: block;
+        display: none;
     }
 
     .botonBanderas{
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
     }
 
     .dropdown-menu {
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
     }
 
     .banderaPrincipal{
-        width: 0;
-        height: 0;
-        visibility: hidden;
-
+        width: 2.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
     }
 
     .textoDropDown {
         position: relative;
-        display: inline-flex;
+        display: inline-block;
         color: black;
         height: auto;
         font-weight:normal;
@@ -666,44 +595,95 @@ a{
 
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin: auto;
         margin-left: 2rem;
     }
 
     .categoriasDropdown{
         position: relative;
-        width: auto;
-        display: inline-flex;
+        width: 100%;
+        display: block;
         color: black;
         font-weight:normal;
-        font-size:0.875rem;
+        font-size:1rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin-left: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
     }
 
     .banderaPrincipalActual{
-        width: 0;
-        height: 0rem;
-        visibility: hidden;
-    }
-
-    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
-        position: relative;
-        display: inline-flex;
-        top: 0.3rem;
-        width: 5rem;
-
-        vertical-align: middle;
-        height: 3rem;
-        margin-right: 2rem;
+        display: none;
     }
 
     .imagenFlechaAbajo{
-        width: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
     }
 
+    .banderasMovil{
+        position: relative;
+        display: flex;
+        margin-left: 0;
+        left: -5rem;
+        margin-bottom: -2rem;
+    }
 
+    .submenuCategorias {
+        display: block;
+        position: relative;
+        width:100%;
+        height: 30rem;
+        z-index: 1;
+    }
+
+    .botonBanderasDropLeft{
+        display: none;
+    }
+
+    .tresRayas2{
+        width: 1.5rem;
+        float: right;
+        margin-top: 1.8rem;
+    }
+
+    #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
+        position: absolute;
+        display: inline;
+        width: 100%;
+        height: auto;
+    }
+
+    /*////Dropdown definición////*/
+    #menu ul{ /* Quita los puntos de la lista del dropdown */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #menu ul a { /* Le da formato al texto del navegador */
+        display:block;
+        color: black;
+        font-weight:normal;
+        font-size:1.875rem;
+        padding:1.375rem;
+        text-transform:uppercase;
+        font-family: "Helvetica", serif;
+
+        width: 100%;
+    }
+    #menu ul li { /* Hace que el dropdown se vea en una fila y no en una columna */
+        position:relative;
+        padding:0;
+        background-color: transparent;
+    }
+    #menu ul ul { /* Items del menu desplegable */
+        display:none;
+        width: 100%;
+        position:absolute;
+        text-align: center;
+        background: white;
+
+    }
+    #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
+        line-height: 0;
+        padding:0.125rem;
+    }
 }

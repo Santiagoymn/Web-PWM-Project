@@ -1,0 +1,23 @@
+{
+  "categorias": [
+    {
+      "categoria": "Categoria 1"
+    
+    },
+    {
+      "categoria": "Categoria 2"
+    },
+    {
+      "categoria": "Categoria 3"
+    },
+    {
+      "categoria": "Categoria 4"
+    },
+    {
+      "categoria": "Categoria 5"
+    },
+    {
+      "categoria": "Categoria 6"
+    }
+  ]
+}

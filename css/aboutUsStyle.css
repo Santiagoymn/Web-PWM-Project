@@ -17,9 +17,14 @@
     background-color: #C4C4C4;
     height: auto;
 }
+.imagenesPersonas{
+    display: flex;
+    justify-content: center;
+}
 
 .conjuntoImagen img{
     border-radius: 50%;
+    object-fit: cover;
 }
 .conjuntoImagen p{
     text-align: center;
@@ -42,19 +47,19 @@
     }
 
     .textoPresentacion{
-        margin-left: 3rem;
         top:-1.75rem;
     }
 
     /*////////// APARTADO QUIÉNES SOMOS //////////*/
     .apartadoQuienesSomos{
-        top: 12.25rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
     }
     .imagenesPersonas{
         top: 10.38rem;
         gap: 3.25rem;
-        display: flex;
-        justify-content: center;
+        margin-bottom:2rem;
     }
 
     .conjuntoImagen{
@@ -72,7 +77,7 @@
 
     /*////////// FOOTER //////////*/
     .footer{
-        bottom: -5rem;
+        margin-top: 7rem;
     }
 }
 
@@ -84,8 +89,8 @@
 
     /*////////// APARTADO INFORMACIÓN //////////*/
     .apartadoInformacion{
-        margin-left: 6.25rem;
-        margin-right: 6.25rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .imgNosotros{
         height: 14.06rem;
@@ -93,20 +98,19 @@
     }
 
     .textoPresentacion{
-        margin-left: 3rem;
         top:-1.75rem;
     }
 
     /*////////// APARTADO QUIÉNES SOMOS //////////*/
     .apartadoQuienesSomos{
-        top: 10.25rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .imagenesPersonas{
         top: 10.38rem;
         gap: 3rem;
-        display: flex;
-        justify-content: center;
         margin-right: 10rem;
         margin-left: 10rem;
     }
@@ -126,7 +130,7 @@
 
     /*////////// FOOTER //////////*/
     .footer{
-        bottom: -10rem;
+        margin-top:9rem;
     }
 }
 
@@ -136,49 +140,50 @@
 */
 @media (max-width: 640px) {
     .apartadoInformacion{
-        margin-left: 4.25rem;
-        margin-right: 4.25rem;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
     }
     .imgNosotros{
         margin-right: 1rem;
         height: 10.81rem;
     }
 
-    .textoPresentacion{
-        font-size: 1.5rem;
-        margin-left: 1.8rem;
-        top:-1.75rem;
-    }
-
     /*////////// APARTADO QUIÉNES SOMOS //////////*/
+    .tituloQuienesSomos{
+        margin-top: 2rem;
+    }
     .apartadoQuienesSomos{
-        top: 10.25rem;
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
     }
     .imagenesPersonas{
-        top: 9.25rem;
+        margin-top:1rem;
         gap: 3.25rem;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-bottom:4rem;
     }
 
     .conjuntoImagen{
-        margin-left: auto;
-        margin-right: auto;
-        width: 15rem;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
     }
 
     .conjuntoImagen img{
         width: 13.44rem;
         height: 13.2rem;
+        align-self: center;
     }
 
     .conjuntoImagen p{
-        font-size: 1.2rem;
         text-align: center;
-        line-height: 1.2rem;
     }
 
     /*////////// FOOTER //////////*/
     .footer{
-        bottom: -15rem;
+        margin-top:7rem;
     }
 }
