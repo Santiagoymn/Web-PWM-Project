@@ -21,27 +21,6 @@
 </div>
 
 
-        <!--<a href="ActivityPage.html">
-            <article class="articulo">
-                <img class="imagenActividad" src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5" alt="Imagen actividad">
-                <div class="nombreActividadImagen">Nombre Actividad</div>
-            </article>
-        </a>
-
-        <a href="ActivityPage.html">
-            <article class="articulo">
-                <img class="imagenActividad" src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5" alt="Imagen actividad">
-                <div class="nombreActividadImagen">Nombre Actividad</div>
-            </article>
-        </a>
-
-        <a href="ActivityPage.html">
-            <article class="articulo">
-                <img class="imagenActividad" src="https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5" alt="Imagen actividad">
-                <div class="nombreActividadImagen">Nombre Actividad</div>
-            </article>
-        </a>-->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script>
         $(document).ready(function (){
@@ -70,7 +49,7 @@
 
             $(".actividades").on("click","a", function (){
                 var id = $(this).children("article").attr("id");
-                sessionStorage.setItem('activityName', id);
+                localStorage.setItem('activityName', id);
             })
         })
     </script>
