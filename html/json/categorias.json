@@ -4,7 +4,21 @@
       "titulo": "Categoria1",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
       "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
-      "alt": "Flyboard"
+      "alt": "Flyboard",
+      "activities": [
+        {
+          "name": "activity 11",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        },
+        {
+          "name": "activity 12",
+          "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        },
+        {
+          "name": "activity 13",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        }
+      ]
     },
     {
       "titulo": "Categoria2",
