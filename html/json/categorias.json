@@ -7,15 +7,32 @@
       "alt": "Flyboard",
       "activities": [
         {
-          "name": "activity 11",
-          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+          "name": "activity11",
+          "url": "https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+          "empresas": [
+            {
+              "name": "Business Sports",
+              "place": "Las Palmas",
+              "price": "24.90€",
+              "number": "123456789",
+              "web": "www.empresa@gmail.com"
+            },
+            {
+              "name": "Business Sports2",
+              "place": "Las Palmas",
+              "price": "24.90€",
+              "number": "123456789",
+              "web": "www.empresa@gmail.com"
+            }
+          ]
         },
         {
-          "name": "activity 12",
+          "name": "activity12",
           "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
         },
         {
-          "name": "activity 13",
+          "name": "activity13",
           "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
         }
       ]
