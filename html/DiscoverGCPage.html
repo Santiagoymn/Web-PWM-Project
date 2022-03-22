@@ -6,11 +6,9 @@
 
     <link rel="stylesheet" href="../css/discoverGCStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
 </head>
-
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
 
 <script>
     $(function(){
@@ -19,70 +17,48 @@
     });
 </script>
 <div id="header"></div>
+
 <body>
     <h2>Conoce Gran Canaria</h2>
     <section class="municipios">
         <div class=listaMunicipios style="display: block"></div>
     </section>
 
-
-
-
-    <script src="scripts/jquery-1.6.9.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-        <script>
-            function getJsonMunicipios() {
-                $.getJSON("json/municipios.json", function (json) {
-                    $.each(json.municipios, function (i) {
-                        var m = "<article class=\"evento\" id=evento + i >\n" +
-                            "            <div class=\"municipio\">\n" +
-                            "                <img src=\"https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5\" alt=\"Imagen de la actividad\" class=\"imagenMunicipio\">\n" +
-                            "                <div class='nombreMunicipio' id=em" + i + ">" + this.municipio + "\n" +
-                            "                    <button type=\"button\" class=\"btn\"  id=evento data-toggle=\"dropdown\">\n" +
-                            "                        <img src=\"images/FlechaAbajo.png\" class=\"flechaAbajoMunicipio\" alt=\"Información Evento\">\n" +
-                            "                    </button>\n" +
-                            "                </div>\n" +
-                            "            </div>\n" +
-                                        "<div class='descripcionMunicipio' id=municipioem" + i + ">\n" +
-                                        "                <div class=\"paginaMunicipio\">\n" +
-                                        "                    <p class=\"textoMunicipio\">" + this.descripcion + "\n" +
-                                        "                    </p>\n" +
-                                        "                    <img src=\"https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5\" alt=\"Imagen de la actividad\" class=\"imagen2Municipio\">\n" +
-                                        "                </div>\n" +
-                                        "</div>";
-                         "</article>"
-                        $(".municipios .listaMunicipios").append(m);
-                    });
+    <script>
+        function getJsonMunicipios() {
+            $.getJSON("json/municipios.json", function (json) {
+                $.each(json.municipios, function (i) {
+                    var m = "<article class=\"evento\" id=evento + i >\n" +
+                        "            <div class=\"municipio\">\n" +
+                        "                <img src=\"https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5\" alt=\"Imagen de la actividad\" class=\"imagenMunicipio\">\n" +
+                        "                <div class='nombreMunicipio' id=em" + i + ">" + this.municipio + "\n" +
+                        "                    <button type=\"button\" class=\"btn\"  id=evento data-toggle=\"dropdown\">\n" +
+                        "                        <img src=\"images/FlechaAbajo.png\" class=\"flechaAbajoMunicipio\" alt=\"Información Evento\">\n" +
+                        "                    </button>\n" +
+                        "                </div>\n" +
+                        "            </div>\n" +
+                                    "<div class='descripcionMunicipio' id=municipioem" + i + ">\n" +
+                                    "                <div class=\"paginaMunicipio\">\n" +
+                                    "                    <p class=\"textoMunicipio\">" + this.descripcion + "\n" +
+                                    "                    </p>\n" +
+                                    "                    <img src=\"https://www.upb.edu/sites/default/files/styles/imagen_730_x_490/public/rectangulo_gris-7d87e40718cbdc6318c2595848cd1cccca4c108afd87a9b046a1dc8968501bf8_3_1_14.png?itok=luZbYAl5\" alt=\"Imagen de la actividad\" class=\"imagen2Municipio\">\n" +
+                                    "                </div>\n" +
+                                    "</div>";
+                     "</article>"
+                    $(".municipios .listaMunicipios").append(m);
                 });
-            }
-
-            getJsonMunicipios();
-
-            $(".municipios .listaMunicipios").on("click", ".btn", function (){
-                var id=$(this).parents().attr("id");
-                var finalId = "#municipio" + id;
-                $(finalId).show();
-            })
-
-
-            $(document).mouseup(function (e){
-                if ($(e.target).closest(".descripcionMunicipio").length === 0){
-                    $(".descripcionMunicipio").hide();
-                }
+                $(".descripcionMunicipio").hide();
             });
+        }
 
-            </script>
+        getJsonMunicipios();
 
-
-
-
-
-
-
-
-
-
+        $(".municipios .listaMunicipios").on("click", ".btn", function (){
+            var id=$(this).parents().attr("id");
+            var finalId = "#municipio" + id;
+            $(finalId).toggle();
+        })
+    </script>
 
 </body>
 <div id="footer"></div>
