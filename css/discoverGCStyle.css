@@ -4,13 +4,12 @@
     .municipios {
         position: relative;
         width: 100%;
-        top: 6rem;
+        margin-top: 6rem;
         text-align: center;
     }
 
     .descripcionMunicipio {
         position: relative;
-        background: blue;
         display: block;
     }
 
@@ -27,6 +26,7 @@
         width: 100rem;
         margin-left: 5rem;
         margin-right: 5rem;
+        object-fit: cover;
 
         text-align: center;
         line-height: 4rem;
@@ -51,7 +51,7 @@
         width: 5.25rem;
         height: 6.20rem;
         right: 1rem;
-        top: -1rem;
+        margin-top: -2rem;
         align-items: center;
     }
 
@@ -69,8 +69,8 @@
         text-align: center;
         line-height: 4rem;
         width: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 60%;
+        transform: translate(0, -60%);
 
         text-transform: uppercase;
         text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
@@ -97,8 +97,6 @@
         margin-top: 3rem;
     }
 
-
-
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
         bottom: -20rem;
@@ -124,7 +122,7 @@
     .municipios {
         position: relative;
         width: 100%;
-        top: 6rem;
+        margin-top: 6rem;
         text-align: center;
     }
 
@@ -132,7 +130,7 @@
         position: relative;
         display: none;
         right: 2.5rem;
-        top: -1.3rem;
+        margin-top: 1.3rem;
     }
 
     .paginaMunicipio {
@@ -166,7 +164,7 @@
         width: 4.25rem;
         height: 5.0rem;
         right: 1rem;
-        top: -0.6rem;
+        margin-top: -0.6rem;
         align-items: center;
     }
 
@@ -244,7 +242,7 @@
     .municipios {
         position: relative;
         width: 100%;
-        top: 1rem;
+        margin-top: 1rem;
         text-align: center;
     }
 
@@ -252,7 +250,7 @@
         position: relative;
         display: none;
         right: 2.5rem;
-        top: -1.3rem;
+        margin-top: 1.3rem;
     }
 
     .paginaMunicipio {
@@ -286,7 +284,7 @@
         width: 3rem;
         height: 3.75rem;
         right: 0.1rem;
-        top: -0.1rem;
+        margin-top: 0.1rem;
         align-items: center;
     }
 
