@@ -1,0 +1,213 @@
+{
+  "categorias": [
+    {
+      "titulo": "Categoria1",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
+      "alt": "Flyboard",
+      "activities": [
+        {
+          "name": "activity11",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+          "empresas": [
+            {
+              "name": "Business Sports",
+              "place": "Las Palmas",
+              "price": "24.90€",
+              "number": "123456789",
+              "web": "www.empresa@gmail.com"
+            },
+            {
+              "name": "Business Sports2",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa@gmail.com"
+            },
+            {
+              "name": "Business Sports3",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa@gmail.com"
+            }
+          ]
+        },
+        {
+          "name": "activity12",
+          "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        },
+        {
+          "name": "activity13",
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "Categoria2",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.lugaresdeaventura.com/sites/default/files/inline-images/senderismo-gran-canaria-roque-nublo-circular-foto-ivan-sanz-5.jpeg",
+      "alt": "Senderismo"
+    },
+    {
+      "titulo": "Categoria3",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.viajes-carrefour.com/blog/wp-content/uploads/2018/06/papas-mojo-canario.jpg",
+      "alt": "Gastronomía"
+    },
+    {
+      "titulo": "Categoria4",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://sense.hdhotels.com/cms/uploads/webp/cobi_media_hdhotels.com_storage_media_uploads_2019_06_05_teatro_perez_galdos-900-r3c1ru.webp",
+      "alt": "Teatro Pérez Galdós"
+    },
+    {
+      "titulo": "Categoria5",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://media.manawa.com/cache/activity_gallery_zoom_770x500/media/2020/03/06d358c3a52daae1a430f84b7ae71800.jpeg",
+      "alt": "Parepente"
+    },
+    {
+      "titulo": "Categoria6",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "url": "https://www.freesurfersschool.com/wp-content/uploads/Foto_16_–_Gran_Canaria_Carnaval.jpg",
+      "alt": "Carnaval"
+    }
+  ],
+
+  "eventos": [
+    {
+      "nombre": "Nombre Evento",
+      "dia" : "Día de la semana: XX-XX-XX:XX",
+      "lugar": "Lugar",
+      "municipio": "Municipio",
+      "url": "https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo."
+    },
+    {
+      "nombre": "Nombre Evento2",
+      "dia" : "Día de la semana: XX-XX-XX:XX",
+      "lugar": "Lugar",
+      "municipio": "Municipio",
+      "url": "https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo."
+    }
+  ],
+
+  "municipios": [
+    {
+      "municipio": "Municipio 1",
+      "descripcion": "Descripcion 1"
+    },
+    {
+      "municipio": "Municipio 2",
+      "descripcion": "Descripcion 2"
+    }
+  ],
+
+  "usuarios": [
+    {
+      "usuario": "mps",
+      "email": "me",
+      "nombre": "mel",
+      "apellidos": "per san",
+      "password": "123"
+    },
+    {
+      "usuario": "mel",
+      "email": "m",
+      "nombre": "mel",
+      "apellidos": "per san",
+      "password": "000"
+    }
+  ],
+
+  "imagenesGaleria": [
+    {
+      "url": "https://photo980x880.mnstatic.com/d1c6ad9c1071e1d191564248f972bf79/bufadero-de-telde-6867911.jpg",
+      "descripcion": "Bufadero de la Garita"
+    },
+    {
+      "url": "https://top-car-hire.com/uploads/images/shutterstock_358099151_1609161159.jpg",
+      "descripcion": "Faro de Maspalomas"
+    },
+    {
+      "url": "https://villagrancanaria.com/cms/uploads/webp/Paisajes-de-Gran-Canaria-1600-qfm767.webp",
+      "descripcion": "Roque Nublo y el Teide"
+    },
+    {
+      "url": "https://espanafascinante.com/wp-content/uploads/principal_lugares_canarias_gran-canaria_que-ver-en-Mog%C3%A1n-672x372.jpg",
+      "descripcion": "Mogán"
+    },
+    {
+      "url": "https://static3.canarias7.es/www/multimedia/202001/24/media/cortadas/37710732936-bbff0ea2db-b_5983939_20200124155346--1248x702.jpg",
+      "descripcion": "Barranco de las Vacas"
+    },
+    {
+      "url": "https://static.eldiario.es/clip/69e9f92e-e63c-4255-9e5f-39d7f923621d_16-9-aspect-ratio_default_0.jpg",
+      "descripcion": "Vegueta"
+    },
+    {
+      "url": "https://www.ecestaticos.com/imagestatic/clipping/f0b/379/f0b379d0b2f351e25fa9cd8460ca188d/descubre-tufia-la-fusion-de-la-playa-negra-y-el-pueblo-blanco-escondida-en-gran-canaria.jpg?mtime=1619695849",
+      "descripcion": "Tufia"
+    },
+    {
+      "url": "https://www.hola.com/imagenes/viajes/20200827174213/road-trip-por-la-ruta-mas-salvaje-y-panoramica-de-gran-canaria/0-859-184/puerto-de-las-nieves-agaete-t.jpg",
+      "descripcion": "Agaete"
+    },
+    {
+      "url": "https://cadenaser00.epimg.net/emisora/imagenes/2016/11/30/ser_las_palmas/1480511736_035652_1480513214_noticia_normal.jpg",
+      "descripcion": "Las Canteras"
+    }
+  ],
+
+  "sobreNosotros" : [
+    {
+      "foto": "https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg",
+      "alt": "Imagen sobre nosotros",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
+    }
+  ],
+  "sobreNosotrosPersonas" : [
+    {
+      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "alt": "Persona 1",
+      "descripcion": "Nombre Apellidos y Profesión"
+    },
+    {
+      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "alt": "Persona 2",
+      "descripcion": "Nombre Apellidos y Profesión"
+    },
+    {
+      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "alt": "Persona 3",
+      "descripcion": "Nombre Apellidos y Profesión"
+    }
+  ],
+
+  "sobreNosotrosGeneral" : [
+    {
+      "logo": "https://www.publicdomainpictures.net/pictures/280000/nahled/dusky-grey-sky-background.jpg",
+      "alt": "Logo de la empresa",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
+    }
+  ],
+  "imagenesCarrusel" : [
+    {
+      "url": "https://ssl.tzoo-img.com/images/tzoo.20775.0.570822.GranCanaria.jpg",
+      "alt": "Dunas de Maspalomas"
+    },
+    {
+      "url": "https://www.clickferry.com/blog/wp-content/uploads/2016/05/Arco2.jpg",
+      "alt": "Ventana del Roque Nublo"
+    },
+    {
+      "url": "https://c1.wallpaperflare.com/preview/372/464/29/gran-canaria-beach-amadores-canary-islands.jpg",
+      "alt": "Playa de Amadores"
+    }
+  ]
+
+
+}
