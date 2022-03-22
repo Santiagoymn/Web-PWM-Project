@@ -10,7 +10,6 @@
 
     .descripcionMunicipio {
         position: relative;
-        top: -1.3rem;
         background: blue;
         display: block;
     }
