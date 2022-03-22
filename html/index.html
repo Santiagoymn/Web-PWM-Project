@@ -5,12 +5,17 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/indexStyle.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../bxslider/jquery.bxslider.css">
+    <script src="../bxslider/jquery.bxslider.min.js"></script>
+
+
 </head>
 <body>
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <script>
     $(function(){
         $("#header").load("Header.html");
@@ -19,8 +24,7 @@
 </script>
 <div id="header"></div>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="../bxslider/jquery.bxslider.min.js"></script>
+
 <script>
     $(document).ready(function(){
         $('.slider').bxSlider();
@@ -29,7 +33,7 @@
 <div class="slider">
     <script>
         $(document).ready(function(){
-            $.getJSON("json/categorias.json", function (json) {
+            $.getJSON("json/carrusel.json", function (json) {
                 $.each(json.imagenesCarrusel, function (){
                     var ctg = "<div class=\"imagenCarrusel\"> <img src=\"" + this.url + "\" alt=\"" + this.alt + "\"> </div>\n";
                     $('.slider').append(ctg);
@@ -42,7 +46,6 @@
 <article class="apartadoCategorias">
     <h2 class="tituloCategorias">CATEGORÍAS</h2>
     <section class="imagenesCategorias">
-        <script src="scripts/jquery-1.6.9.min.js"></script>
         <script>
             $(document).ready(function(){
                 $.getJSON("json/categorias.json", function (json) {
@@ -75,7 +78,7 @@
                     $.getJSON("json/categorias.json", function (json) {
                         $.each(json.sobreNosotrosGeneral, function () {
                             var au = "<img class=\"imagenSobreNosotros\" src=\"" + this.logo + "\" alt=\"" + this.alt + "\">\n" +
-                                " <div class =\"textoapartadoSobreNosotros\"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.</div>"
+                                " <div class =\"textoapartadoSobreNosotros\">" +  this.descripcion + "</div>"
                             $('.fotoTexto').append(au);
                         });
                     });
