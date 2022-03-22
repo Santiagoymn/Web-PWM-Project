@@ -61,7 +61,6 @@
     .imagenPin { /* Imagen del pin en la cabecera de empresas */
         width: 1.6875rem;
         height: 4.6875rem;
-        margin-left: 8rem;
     }
 
     .imagenEuro{
@@ -108,7 +107,7 @@
 
     /*////////// FOOTER //////////*/
     .footer{
-        bottom: -20rem;
+        margin-top: 10rem;
     }
 
 
@@ -120,8 +119,7 @@
 
     .empresa{
         position: relative;
-        margin-bottom: 8rem;
-        margin-right: 6.25rem;
+        margin-top: 5rem;
     }
 
     .informacionEspecifica{
