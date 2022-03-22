@@ -79,7 +79,7 @@
                             <script>
                                 $.getJSON("json/categorias.json", function (json) {
                                     $.each(json.categorias, function (){
-                                        var categoria = '<li><a href="CategoryPage.html"><p class="fuenteCategorias">' + this['categoria'] + '</p></a></li>';
+                                        var categoria = '<li id=' + this['titulo'] + '><a href="CategoryPage.html"><p class="fuenteCategorias">' + this['titulo'] + '</p></a></li>';
                                         $('.submenuCategorias').append(categoria);
                                     });
                                 });
@@ -91,6 +91,7 @@
 
             <img src="images/mas.png" class="simboloMas" alt="Simbolo más">
             <img src="images/menos.png" class="simboloMenos" alt="simbolo menos">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
             <script>
                 $(document).ready(function () {
                     $(".simboloMas").click(function (){
@@ -104,6 +105,11 @@
                         $(".simboloMenos").toggle();
                         $(".simboloMas").toggle();
                     });
+
+                    $("#menu ul li").on("click", "li", function (){
+                        var id = $(this).attr("id");
+                        localStorage.setItem("category", id);
+                    })
                 });
             </script>
 

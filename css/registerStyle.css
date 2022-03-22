@@ -1,0 +1,356 @@
+/*////////// CUADRO REGISTRO //////////*/
+.register{
+    background-image: url("https://marcacanaria.com/wp-content/uploads/2021/04/vista-aerea-de-la-playa-de-gui-gui.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: auto;
+    justify-content: center;
+}
+.contenedorFormRegistro{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.conjuntoInputRegistro{
+    display: flex;
+}
+
+.tituloRegistro{
+    width:auto;
+    align-self: center;
+    margin-left:0;
+}
+
+.iconoR{
+    position: relative;
+}
+
+form{
+    text-align: left;
+}
+
+form input{
+    margin-bottom: 3rem;
+    border: 0;
+    border-bottom: 2px solid #f0f0f0;
+    width: 100%;
+}
+
+input:valid {
+    border-color: black;
+}
+input:focus {
+    outline: none;
+    border-color: lightblue;
+}
+
+.botonFormRegistro{
+    text-align: center;
+}
+
+.botonFormRegistro button{
+    background-color: #CEE0FC;
+    border-radius: 10%;
+    border: none;
+    width: auto;
+}
+.accesoRegistro{
+    align-self: center;
+}
+.accesoRegistro a{
+    text-decoration: none;
+}
+
+/*////////// CUADRO MENSAJE REGISTRO REALIZADO CORRECTAMENTE //////////*/
+.mensajeRegistrado{
+    background-image: url("https://machbel.com/fotos/2017/09/Vista-del-Roque-Nublo-y-Teide-desde-Gran-Canaria-Roque-Nublo-y-Teide.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: auto;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+}
+.contenedorMensaje{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.tituloRegistroSuccess{
+    width:auto;
+    align-self: center;
+    margin-left:0;
+}
+.contenedorMensaje p{
+    width:auto;
+    align-self: center;
+}
+.btnInicioSesion{
+    position: relative;
+    font-family: Helvetica, serif;
+    text-align: center;
+    background: #CEE0FC;
+    align-self: center;
+    border-radius: 10%;
+}
+/*////////// ERRORES //////////*/
+.alertaError{
+    background-color: red;
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+.alertaError p{
+    color: white;
+}
+/*////////// FUNCIONALIDADES //////////*/
+.ocultar {
+    display: none;
+}
+.mostrar {
+    display: flex;
+}
+
+
+/*/////////// MEDIA QUERY ///////////*/
+/*
+  ##Device = Desktops
+  ##Screen = 960px to higher resolution desktops
+*/
+@media (min-width: 960px){
+    /*////////// CUADRO REGISTRO //////////*/
+    .register{
+        padding: 20rem;
+    }
+    .iconoR{
+        margin-top: 3rem;
+        height: 2.95rem;
+        width: 3.18rem;
+        bottom: 2.8rem;
+        margin-right: 1.5rem;
+    }
+
+    .tituloInicioSesion{
+        margin-top:2rem;
+        margin-left:2rem;
+    }
+
+    .conjuntoInputRegistro input{
+        font-size: 2rem;
+    }
+
+    form{
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    form label{
+        font-size: 2.2rem;
+    }
+
+    .botonFormRegistro button{
+        height: 3rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .accesoRegistro{
+        font-size:1.5rem;
+        width:22rem;
+    }
+    .accesoRegistro a:hover{
+        color: #5094FF;
+    }
+
+    /*////////// CUADRO MENSAJE REGISTRO REALIZADO CORRECTAMENTE //////////*/
+    .mensajeRegistrado{
+        padding: 20rem;
+    }
+    .contenedorMensaje{
+        height: 40rem;
+    }
+    .tituloRegistroSuccess{
+        margin-top:12rem;
+    }
+    .contenedorMensaje p{
+        font-size: 2rem;
+    }
+    .btnInicioSesion{
+        font-size: 2rem;
+        margin-top:10rem;
+    }
+    /*////////// ERRORES //////////*/
+    .alertaError{
+        margin-bottom:1rem;
+    }
+    .alertaError p{
+        font-size:1.5rem;
+    }
+}
+
+/*
+  ##Device = Tablets
+  ##Screen = 640px to 960px
+*/
+@media (min-width: 640px) and (max-width: 960px) {
+    /*////////// CUADRO REGISTRO //////////*/
+    .register{
+        padding: 5rem;
+        background-size: 100% 100%;
+    }
+    .iconoR{
+        margin-top: 1.5rem;
+        height: 2rem;
+        width: 2.3rem;
+        bottom: 1.3rem;
+        margin-right: 1.3rem;
+    }
+    .conjuntoInputRegistro input{
+        font-size: 1.6rem;
+    }
+    form{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    form label{
+        font-size: 1.8rem;
+    }
+
+    .botonFormRegistro button{
+        width:auto;
+        height: 3rem;
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .accesoRegistro{
+        font-size:1.4rem;
+        width:auto;
+        margin-bottom: 1rem;
+    }
+    .accesoRegistro a{
+        color: #5094FF;
+    }
+    /*////////// CUADRO MENSAJE REGISTRO REALIZADO CORRECTAMENTE //////////*/
+    .mensajeRegistrado{
+        padding: 5rem;
+        background-size: 100% 100%;
+    }
+    .contenedorMensaje{
+        height: auto;
+        width: auto;
+    }
+    .tituloRegistroSuccess{
+        margin-top:3rem;
+    }
+    .contenedorMensaje p{
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+    .btnInicioSesion{
+        font-size: 2rem;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    /*////////// ERRORES //////////*/
+    .alertaError{
+        margin-bottom:1rem;
+    }
+    .alertaError p{
+        margin-top:1rem;
+        font-size:1.5rem;
+        text-align: center;
+    }
+}
+
+/*
+  ##Device = Mobiles
+  ##Screen = 640px to minimal resolution
+*/
+@media (max-width: 640px) {
+    /*////////// CUADRO REGISTRO //////////*/
+    .register{
+        padding: 1rem;
+        background-size: 100% 100%;
+    }
+    .iconoR{
+        margin-top: 0.9rem;
+        height: 1.2rem;
+        width: 1.4rem;
+        bottom: 0.4rem;
+        margin-right: 0.89rem;
+    }
+    .conjuntoInputRegistro input{
+        font-size: 0.9rem;
+    }
+    form{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    form label{
+        font-size: 1.2rem;
+    }
+
+    .tituloRegistro{
+        font-size: 1.75rem;
+    }
+
+    .botonFormRegistro button{
+        width:auto;
+        height: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .accesoRegistro{
+        font-size:1rem;
+        width:10rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    .accesoRegistro a{
+        color: #5094FF;
+    }
+    /*////////// CUADRO MENSAJE REGISTRO REALIZADO CORRECTAMENTE //////////*/
+    .mensajeRegistrado{
+        padding: 1rem;
+        background-size: 100% 100%;
+    }
+    .contenedorMensaje{
+        height: auto;
+        justify-content: center;
+    }
+    .tituloRegistroSuccess{
+        font-size: 1.75rem;
+        margin-top:2rem;
+    }
+    .contenedorMensaje p{
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .btnInicioSesion{
+        font-size: 1.2rem;
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+    /*////////// ERRORES //////////*/
+    .alertaError{
+        margin-bottom:1rem;
+    }
+    .alertaError p{
+        margin-top:1rem;
+        font-size:1rem;
+        line-height:1.5rem;
+        text-align: center;
+    }
+
+}

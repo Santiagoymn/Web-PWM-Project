@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../css/galleryStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"> !-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
 
 </head>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -22,36 +23,39 @@
 <body>
     <h2>Galería</h2>
 
+    <script>
+        function getJsonGaleria() {
+            $.getJSON("json/galeriaImagenes.json", function (json) {
+                var iteracion = 0;
+                var aux = "";
+                $.each(json.imagenes, function () {
+                    if (iteracion === 4) {
+                        iteracion = 0;
+                        aux = '<div class="col-sm-12 col-md-4">\n';
+                    } else {
+                        iteracion++;
+                        aux = '<div class="col-sm-6 col-md-4">\n';
+                    }
+                    aux += '<a class="lightbox"'  + '>\n' +
+                        '       <img class="prueba" src="' + this.url + '"' + ' alt="' + this.descripcion + '"' + '>\n' +
+                        '    </a>\n' +
+                        '</div>';
+                    $('.row').append(aux);
+                });
+            });
+        }
+    </script>
+
+
     <div class="contenedorGaleria">
         <div class="galeria">
             <div class="row">
                 <script>
-                    $.getJSON("json/galeriaImagenes.json", function (json) {
-                        var iteracion = 0;
-                        $.each(json.imagenes, function (i){
-                            if (iteracion == 4){
-                                iteracion=0;
-                                var aux = '<div class="col-sm-12 col-md-4">\n';
-                            }else{
-                                iteracion++;
-                                var aux = '<div class="col-sm-6 col-md-4">\n';
-                            }
-                            aux +=  '<a class="lightbox" href="' + this.url + '"' + '>\n' +
-                                '       <img src="' + this.url + '"' +  'alt="' + this.descripcion + '"' + '>\n' +
-                                '    </a>\n' +
-                                '</div>';
-                            $('.row').append(aux);
-                        });
-                    });
+                    getJsonGaleria();
                 </script>
             </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.galeria');
-    </script>
 
 </body>
 <div id="footer"></div>
