@@ -18,27 +18,37 @@
     <h2>Sobre Nosotros</h2>
 
     <div class="apartadoInformacion">
-        <p class="textoPresentacion">
-            <img class="imgNosotros" src="https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg" alt="Logo"/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla.
-        </p>
+        <script>
+            $(document).ready(function(){
+                $.getJSON("json/data.json", function (json) {
+                    $.each(json.sobreNosotros, function () {
+                        var au = "<p class=\"textoPresentacion\">\n" +
+                                    "<img class=\"imgNosotros\" src=\"" + this.foto + "\" alt=\"" + this.alt + "\"/>\n" +
+                                    this.descripcion +
+                            "</p>";
+                        $('.apartadoInformacion').append(au);
+                    });
+                });
+            });
+        </script>
     </div>
 
     <div class="apartadoQuienesSomos">
         <h3 class="tituloQuienesSomos">¿Quiénes Somos?</h3>
         <div class="imagenesPersonas">
-            <div class="conjuntoImagen">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Imagen Persona 1"/>
-                <p>Nombre Apellidos y Profesión</p>
-            </div>
-            <div class="conjuntoImagen">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Imagen Persona 2"/>
-                <p>Nombre Apellidos y Profesión</p>
-            </div>
-            <div class="conjuntoImagen">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"  alt="Imagen Persona 3"/>
-                <p>Nombre Apellidos y Profesión</p>
-            </div>
+            <script>
+                $(document).ready(function(){
+                    $.getJSON("json/categorias.json", function (json) {
+                        $.each(json.sobreNosotrosPersonas, function () {
+                            var persona = "<div class=\"conjuntoImagen\">" +
+                                "               <img src=\"" + this.foto + "\" alt=\"" + this.alt + "\"/>\n" +
+                                "               <p>" + this.descripcion + "</p>" +
+                                "           </div>";
+                            $('.imagenesPersonas').append(persona);
+                        });
+                    });
+                });
+            </script>
         </div>
 
     </div>
