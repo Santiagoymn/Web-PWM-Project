@@ -46,35 +46,6 @@
     }
     addEventListener("load", initiate);
 </script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" >
-    $(document).ready(function() {
-        $('#inicio').click( function(){
-            $.getJSON("json/users.json", function(data) {
-                /*for(var i = 0; i < data.user.length; i++) {
-                    var userJson = data.user[i].usuario;
-                    var passwordJson = data.user[i].password;
-                    var userInput = $('#user').val();
-                    var passwordInput = $('#passwd').val();
-                    if (userJson === userInput){
-                        if(passwordJson===passwordInput){
-                            alert("Coinciden");
-                            break;
-                        }
-                        else{
-                            var userMatch=true;
-                        }
-                    }
-                }
-                if (userMatch ===true){
-                    alert("La contraseña introducida es incorrecta. Vuelva a intentarlo");
-                }*/
-                sessionStorage.setItem("logged", "true");
-                window.location.href = "index.html";
-            });
-        });
-    });
-</script>
 
 <div id="header"></div>
 <body>
@@ -112,6 +83,34 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" >
+    $(document).ready(function() {
+        $('#inicio').click( function(){
+            $.getJSON("http://localhost:3000/usuarios", function (data_users) {
+                var existe = false;
+                for (let idx = 0; idx < data_users.length; idx++) {
+                    let user_item = data_users[idx];
+
+                    var userInput = $('#user').val();
+                    var passwordInput = $('#passwd').val();
+
+                    if(userInput == user_item.usuario) {
+                        if (passwordInput == user_item.password) {
+                            existe = true;
+                            sessionStorage.setItem("logged", "true");
+                            window.location.href = "index.html";
+                        }
+                    }
+                }
+                if(existe == false){
+                    alert("Usuario o Contraseña incorrectos");
+                }
+            });
+        });
+    });
+</script>
 </body>
 <div id="footer"></div>
 </html>
