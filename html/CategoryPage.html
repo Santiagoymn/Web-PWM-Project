@@ -25,20 +25,23 @@
     <script>
         $(document).ready(function (){
             function getJsonActivities(){
-                $.getJSON("json/categorias.json", function (json){
+                $.getJSON("../json/datos.json", function (json){
                     $.each(json.categorias, function (i, v){
-                        if(v.titulo == localStorage.getItem("category")){
+                        if(v.titulo.replace(" ", "") === localStorage.getItem("category")){
                             var intro = "<h2>" + this.titulo + "</h2>" +
                                 "<p class='descripcionCategorias'>" + this.descripcion + "</p>" +
                                 "<div class='actividades'></div>"
 
                             $(".categoryWrapper").append(intro);
-                            $.each(v.activities, function(i){
+                            $.each(v.actividades, function(i){
                                 var events = "<a href='ActivityPage.html'>" +
-                                    "                 <article class='articulo' id=" + this.name + ">" +
+                                    "            <div class='actividad' id=" + this.name.replace(" ", "") + ">" +
+                                    "                 <div class='centrado'>" +
+                                    "                       <div class='nombreActividadImagen'>" + this.name+ "</div>" +
+                                    "                 </div>" +
                                     "                 <img class='imagenActividad' src=" + this.url + ">" +
-                                    "                 <div class='nombreActividadImagen'>" + this.name + "</div></article>" +
-                                    "              </a>   "
+                                    "             </div>" +
+                                    "          </a>   "
                                 $(".actividades").append(events);
                             })
                         }
@@ -49,7 +52,7 @@
 
 
             $(".categoryWrapper").on("click","a", function (){
-                var id = $(this).children("article").attr("id");
+                var id = $(this).children("div").attr("id");
                 localStorage.setItem('activityName', id);
             })
         })
