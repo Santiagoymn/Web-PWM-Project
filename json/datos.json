@@ -5,32 +5,32 @@
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
       "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
       "alt": "Flyboard",
-      "activities": [
+      "actividades": [
         {
           "name": "activity11",
           "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sapien at turpis euismod aliquet nec non enim. Integer condimentum orci ipsum, eu aliquet nulla consequat eget. Phasellus fermentum nisi ultrices magna accumsan venenatis. Donec in mollis mauris. Ut nec erat enim. Proin ullamcorper libero in nulla aliquet imperdiet. Nullam quis lacus vitae mi porta pulvinar in quis nulla. Aenean dapibus vel nisl et fermentum. Nullam vehicula vitae nisi a mollis.",
           "empresas": [
             {
               "name": "Business Sports",
               "place": "Las Palmas",
               "price": "24.90€",
               "number": "123456789",
-              "web": "www.empresa@gmail.com"
+              "web": "www.empresa.com"
             },
             {
               "name": "Business Sports2",
               "place": "Las Palmas",
               "price": "50€",
               "number": "123456789",
-              "web": "www.empresa@gmail.com"
+              "web": "www.empresa.com"
             },
             {
               "name": "Business Sports3",
               "place": "Las Palmas",
               "price": "50€",
               "number": "123456789",
-              "web": "www.empresa@gmail.com"
+              "web": "www.empresa.com"
             }
           ]
         },
