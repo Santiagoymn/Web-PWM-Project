@@ -1,15 +1,15 @@
 {
   "categorias": [
     {
-      "titulo": "Categoria1",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit.",
+      "titulo": "Actividades acuáticas",
+      "descripcion": "Disfruta del mar, la costa y de los paisajes de Gran Canaria. Estas son algunas de las actividades para disfrutar del sol y divertirte.",
       "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
       "alt": "Flyboard",
       "actividades": [
         {
-          "name": "activity11",
+          "name": "Flyboard",
           "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sapien at turpis euismod aliquet nec non enim. Integer condimentum orci ipsum, eu aliquet nulla consequat eget. Phasellus fermentum nisi ultrices magna accumsan venenatis. Donec in mollis mauris. Ut nec erat enim. Proin ullamcorper libero in nulla aliquet imperdiet. Nullam quis lacus vitae mi porta pulvinar in quis nulla. Aenean dapibus vel nisl et fermentum. Nullam vehicula vitae nisi a mollis.",
+          "description": "Guía de empresas para hacer flyboard Gran Canaria. Consulta precios y obtén las mejores ofertas del deporte de moda. Puedes Alquilar fly board en Gran Canaria a través de los distintos centros de flyboard en Gran Canaria. El fly board es una actividad perfecta para practicar en cumpleaños, eventos e incentivos de empresa, teambuilding, regalos originales y despedidas de soltero",
           "empresas": [
             {
               "name": "Business Sports",
@@ -35,12 +35,60 @@
           ]
         },
         {
-          "name": "activity12",
-          "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+          "name": "Motos acuáticas",
+          "url" : "https://cdn.getyourguide.com/img/tour/5ca36c9e4cfb9.jpeg/99.jpg",
+          "description": "Descubre las magníficas costas de Gran Canaria mientras conduces tu propio Jet Ski. Las motos de agua son fáciles de manejar y no requieren experiencia previa para su uso. Pueden conducir todas aquellas personas mayores de 16 años.",
+          "empresas": [
+            {
+              "name": "Business Sports",
+              "place": "Las Palmas",
+              "price": "24.90€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            },
+            {
+              "name": "Business Sports2",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            },
+            {
+              "name": "Business Sports3",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            }
+          ]
         },
         {
-          "name": "activity13",
-          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+          "name": "Parasailing",
+          "url": "https://cdn.getyourguide.com/img/tour/61784339969b5.jpeg/99.jpg",
+          "description": "  Vuela en paracaídas, hasta a 150 metros de altura, elevado desde un barco en el mar. Hacer parasailing en el sur de gran canaria Experimenta sensaciones intensas y contradictorias de paz, libertad, seguridad y vulnerabilidad al mismo tiempo. paracaidismo en el mar Disfruta del sol y la brisa marina.  Sorpréndete viendo las costas y barrancos de Gran Canaria desde un ángulo completamente distinto al que estás acostumbrado.",
+          "empresas": [
+            {
+              "name": "Business Sports",
+              "place": "Las Palmas",
+              "price": "24.90€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            },
+            {
+              "name": "Business Sports2",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            },
+            {
+              "name": "Business Sports3",
+              "place": "Las Palmas",
+              "price": "50€",
+              "number": "123456789",
+              "web": "www.empresa.com"
+            }
+          ]
         }
       ]
     },

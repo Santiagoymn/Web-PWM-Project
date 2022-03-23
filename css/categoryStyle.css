@@ -1,50 +1,53 @@
+/*////////// ACTIVIDADES //////////*/
+.actividades { /* Contenedor de actividades */
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.actividad { /* Contenedor de actividad */
+    position: relative;
+    display: block;
+}
+.imagenActividad {
+    width: 100%;
+    object-fit: cover;
+}
+.centrado{ /* Centrado del nombre de la actividad en la imagen */
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+
 @media (min-width: 960px) {
-
-    .nombreActividadImagen{
-        position: absolute;
-        text-align: center;
-        line-height: 4rem;
-        width: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
     .descripcionCategorias{
-        margin-left: 7rem;
-        margin-right: 4rem;
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
         display: none;
     }
-
     /*////////// ACTIVIDADES //////////*/
-    .actividades { /* Contenedor de actividades */
-        position: relative;
-        width: 100%;
-        top: 5rem;
-        text-align: center;
-    }
 
-    .articulo { /* Contenedor de actividad */
-        position: relative;
-        width: 100%;
-        margin-top: 3rem;
-        justify-content: center;
+    .actividad { /* Contenedor de actividad */
+        height: 25.8rem;
+        margin-bottom:4rem;
     }
-
     .imagenActividad {
-        width: 100%;
         height: 25.8rem;
     }
-
-    /*////////// TEXTO //////////*/
-    .centrado { /* Texto centrado */
+    .centrado{ /* Centrado del nombre de la actividad en la imagen */
         position: relative;
+        z-index: 1;
         top: 50%;
         transform: translate(0, 50%);
     }
 
     /*////////// FOOTER //////////*/
     .footer {
-        bottom: -20rem;
+        margin-top: 15rem;
     }
 }
 
@@ -53,118 +56,57 @@
 
 
 @media (min-width: 640px) and (max-width: 960px) {
-
-    h2{
-        font-size: 4rem;
-        margin-left: 2rem;
-    }
-
     .descripcionCategorias{
         margin-left: 2rem;
         margin-right: 2rem;
         font-size: 1.5rem;
     }
-
-    .nombreActividadImagen { /*título de nombre de actividad en Category Page y Activity Page*/
-        position: absolute;
-        font-size: 3rem;
-        width: 100%;
-        text-align: center;
-        line-height: 4rem;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
-
     /*////////// ACTIVIDADES //////////*/
-    .actividades { /* Contenedor de actividades */
-        position: relative;
-        width: 100%;
-        top: 5rem;
-        text-align: center;
-    }
 
-    .articulo { /* Contenedor de actividad */
-        position: relative;
-        width: 100%;
-        margin-top: 3rem;
-    }
-
-    .imagenActividad {
-        width: 100%;
+    .actividad { /* Contenedor de actividad */
         height: 15.8rem;
-        background-color: #C4C4C5;
+        margin-bottom:4rem;
     }
-
-    /*////////// TEXTO //////////*/
-    .centrado { /* Texto centrado */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .imagenActividad {
+        height: 15.8rem;
+    }
+    .centrado{ /* Centrado del nombre de la actividad en la imagen */
+        position: relative;
+        z-index: 1;
+        top:50%;
+        transform: translate(0, 50%);
     }
 
     /*////////// FOOTER //////////*/
     .footer {
-        bottom: -20rem;
+        margin-top: 10rem;
     }
 }
-
-
-
-
 
 @media (max-width: 640px) {
 
     .descripcionCategorias{
-        margin-left: 2rem;
-        margin-right: 2rem;
-        font-size: 1.3rem;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
     }
-
-    .nombreActividadImagen { /*título de nombre de actividad en Category Page y Activity Page*/
-        position: absolute;
-        font-size: 2rem;
-        width: 100%;
-        text-align: center;
-        line-height: 4rem;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
-    h2{
-        width: 80%;
-        font-size: 2.3rem;
-        margin-left: 1.8rem;
-    }
-
-    p{
-        font-size: 2rem;
-    }
-
-
     /*////////// ACTIVIDADES //////////*/
-    .actividades { /* Contenedor de actividades */
-        position: relative;
-        width: 100%;
-        top: 5rem;
-        text-align: center;
-    }
 
-    .articulo { /* Contenedor de actividad */
-        position: relative;
-        width: 100%;
-        margin-top: 3rem;
+    .actividad { /* Contenedor de actividad */
+        height: 18rem;
+        margin-bottom:4rem;
     }
-
     .imagenActividad {
-        width: 100%;
-        height: 15.8rem;
-        background-color: #C4C4C5;
+        height: 18rem;
     }
-
+    .centrado{ /* Centrado del nombre de la actividad en la imagen */
+        position: relative;
+        z-index: 1;
+        top:50%;
+        transform: translate(0, 50%);
+    }
     /*////////// FOOTER //////////*/
     .footer {
-        bottom: -20rem;
+        margin-top: 10rem;
     }
+
 }
