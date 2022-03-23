@@ -51,7 +51,7 @@
     $(document).ready(function() {
         $('#inicio').click( function(){
             $.getJSON("json/users.json", function(data) {
-                for(var i = 0; i < data.user.length; i++) {
+                /*for(var i = 0; i < data.user.length; i++) {
                     var userJson = data.user[i].usuario;
                     var passwordJson = data.user[i].password;
                     var userInput = $('#user').val();
@@ -68,6 +68,8 @@
                 }
                 if (userMatch ===true){
                     alert("La contraseña introducida es incorrecta. Vuelva a intentarlo");
+                }*/
+                sessionStorage.setItem("logged", "true");
                 }
             });
         });
