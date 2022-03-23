@@ -25,7 +25,7 @@
             $.getJSON("../json/datos.json", function (json){
                 $.each(json.categorias, function (i, v){
                     $.each(v.actividades, function (i, b){
-                        if(localStorage.getItem("activityName") === this.name){
+                        if(localStorage.getItem("activityName") === this.name.replace(" ", "")){
                             var activity = "<div class='posicionamientoImagenFondo'>" +
                                         "<img src=" + this.url+ " alt=" + this.name + " class=imagenFondo>" +
                                         "<div class='centrado'>" +
