@@ -69,6 +69,8 @@
                 if (userMatch ===true){
                     alert("La contraseña introducida es incorrecta. Vuelva a intentarlo");
                 }
+
+                sessionStorage.setItem("logged", "true");
             });
         });
     });
