@@ -27,7 +27,13 @@
             });
         </script>
 
-        <a href="index.html" class="loginRegister">Login/Register</a>
+        <script>
+            if ( sessionStorage.getItem("logged") === "true"){
+                $('.lineaHeader').append("<a href=\"Login.html\"><img src=\"images/icono-usuario.png\" class=\"iconoLogueado\" alt='Icono logueado'></a>");
+            }else{
+                $('.lineaHeader').append("<a href=\"Login.html\" class='loginRegister'>Login/Register</a>");
+            }
+        </script>
 
         <div class="botonBanderasDropLeft">
             <button class="btn btn-secondary" type="button">
@@ -35,7 +41,7 @@
             </button>
             <div class="btn-group dropleft" role="group">
                 <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="images/FlechaAbajo.png" class="imagenFlechaAbajo" alt="Idiomas">
+                    <img src="images/FlechaAbajo.png" class="imagenFlechaAbajo" alt="Idiomas ">
                 </button>
                 <div class="dropdown-menu">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACTCAMAAADSiocKAAAACVBMVEUAAADdAAD/zgDGIigcAAAAiElEQVR4nO3PAQEAIAzAoGv/0ObYhQbMAAAAAAAAAAAAAPCvs5hclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXJVclVyVXNXcxeSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5KrkquSq5Krkqh6p735V06ByEQAAAABJRU5ErkJggg==" class="banderaPrincipal" alt="Deutsch">
@@ -69,7 +75,13 @@
 
             <rect class="rectanguloSeparacionDropdown"></rect>
 
-            <a href="index.html"><p class="loginRegisterMovil">Login/Register</p></a>
+            <script>
+                if ( sessionStorage.getItem("logged") === "true"){
+                    $('.lineaHeaderOculto').append("<a href=\"Login.html\"><img src=\"images/icono-usuario.png\" class=\"iconoLogueadoMovil\" alt='Icono logueado'></a>");
+                }else{
+                    $('.lineaHeaderOculto').append("<a href=\"Login.html\" class='loginRegisterMovil'>Login/Register</a>");
+                }
+            </script>
 
             <div id="menu">
                 <ul>
