@@ -84,6 +84,16 @@ a{
         margin-right: 2rem;
     }
 
+    .iconoLogueado{
+        position: relative;
+        float: right;
+        top: -4.2rem;
+        font-size: 1.25rem;
+        width: 4rem;
+        margin: 0;
+        margin-right: 2rem;
+    }
+
     .lineaHeaderOculto{
         position: relative;
         display: inline-flex;
@@ -215,7 +225,7 @@ a{
     #menu ul ul { /* Items del menu desplegable */
         display:none;
         position:absolute;
-        top: 4.9rem;
+        top: 4.8rem;
         text-align: center;
         background: white;
 
@@ -226,6 +236,10 @@ a{
     }
     #menu ul li:hover > ul {
         display:block;
+    }
+
+    .iconoLogueadoMovil{
+        display: none;
     }
 }
 
@@ -260,7 +274,7 @@ a{
         position: relative;
         width: 100%;
         height: 4.3rem;
-        margin-top: -0.41rem;
+        margin-top: -2.7rem;
         display: inline-block;
         background: #CEE0FC;
         z-index: -1;
@@ -322,9 +336,20 @@ a{
     .loginRegister{
         position: relative;
         float: right;
-        top: -4rem;
+        top: -6rem;
+        height: 3rem;
         margin-right: 2rem;
         font-size: 0.9rem;
+    }
+
+    .iconoLogueado{
+        position: relative;
+        float: right;
+        top: -7rem;
+        font-size: 1.25rem;
+        width: 3rem;
+        margin: 0;
+        margin-right: 2rem;
     }
 
     .lineaHeaderOculto{
@@ -399,7 +424,7 @@ a{
         font-family: "Helvetica", serif;
         margin: auto;
 
-        margin-top: -1.3rem;
+        margin-top: -0.5rem;
         margin-left: 1.3rem;
     }
 
@@ -423,7 +448,7 @@ a{
     #menu{ /* Esto lo que hace es ajustar la posición en donde se encuentra el dropdown */
         position: relative;
         display: flex;
-        margin-top: -2.4rem;
+        margin-top: -1.8rem;
         height: 3rem;
         width: 8rem;
         text-align: center;
@@ -470,8 +495,12 @@ a{
     .botonBanderasDropLeft{
         position: relative;
         float: right;
-        left:6rem;
-        margin-top: -2.5rem;
+        margin-right: 2rem;
+        margin-top: -2rem;
+    }
+
+    .iconoLogueadoMovil{
+        display: none;
     }
 }
 
@@ -534,7 +563,7 @@ a{
         position: relative;
         width: 3rem;
         height: 3rem;
-        left: 13%;
+        margin-left: 23%;
     }
 
     .rectanguloSeparacionDropdown {
@@ -551,7 +580,7 @@ a{
         width: 1rem;
         height: 1rem;
         margin-top: 1rem;
-        left: 6rem;
+        margin-right: 1rem;
         vertical-align: middle;
     }
 
@@ -562,7 +591,7 @@ a{
         width: 1rem;
         height: 1rem;
         margin-top: 1rem;
-        left: 6rem;
+        margin-right: 1rem;
         vertical-align: middle;
     }
 
@@ -577,9 +606,19 @@ a{
     .loginRegisterMovil{
         position: relative;
         float: right;
-        top: -4.2rem;
+        top: -16rem;
         margin-right: 1rem;
         font-size: 0.9rem;
+    }
+
+    .iconoLogueadoMovil{
+        position: relative;
+        float: right;
+        top: -16rem;
+        font-size: 1.25rem;
+        width: 2rem;
+        margin: 0;
+        margin-right: 1.2rem;
     }
 
     .loginRegister{
@@ -621,11 +660,11 @@ a{
         display: block;
         color: black;
         font-weight:normal;
-        font-size:1rem;
+        font-size:0.875rem;
         text-transform:uppercase;
         font-family: "Helvetica", serif;
         margin-left: 2rem;
-        margin-top: 0rem;
+        margin-top: -0.7rem;
     }
 
     .banderaPrincipalActual{
@@ -697,8 +736,13 @@ a{
         position:absolute;
         text-align: center;
         background: white;
+        margin-top: -2rem;
     }
     #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
         line-height: 0;
+    }
+
+    .iconoLogueado{
+        display: none;
     }
 }
