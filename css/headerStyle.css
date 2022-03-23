@@ -701,8 +701,4 @@ a{
     #menu ul ul a {  /* Items del menu desplegable al pasar el ratón */
         line-height: 0;
     }
-
-    .prueba{
-        height: 1rem;
-    }
 }
