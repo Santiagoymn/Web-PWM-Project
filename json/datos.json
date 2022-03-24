@@ -147,12 +147,22 @@
   ],
   "municipios": [
     {
-      "municipio": "Municipio 1",
-      "descripcion": "Descripcion 1"
+      "municipio": "Las Palmas de Gran Canaria",
+      "descripcion": "Las Palmas es la capital de Gran Canaria, una de las islas que forman el archipiélago español de Canarias, frente al noroeste de África. La ciudad es un puerto importante de cruceros y es conocida por sus zonas de compras libres de impuestos y sus playas de arena. En la playa de Las Canteras, una barrera de coral bordea la playa y protege a los bañistas. El carnaval anual de Las Palmas de Gran Canaria reúne a artistas con disfraces extravagantes y organiza espectáculos de música y baile. as Palmas es la capital de Gran Canaria, una de las islas que forman el archipiélago español de Canarias, frente al noroeste de África. La ciudad es un puerto importante de cruceros y es conocida por sus zonas de compras libres de impuestos y sus playas de arena. En la playa de Las Canteras, una barrera de coral bordea la playa y protege a los bañistas. El carnaval anual de Las Palmas de Gran Canaria reúne a artistas con disfraces extravagantes y organiza espectáculos de música y baile.",
+      "urlImagen": "https://content.r9cdn.net/rimg/dimg/ab/53/c0cea721-city-9739-17772065a60.jpg?width=1200&height=630&crop=true",
+      "imagenDropdown": "https://upload.wikimedia.org/wikipedia/commons/a/a3/GC_LasPalmasdeGC.png"
     },
     {
-      "municipio": "Municipio 2",
-      "descripcion": "Descripcion 2"
+      "municipio": "Santa Lucía de Tirajana",
+      "descripcion": "Santa Lucía de Tirajana es un municipio español perteneciente a la provincia de Las Palmas, en la isla de Gran Canaria. Con 71863 habitantes en 2018 es el tercer municipio más poblado de la isla y el sexto de Canarias.",
+      "urlImagen": "https://www.canarirural.com/fotografiaw1920h900f7641.jpg",
+      "imagenDropdown": "https://upload.wikimedia.org/wikipedia/commons/d/d9/GC_SantaLuciadeTirajana.png"
+    },
+    {
+      "municipio": "Arucas",
+      "descripcion": "Arucas es un municipio español perteneciente a la provincia de Las Palmas, en la isla de Gran Canaria —Canarias, España—.Destaca dentro de su patrimonio histórico-artístico la iglesia de San Juan Bautista, conocida popularmente como la Catedral de Arucas.\u200B",
+      "urlImagen": "https://www.spain.info/.content/imagenes/cabeceras-grandes/canarias/arucas-gran-canaria-panoramica-s1307849392.jpg",
+      "imagenDropdown": "https://upload.wikimedia.org/wikipedia/commons/0/03/GC_Arucas.png"
     }
   ],
   "usuarios": [
