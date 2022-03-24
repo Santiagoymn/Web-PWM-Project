@@ -36,7 +36,7 @@
         },
         {
           "name": "activity12",
-          "url" : "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
+          "url": "https://www.watersportsluismolina.com/wp-content/uploads/2016/05/imagen_flyboard.jpg"
         },
         {
           "name": "activity13",
@@ -75,11 +75,10 @@
       "alt": "Carnaval"
     }
   ],
-
   "eventos": [
     {
       "nombre": "Granca Live Festival 2022",
-      "fecha" : "Viernes: 08-07 15:00 - Sábado: 09-07 14:00",
+      "fecha": "Viernes: 08-07 15:00 - Sábado: 09-07 14:00",
       "lugar": "Gran Canaria Arena",
       "municipio": "Las Palmas de Gran Canaria",
       "url": "https://static.tomaticket.es/img/artista_imagen/203751-granca.jpg",
@@ -89,7 +88,7 @@
     },
     {
       "nombre": "Concierto Melendi",
-      "fecha" : "Viernes: 15-07 21:00",
+      "fecha": "Viernes: 15-07 21:00",
       "lugar": "Gran Canaria Arena",
       "municipio": "Las Palmas de Gran Canaria",
       "url": "https://cd1.taquilla.com/data/images/t/f3/melendi.jpg",
@@ -98,7 +97,6 @@
       "mes": "JUL"
     }
   ],
-
   "municipios": [
     {
       "municipio": "Municipio 1",
@@ -109,24 +107,24 @@
       "descripcion": "Descripcion 2"
     }
   ],
-
   "usuarios": [
     {
       "usuario": "mps",
       "email": "me",
       "nombre": "mel",
       "apellidos": "per san",
-      "password": "123"
+      "password": "123",
+      "id": 1
     },
     {
       "usuario": "mel",
       "email": "m",
       "nombre": "mel",
       "apellidos": "per san",
-      "password": "000"
+      "password": "000",
+      "id": 2
     }
   ],
-
   "imagenesGaleria": [
     {
       "url": "https://photo980x880.mnstatic.com/d1c6ad9c1071e1d191564248f972bf79/bufadero-de-telde-6867911.jpg",
@@ -165,15 +163,14 @@
       "descripcion": "Las Canteras"
     }
   ],
-
-  "sobreNosotros" : [
+  "sobreNosotros": [
     {
       "foto": "https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg",
       "alt": "Imagen sobre nosotros",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
     }
   ],
-  "sobreNosotrosPersonas" : [
+  "sobreNosotrosPersonas": [
     {
       "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
       "alt": "Persona 1",
@@ -190,15 +187,14 @@
       "descripcion": "Nombre Apellidos y Profesión"
     }
   ],
-
-  "sobreNosotrosGeneral" : [
+  "sobreNosotrosGeneral": [
     {
       "logo": "https://www.publicdomainpictures.net/pictures/280000/nahled/dusky-grey-sky-background.jpg",
       "alt": "Logo de la empresa",
       "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
     }
   ],
-  "imagenesCarrusel" : [
+  "imagenesCarrusel": [
     {
       "url": "https://ssl.tzoo-img.com/images/tzoo.20775.0.570822.GranCanaria.jpg",
       "alt": "Dunas de Maspalomas"
@@ -212,6 +208,4 @@
       "alt": "Playa de Amadores"
     }
   ]
-
-
 }
