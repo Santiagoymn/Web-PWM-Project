@@ -26,7 +26,7 @@
         <div class="col-10 col-md-8 col-lg-6">
             <div class="contenedorFormRegistro">
                 <h2 class="tituloRegistro">Registro</h2>
-                <form>
+                <form id="form">
                     <label for="user">Usuario</label>
                     <div class="conjuntoInputRegistro">
                         <img src="images/icono-usuario.png" class="iconoR" alt="Usuario">
@@ -58,7 +58,7 @@
                         <input type="password" id="repeatPasswd" name="repeatPasswd" required>
                     </div>
                     <div class="botonFormRegistro">
-                        <button type="button" value="Registrarse" id="registro" onclick="compruebaUsuarios()">
+                        <button type="submit" value="Registrarse" id="registro">
                             Registrarse
                         </button>
                     </div>
@@ -104,73 +104,95 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" >
-    function compruebaUsuarios(){
-        $.getJSON("../json/datos.json", function(data) {
-            var errorVariable;
-            for(var i = 0; i < data.usuarios.length; i++) {
-                var userJson = data.usuarios[i].usuario;
-                var emailJson = data.usuarios[i].email;
+<script type="text/javascript">
+    $(document).ready(function (){
+        var form = document.getElementById("form");
+
+        form.addEventListener('submit', function (e){
+            e.preventDefault();
+
+            var passwd = compruebaClaves();
+            var usr = compruebaUsuarios();
+            let isValid = passwd && usr;
+
+            if(isValid){
                 var userInput = $('#user').val();
                 var emailInput = $('#email').val();
-
-                alert(userJson);
-                alert(userInput)
-                if (userJson === userInput && emailJson !== emailInput){
-                    alert("entra");
-                    errorVariable = true;
-                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                    document.getElementById("errorEmail").classList.remove("mostrar");
-                    document.getElementById("errorUsuario").classList.remove("ocultar");
-                    document.getElementById("errorUsuario").classList.add("mostrar");
-                }
-                else if (emailJson === emailInput && userJson !== userInput){
-                    errorVariable = true;
-                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                    document.getElementById("errorUsuario").classList.remove("mostrar");
-                    document.getElementById("errorEmail").classList.remove("ocultar");
-                    document.getElementById("errorEmail").classList.add("mostrar");
-                }
-                else if (emailJson === emailInput && userJson === userInput){
-                    errorVariable = true;
-                    document.getElementById("errorEmail").classList.remove("mostrar");
-                    document.getElementById("errorUsuario").classList.remove("mostrar");
-                    document.getElementById("errorEmailUsuario").classList.remove("ocultar");
-                    document.getElementById("errorEmailUsuario").classList.add("mostrar");
-                }
-                else{
-                    errorVariable = false;
-                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                    document.getElementById("errorEmail").classList.remove("mostrar");
-                    document.getElementById("errorUsuario").classList.remove("mostrar");
-                }
-            }
-
-            if(errorVariable !== true){
                 var passwordInput = $('#passwd').val();
-                var repeatPasswdInput = $('#repeatPasswd').val();
                 var nombreInput = $('#nombre').val();
                 var apellidosInput = $('#apellidos').val();
 
-                if (passwordInput !== repeatPasswdInput){
-                    document.getElementById("errorContraseña").classList.remove("ocultar");
-                    document.getElementById("errorContraseña").classList.add("mostrar");
-                }
-                else{
-                    fetch('http://localhost:3000/usuarios', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'}, // this line is important, if this content-type is not set it wont work
-                        body: JSON.stringify({ "usuario": userInput, "email" : emailInput, "nombre": nombreInput,
-                            "apellidos": apellidosInput, "password": passwordInput})
-                    }).then(res => res.json());
-                    document.getElementById("mensajeOK").classList.remove("ocultar");
-                    document.getElementById("mensajeOK").classList.add("mostrar");
-                    document.getElementById("cuadroRegistro").classList.add("ocultar");
-                    document.getElementById("errorContraseña").classList.remove("mostrar");
-                }
+                fetch('http://localhost:3000/usuarios', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        "usuario": userInput, "email": emailInput, "nombre": nombreInput,
+                        "apellidos": apellidosInput, "password": passwordInput
+                    })
+                }).then(res => res.json())
+
+                document.getElementById("mensajeOK").classList.remove("ocultar");
+                document.getElementById("mensajeOK").classList.add("mostrar");
+                document.getElementById("cuadroRegistro").classList.add("ocultar");
+                document.getElementById("errorContraseña").classList.remove("mostrar");
             }
-        });
-    }
+        })
+
+        function compruebaClaves(){
+            var pass1 = $('#passwd').val();
+            var pass2 = $('#repeatPasswd').val();
+
+            if(pass1 !== pass2){
+                document.getElementById("errorContraseña").classList.remove("ocultar");
+                document.getElementById("errorContraseña").classList.add("mostrar");
+                return false;
+            }else{
+                document.getElementById("errorContraseña").classList.remove("mostrar");
+                return true;
+            }
+        }
+
+        function compruebaUsuarios() {
+            $.getJSON("../json/datos.json",function (data){
+                for (var i = 0; i < data.usuarios.length; i++) {
+                    var userJson = data.usuarios[i].usuario;
+                    var emailJson = data.usuarios[i].email;
+                    var userInput = $('#user').val();
+                    var emailInput = $('#email').val();
+
+                    if (userJson === userInput && emailJson !== emailInput) {
+                        localStorage.setItem("valido", "false");
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("ocultar");
+                        document.getElementById("errorUsuario").classList.add("mostrar");
+                        break;
+                    } else if (emailJson === emailInput && userJson !== userInput) {
+                        localStorage.setItem("valido", "false");
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("ocultar");
+                        document.getElementById("errorEmail").classList.add("mostrar");
+                        break;
+                    } else if (emailJson === emailInput && userJson === userInput) {
+                        localStorage.setItem("valido", "false");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmailUsuario").classList.remove("ocultar");
+                        document.getElementById("errorEmailUsuario").classList.add("mostrar");
+                        break;
+                    } else {
+                        localStorage.setItem("valido", "true");
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
+                    }
+                }
+            });
+            return localStorage.getItem("valido") === "true";
+        }
+    })
+
 </script>
 </body>
 <div id="footer"></div>
