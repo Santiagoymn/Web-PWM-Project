@@ -17,77 +17,6 @@
 
 </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" >
-    $(document).ready(function() {
-        $('#registro').click( function(){
-            $.getJSON("json/users.json", function(data) {
-                var errorVariable;
-                for(var i = 0; i < data.user.length; i++) {
-                    var userJson = data.user[i].usuario;
-                    var emailJson = data.user[i].email;
-                    var userInput = $('#user').val();
-                    var emailInput = $('#email').val();
-                    if (userJson === userInput && emailJson !== emailInput){
-                        errorVariable = true;
-                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                        document.getElementById("errorEmail").classList.remove("mostrar");
-                        document.getElementById("errorUsuario").classList.remove("ocultar");
-                        document.getElementById("errorUsuario").classList.add("mostrar");
-                    }
-                    else if (emailJson === emailInput && userJson !== userInput){
-                        errorVariable = true;
-                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                        document.getElementById("errorUsuario").classList.remove("mostrar");
-                        document.getElementById("errorEmail").classList.remove("ocultar");
-                        document.getElementById("errorEmail").classList.add("mostrar");
-                    }
-                    else if (emailJson === emailInput && userJson === userInput){
-                        errorVariable = true;
-                        document.getElementById("errorEmail").classList.remove("mostrar");
-                        document.getElementById("errorUsuario").classList.remove("mostrar");
-                        document.getElementById("errorEmailUsuario").classList.remove("ocultar");
-                        document.getElementById("errorEmailUsuario").classList.add("mostrar");
-                    }
-                    else{
-                        errorVariable = false;
-                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                        document.getElementById("errorEmail").classList.remove("mostrar");
-                        document.getElementById("errorUsuario").classList.remove("mostrar");
-                    }
-                }
-                if(errorVariable !== true){
-                    var passwordInput = $('#passwd').val();
-                    var repeatPasswdInput = $('#repeatPasswd').val();
-                    var nombreInput = $('#nombre').val();
-                    var apellidosInput = $('#apellidos').val();
-                    if (passwordInput==="" || nombreInput==="" || apellidosInput==="" || repeatPasswdInput==="" ||
-                        userInput==="" || emailInput===""){
-                        document.getElementById("errorCamposNoRellenos").classList.remove("ocultar");
-                        document.getElementById("errorCamposNoRellenos").classList.add("mostrar");
-                    }
-                    if (passwordInput === repeatPasswdInput){
-                        /*ar usuarioInput = {"usuario": userInput, "email": emailInput, "nombre": nombreInput,
-                            "apellidos": apellidosInput, "password": passwordInput};
-                        var usuarioInput = {"usuario": userInput, "email": emailInput, "nombre": nombreInput,
-                            "apellidos": apellidosInput, "password": passwordInput};
-                        localStorage.setItem('json/users.json', JSON.stringify(usuarioInput));
-                        data.user.push(usuarioInput);
-                        alert(data.user[2].usuario);*/
-                        document.getElementById("mensajeOK").classList.remove("ocultar");
-                        document.getElementById("mensajeOK").classList.add("mostrar");
-                        document.getElementById("cuadroRegistro").classList.add("ocultar");
-                        document.getElementById("errorContraseña").classList.remove("mostrar");
-                    }
-                    else{
-                        document.getElementById("errorContraseña").classList.remove("ocultar");
-                        document.getElementById("errorContraseña").classList.add("mostrar");
-                    }
-                }
-            });
-        });
-    });
-</script>
 <div id="header"></div>
 <body>
 <div class="register" id="cuadroRegistro">
@@ -129,7 +58,7 @@
                         <input type="password" id="repeatPasswd" name="repeatPasswd" required>
                     </div>
                     <div class="botonFormRegistro">
-                        <button type="button" value="Registrarse" id="registro" onclick="validarRegistro()">
+                        <button type="button" value="Registrarse" id="registro" onclick="compruebaUsuarios()">
                             Registrarse
                         </button>
                     </div>
@@ -173,6 +102,76 @@
         </div>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" >
+    function compruebaUsuarios(){
+        $.getJSON("../json/datos.json", function(data) {
+            var errorVariable;
+            for(var i = 0; i < data.usuarios.length; i++) {
+                var userJson = data.usuarios[i].usuario;
+                var emailJson = data.usuarios[i].email;
+                var userInput = $('#user').val();
+                var emailInput = $('#email').val();
+
+                alert(userJson);
+                alert(userInput)
+                if (userJson === userInput && emailJson !== emailInput){
+                    alert("entra");
+                    errorVariable = true;
+                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                    document.getElementById("errorEmail").classList.remove("mostrar");
+                    document.getElementById("errorUsuario").classList.remove("ocultar");
+                    document.getElementById("errorUsuario").classList.add("mostrar");
+                }
+                else if (emailJson === emailInput && userJson !== userInput){
+                    errorVariable = true;
+                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                    document.getElementById("errorUsuario").classList.remove("mostrar");
+                    document.getElementById("errorEmail").classList.remove("ocultar");
+                    document.getElementById("errorEmail").classList.add("mostrar");
+                }
+                else if (emailJson === emailInput && userJson === userInput){
+                    errorVariable = true;
+                    document.getElementById("errorEmail").classList.remove("mostrar");
+                    document.getElementById("errorUsuario").classList.remove("mostrar");
+                    document.getElementById("errorEmailUsuario").classList.remove("ocultar");
+                    document.getElementById("errorEmailUsuario").classList.add("mostrar");
+                }
+                else{
+                    errorVariable = false;
+                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                    document.getElementById("errorEmail").classList.remove("mostrar");
+                    document.getElementById("errorUsuario").classList.remove("mostrar");
+                }
+            }
+
+            if(errorVariable !== true){
+                var passwordInput = $('#passwd').val();
+                var repeatPasswdInput = $('#repeatPasswd').val();
+                var nombreInput = $('#nombre').val();
+                var apellidosInput = $('#apellidos').val();
+
+                if (passwordInput !== repeatPasswdInput){
+                    document.getElementById("errorContraseña").classList.remove("ocultar");
+                    document.getElementById("errorContraseña").classList.add("mostrar");
+                }
+                else{
+                    fetch('http://localhost:3000/usuarios', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'}, // this line is important, if this content-type is not set it wont work
+                        body: JSON.stringify({ "usuario": userInput, "email" : emailInput, "nombre": nombreInput,
+                            "apellidos": apellidosInput, "password": passwordInput})
+                    }).then(res => res.json());
+                    document.getElementById("mensajeOK").classList.remove("ocultar");
+                    document.getElementById("mensajeOK").classList.add("mostrar");
+                    document.getElementById("cuadroRegistro").classList.add("ocultar");
+                    document.getElementById("errorContraseña").classList.remove("mostrar");
+                }
+            }
+        });
+    }
+</script>
 </body>
 <div id="footer"></div>
 </html>
