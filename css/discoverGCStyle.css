@@ -87,13 +87,13 @@
     }
     .nombreMunicipio {
         line-height: 4rem;
-        top: 60%;
+        top: 55%;
         font-size: 3rem;
     }
     /*////////// Botón //////////*/
     .flechaAbajoMunicipio {
-        width: 5.25rem;
-        height: 6.20rem;
+        width: 6rem;
+        height: 6rem;
         right: 1rem;
         margin-top: -2rem;
     }
@@ -118,6 +118,14 @@
         margin-left: 6.25rem;
         margin-right: 3rem;
     }
+
+    .colorFondo{
+        display: inline-block;
+        height: 3.5rem;
+        text-align:center;
+        background: #424242;
+    }
+
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
         margin-top: 16rem;
@@ -178,6 +186,14 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    .colorFondo{
+        display: inline-block;
+        height: 3.5rem;
+        text-align:center;
+        background: #424242;
+    }
+
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
         margin-top: 16rem;
@@ -260,7 +276,7 @@
     .nombreMunicipio {
         position: absolute;
         text-align: center;
-        line-height: 4rem;
+        line-height: 2rem;
         width: 100%;
         top: 50%;
         transform: translate(0, -50%);
@@ -297,6 +313,13 @@
     ul, ol {
         list-style: none;
         width: 100%;
+    }
+
+    .colorFondo{
+        display: inline-block;
+        height: 1.8rem;
+        text-align:center;
+        background: #424242;
     }
 
     /*////////// FOOTER //////////*/
