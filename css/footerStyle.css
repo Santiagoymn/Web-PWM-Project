@@ -93,18 +93,26 @@ footer{
         bottom: -2.5rem;
     }
     .imagenInstagram{
-        width: 3.2875rem;
-        height: 3.2875rem;
+        width: 3.0875rem;
+        height: 3.0875rem;
     }
     .imagenFacebook{
-        width: 3.6875rem;
-        height: 3.4375rem;
+        width: 3.8875rem;
+        height: 3.5375rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .imagenYouTube{
         width: 4.1rem;
-        height: 3.1em;
+        height: 3.3em;
+    }
+
+    .localizacionImagenCorreo{
+        margin-top: -2rem;
+    }
+
+    .localizacionImagenTelefono{
+        margin-top: -1.3rem;
     }
 }
 
@@ -164,6 +172,14 @@ footer{
         width: 3.1rem;
         height: 2.1em;
     }
+
+    .localizacionImagenCorreo{
+        margin-top: -1.5rem;
+    }
+
+    .localizacionImagenTelefono{
+        margin-top: -0.8rem;
+    }
 }
 
 /*
@@ -222,5 +238,13 @@ footer{
     .imagenYouTube{
         width: 2rem;
         height: 1.5em;
+    }
+
+    .localizacionImagenCorreo{
+        margin-top: -2rem;
+    }
+
+    .localizacionImagenTelefono{
+        margin-top: -1.3rem;
     }
 }
