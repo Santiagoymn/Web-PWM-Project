@@ -166,21 +166,18 @@
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("ocultar");
                         document.getElementById("errorUsuario").classList.add("mostrar");
-                        break;
                     } else if (emailJson === emailInput && userJson !== userInput) {
                         localStorage.setItem("valido", "false");
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmail").classList.remove("ocultar");
                         document.getElementById("errorEmail").classList.add("mostrar");
-                        break;
                     } else if (emailJson === emailInput && userJson === userInput) {
                         localStorage.setItem("valido", "false");
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmailUsuario").classList.remove("ocultar");
                         document.getElementById("errorEmailUsuario").classList.add("mostrar");
-                        break;
                     } else {
                         localStorage.setItem("valido", "true");
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
