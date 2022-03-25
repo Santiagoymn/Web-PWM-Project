@@ -296,7 +296,7 @@
   "municipios": [
     {
       "municipio": "Las Palmas de Gran Canaria",
-      "descripcion": "Las Palmas es la capital de Gran Canaria, una de las islas que forman el archipiélago español de Canarias, frente al noroeste de África. La ciudad es un puerto importante de cruceros y es conocida por sus zonas de compras libres de impuestos y sus playas de arena. En la playa de Las Canteras, una barrera de coral bordea la playa y protege a los bañistas. El carnaval anual de Las Palmas de Gran Canaria reúne a artistas con disfraces extravagantes y organiza espectáculos de música y baile. as Palmas es la capital de Gran Canaria, una de las islas que forman el archipiélago español de Canarias, frente al noroeste de África. La ciudad es un puerto importante de cruceros y es conocida por sus zonas de compras libres de impuestos y sus playas de arena. En la playa de Las Canteras, una barrera de coral bordea la playa y protege a los bañistas. El carnaval anual de Las Palmas de Gran Canaria reúne a artistas con disfraces extravagantes y organiza espectáculos de música y baile.",
+      "descripcion": "Las Palmas es la capital de Gran Canaria, una de las islas que forman el archipiélago español de Canarias, frente al noroeste de África. La ciudad es un puerto importante de cruceros y es conocida por sus zonas de compras libres de impuestos y sus playas de arena. En la playa de Las Canteras, una barrera de coral bordea la playa y protege a los bañistas. El carnaval anual de Las Palmas de Gran Canaria reúne a artistas con disfraces extravagantes y organiza espectáculos de música y baile.",
       "urlImagen": "https://content.r9cdn.net/rimg/dimg/ab/53/c0cea721-city-9739-17772065a60.jpg?width=1200&height=630&crop=true",
       "imagenDropdown": "https://upload.wikimedia.org/wikipedia/commons/a/a3/GC_LasPalmasdeGC.png"
     },
@@ -481,22 +481,22 @@
     {
       "foto": "https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg",
       "alt": "Imagen sobre nosotros",
-      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web correctamente y con un diseño responsivo."
+      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
   ],
   "sobreNosotrosPersonas": [
     {
-      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "foto": "images/trabajador1.jpeg",
       "alt": "Trabajador 1",
       "descripcion": "Melba Pérez Santana, ingeniera informática"
     },
     {
-      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "foto": "images/trabajador2.jpeg",
       "alt": "Trabajador 2",
       "descripcion": "Samuel Rodríguez Hernández, ingeniero informático"
     },
     {
-      "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "foto": "images/trabajador3.jpeg",
       "alt": "Trabajador 3",
       "descripcion": "Santiago Adrián Yánez Martín, ingeniero informático"
     }
