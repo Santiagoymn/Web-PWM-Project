@@ -36,7 +36,7 @@
         },
         {
           "name": "Motos acuáticas",
-          "url" : "https://cdn.getyourguide.com/img/tour/5ca36c9e4cfb9.jpeg/99.jpg",
+          "url": "https://cdn.getyourguide.com/img/tour/5ca36c9e4cfb9.jpeg/99.jpg",
           "description": "Descubre las magníficas costas de Gran Canaria mientras conduces tu propio Jet Ski. Las motos de agua son fáciles de manejar y no requieren experiencia previa para su uso. Pueden conducir todas aquellas personas mayores de 16 años.",
           "empresas": [
             {
@@ -101,7 +101,7 @@
         {
           "name": "Cueva de Roque Nublo",
           "url": "https://www.caminantesdeaguere.com/wp-content/uploads/2019/10/ventanas-del-nublo.jpg",
-          "description" : "Recorre el interior de la isla de Gran Canaria haciendo una circula saliendo desde los Llano de la Pez y recorriendo los alrededores del Rque Nublo hast llegar a su cueva, en donde se realizará un descansoo en el que tomar fotos y reponer fuerzas para la vuelta a   los Llanos de la Pez",
+          "description": "Recorre el interior de la isla de Gran Canaria haciendo una circula saliendo desde los Llano de la Pez y recorriendo los alrededores del Rque Nublo hast llegar a su cueva, en donde se realizará un descansoo en el que tomar fotos y reponer fuerzas para la vuelta a   los Llanos de la Pez",
           "empresas": [
             {
               "name": "Caminante SI hay camino",
@@ -115,7 +115,7 @@
         {
           "name": "Barranco de azuaje",
           "url": "https://s1.wklcdn.com/image_1/40658/2117261/784327Master.jpg",
-          "description" : "Azuaje es una espacio natural protegido de 61,1 ha, forma parte desde 1987 del parque rural de Doramas y ha sido reclasificado con la aprobación el 16 de noviembre de 1994 de la Ley de Espacios Naturales como reserva natural especial.1\u200B Es un tramo de uno de los barrancos más importantes y de mayor belleza paisajística del norte de Gran Canaria. Apúntate y descúbrelo",
+          "description": "Azuaje es una espacio natural protegido de 61,1 ha, forma parte desde 1987 del parque rural de Doramas y ha sido reclasificado con la aprobación el 16 de noviembre de 1994 de la Ley de Espacios Naturales como reserva natural especial.1​ Es un tramo de uno de los barrancos más importantes y de mayor belleza paisajística del norte de Gran Canaria. Apúntate y descúbrelo",
           "empresas": [
             {
               "name": "Trotamundos GC",
@@ -273,6 +273,16 @@
   ],
   "eventos": [
     {
+      "nombre": "Concierto Fito & Fitipaldis",
+      "fecha": "Sábado: 25-06 19:30",
+      "lugar": "Parque Santa Catalina",
+      "municipio": "Las Palmas de Gran Canaria",
+      "url": "https://www.laguiago.com/wp-content/uploads/2019/02/Fitoscopia-rinde-tributo-a-Fito-Fitipaldis-en-Sala-X-de-Sevilla.jpg",
+      "descripcion": "Fito & Fitipaldis recala con su gira de conciertos en Canarias\n\n\nFito y Fitiplados vuelven a Canarias con su gira. Las entardas acaban de salir a la venta al precio de 39.60 Euros y los conciertos se celebraran en Tenerife y Gran Canaria el 24 y 25 de Junio de 2022\n\n\nActualmente su web se encuentra en construccion, ya que van a grabar su nuevo disco para presentarlo e iniciar la gira 2020.\n\n\nTras 22 años de carrera, Fito & Fitipaldis afronta una des sus giras más exigentes e ilusionantes.\n\n\nSe anuncian dos nuevas paradas los días 24 y 25 de junio en Gran Canaria y Tenerife respectivamente.",
+      "dia": "25",
+      "mes": "JUN"
+    },
+    {
       "nombre": "Granca Live Festival 2022",
       "fecha": "Viernes: 08-07 15:00 - Sábado: 09-07 14:00",
       "lugar": "Gran Canaria Arena",
@@ -308,7 +318,7 @@
     },
     {
       "municipio": "Arucas",
-      "descripcion": "Arucas es un municipio español perteneciente a la provincia de Las Palmas, en la isla de Gran Canaria —Canarias, España—.Destaca dentro de su patrimonio histórico-artístico la iglesia de San Juan Bautista, conocida popularmente como la Catedral de Arucas.\u200B",
+      "descripcion": "Arucas es un municipio español perteneciente a la provincia de Las Palmas, en la isla de Gran Canaria —Canarias, España—.Destaca dentro de su patrimonio histórico-artístico la iglesia de San Juan Bautista, conocida popularmente como la Catedral de Arucas.​",
       "urlImagen": "https://www.spain.info/.content/imagenes/cabeceras-grandes/canarias/arucas-gran-canaria-panoramica-s1307849392.jpg",
       "imagenDropdown": "https://upload.wikimedia.org/wikipedia/commons/0/03/GC_Arucas.png"
     },
@@ -410,7 +420,7 @@
     },
     {
       "municipio": "Valsequillo de Gran Canaria",
-      "descripcion": "Está situado en la zona centro-oriental de la isla de Gran Canaria, distando la cabecera municipal 24 kilómetros de la capital insular.\u200B\n\nValsequillo se ubica mayoritariamente en la zona de las medianías, no poseyendo salida al mar. La cabecera municipal se halla a 574 msnm,\u200B alcanzando el municipio su altitud máxima a 1842.2 msnm en la Montaña de los Bizcochos.\u200B",
+      "descripcion": "Está situado en la zona centro-oriental de la isla de Gran Canaria, distando la cabecera municipal 24 kilómetros de la capital insular.​\n\nValsequillo se ubica mayoritariamente en la zona de las medianías, no poseyendo salida al mar. La cabecera municipal se halla a 574 msnm,​ alcanzando el municipio su altitud máxima a 1842.2 msnm en la Montaña de los Bizcochos.​",
       "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Valsequillo_de_Gran_Canaria_D81_8056_%2833044472246%29.jpg/1179px-Valsequillo_de_Gran_Canaria_D81_8056_%2833044472246%29.jpg",
       "imagenDropdown": "data:image/png;base64,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"
     },
@@ -423,20 +433,28 @@
   ],
   "usuarios": [
     {
-      "usuario": "mps",
-      "email": "me",
-      "nombre": "mel",
-      "apellidos": "per san",
-      "password": "123",
+      "usuario": "s",
+      "email": "s@s",
+      "nombre": "s",
+      "apellidos": "s",
+      "password": "s",
       "id": 1
     },
     {
-      "usuario": "mel",
-      "email": "m",
-      "nombre": "mel",
-      "apellidos": "per san",
-      "password": "000",
+      "usuario": "sa",
+      "email": "sa@sa",
+      "nombre": "sa",
+      "apellidos": "sa",
+      "password": "sa",
       "id": 2
+    },
+    {
+      "usuario": "sa",
+      "email": "sa@sa",
+      "nombre": "sa",
+      "apellidos": "sa",
+      "password": "sa",
+      "id": 3
     }
   ],
   "imagenesGaleria": [
@@ -479,7 +497,7 @@
   ],
   "sobreNosotros": [
     {
-      "foto": "https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg",
+      "foto": "images/Logo.png",
       "alt": "Imagen sobre nosotros",
       "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
@@ -503,9 +521,9 @@
   ],
   "sobreNosotrosGeneral": [
     {
-      "logo": "/images/Logo.png",
+      "logo": "images/Logo.png",
       "alt": "Logo de la empresa",
-      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria"
+      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web dieseñada correctamente y con un diseño responsivo."
     }
   ],
   "imagenesCarrusel": [
