@@ -481,31 +481,31 @@
     {
       "foto": "https://www.muycomputer.com/wp-content/uploads/2020/02/GoogleContacts.jpg",
       "alt": "Imagen sobre nosotros",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
+      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria que estamos cursando una asignatura llamada 'Programación Web Y móvil' en la que como proyecto de curso estamo llevando a cabo la creación y gestión de la presente página web en función de los conocimientos que se están impartiendo en clases, con el deseo de tener una página web correctamente y con un diseño responsivo."
     }
   ],
   "sobreNosotrosPersonas": [
     {
       "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-      "alt": "Persona 1",
-      "descripcion": "Nombre Apellidos y Profesión"
+      "alt": "Trabajador 1",
+      "descripcion": "Melba Pérez Santana, ingeniera informática"
     },
     {
       "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-      "alt": "Persona 2",
-      "descripcion": "Nombre Apellidos y Profesión"
+      "alt": "Trabajador 2",
+      "descripcion": "Samuel Rodríguez Hernández, ingeniero informático"
     },
     {
       "foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
-      "alt": "Persona 3",
-      "descripcion": "Nombre Apellidos y Profesión"
+      "alt": "Trabajador 3",
+      "descripcion": "Santiago Adrián Yánez Martín, ingeniero informático"
     }
   ],
   "sobreNosotrosGeneral": [
     {
-      "logo": "https://www.publicdomainpictures.net/pictures/280000/nahled/dusky-grey-sky-background.jpg",
+      "logo": "/images/Logo.png",
       "alt": "Logo de la empresa",
-      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue urna nec nunc hendrerit suscipit. Vivamus quis orci tempus massa tristique congue. Etiam turpis sapien, luctus sollicitudin risus id, elementum laoreet lectus. Integer a vulputate ex. Aenean mollis mi sed lectus varius, ac dignissim lacus posuere. Quisque interdum ultrices egestas. Donec sed nisl vel lorem mollis malesuada. Mauris interdum blandit tellus id fringilla."
+      "descripcion": "Somos tres estudiantes de tercer curso del grado de ingeniería informática en la univesidad de Las Palmas de Gran Canaria"
     }
   ],
   "imagenesCarrusel": [
