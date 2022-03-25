@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "name": "Nombre Evento",
+      "day" : "Día de la semana: XX-XX-XX:XX",
+      "place": "Lugar",
+      "municipality": "Municipio",
+      "descriptionImage": "https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg",
+      "descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo."
+    },
+    {
+      "name": "Nombre Evento2",
+      "day" : "Día de la semana: XX-XX-XX:XX",
+      "place": "Lugar",
+      "municipality": "Municipio",
+      "descriptionImage": "https://www.bbva.com/wp-content/uploads/2020/05/festival2-1920x1180.jpg",
+      "descriptionText": "qqqqLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus metus, eleifend sit amet turpis vitae, sodales elementum risus. Integer scelerisque dui ac est pretium aliquam. Phasellus in magna arcu. Phasellus accumsan eros vitae turpis tincidunt volutpat id quis quam. Sed vitae sapien quis erat eleifend consequat. Nam ultrices ligula ut sagittis malesuada. Proin nisl libero, finibus quis dolor quis, blandit hendrerit justo."
+    }
+  ]
+}

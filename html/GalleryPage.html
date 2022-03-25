@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="../css/galleryStyle.css" type="text/css">
     <link rel="stylesheet" href="../css/generalStyle.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet"> !-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
 
 </head>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -22,63 +23,40 @@
 <body>
     <h2>Galería</h2>
 
+    <script>
+        function getJsonGaleria() {
+            $.getJSON("json/galeriaImagenes.json", function (json) {
+                var iteracion = 0;
+                var aux = "";
+                $.each(json.imagenes, function () {
+                    if (iteracion === 4) {
+                        iteracion = 0;
+                        aux = '<div class="col-sm-12 col-md-4">\n';
+                    } else {
+                        iteracion++;
+                        aux = '<div class="col-sm-6 col-md-4">\n';
+                    }
+                    aux += '<a class="lightbox"'  + '>\n' +
+                        '       <img class="prueba" src="' + this.url + '"' + ' alt="' + this.descripcion + '"' + '>\n' +
+                        '    </a>\n' +
+                        '</div>';
+                    $('.row').append(aux);
+                });
+            });
+        }
+    </script>
+
+
     <div class="contenedorGaleria">
         <div class="galeria">
-
             <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://photo980x880.mnstatic.com/d1c6ad9c1071e1d191564248f972bf79/bufadero-de-telde-6867911.jpg">
-                        <img src="https://photo980x880.mnstatic.com/d1c6ad9c1071e1d191564248f972bf79/bufadero-de-telde-6867911.jpg" alt="Bufadero de la Garita">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://top-car-hire.com/uploads/images/shutterstock_358099151_1609161159.jpg">
-                        <img src="https://top-car-hire.com/uploads/images/shutterstock_358099151_1609161159.jpg" alt="Faro de Maspalomas">
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <a class="lightbox" href="https://villagrancanaria.com/cms/uploads/webp/Paisajes-de-Gran-Canaria-1600-qfm767.webp">
-                        <img src="https://villagrancanaria.com/cms/uploads/webp/Paisajes-de-Gran-Canaria-1600-qfm767.webp" alt="Roque Nublo y el Teide">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://espanafascinante.com/wp-content/uploads/principal_lugares_canarias_gran-canaria_que-ver-en-Mog%C3%A1n-672x372.jpg">
-                        <img src="https://espanafascinante.com/wp-content/uploads/principal_lugares_canarias_gran-canaria_que-ver-en-Mog%C3%A1n-672x372.jpg" alt="Mogán">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://static3.canarias7.es/www/multimedia/202001/24/media/cortadas/37710732936-bbff0ea2db-b_5983939_20200124155346--1248x702.jpg">
-                        <img src="https://static3.canarias7.es/www/multimedia/202001/24/media/cortadas/37710732936-bbff0ea2db-b_5983939_20200124155346--1248x702.jpg" alt="Barranco de las Vacas">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://static.eldiario.es/clip/69e9f92e-e63c-4255-9e5f-39d7f923621d_16-9-aspect-ratio_default_0.jpg">
-                        <img src="https://static.eldiario.es/clip/69e9f92e-e63c-4255-9e5f-39d7f923621d_16-9-aspect-ratio_default_0.jpg" alt="Vegueta">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://www.ecestaticos.com/imagestatic/clipping/f0b/379/f0b379d0b2f351e25fa9cd8460ca188d/descubre-tufia-la-fusion-de-la-playa-negra-y-el-pueblo-blanco-escondida-en-gran-canaria.jpg?mtime=1619695849">
-                        <img src="https://www.ecestaticos.com/imagestatic/clipping/f0b/379/f0b379d0b2f351e25fa9cd8460ca188d/descubre-tufia-la-fusion-de-la-playa-negra-y-el-pueblo-blanco-escondida-en-gran-canaria.jpg?mtime=1619695849" alt="Tufia">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://www.hola.com/imagenes/viajes/20200827174213/road-trip-por-la-ruta-mas-salvaje-y-panoramica-de-gran-canaria/0-859-184/puerto-de-las-nieves-agaete-t.jpg">
-                        <img src="https://www.hola.com/imagenes/viajes/20200827174213/road-trip-por-la-ruta-mas-salvaje-y-panoramica-de-gran-canaria/0-859-184/puerto-de-las-nieves-agaete-t.jpg" alt="Agaete">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                    <a class="lightbox" href="https://cadenaser00.epimg.net/emisora/imagenes/2016/11/30/ser_las_palmas/1480511736_035652_1480513214_noticia_normal.jpg">
-                        <img src="https://cadenaser00.epimg.net/emisora/imagenes/2016/11/30/ser_las_palmas/1480511736_035652_1480513214_noticia_normal.jpg" alt="Las Canteras">
-                    </a>
-                </div>
+                <script>
+                    getJsonGaleria();
+                </script>
             </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.galeria');
-    </script>
 </body>
 <div id="footer"></div>
 </html>
