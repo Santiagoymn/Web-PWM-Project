@@ -127,7 +127,7 @@ ul, ol {
 
 .mensajeNoRegistrado{
     position: relative;
-    font-family: 'Roboto';
+    font-family: "Helvetica", serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -136,7 +136,7 @@ ul, ol {
 
 .btnLogin{
     position: relative;
-    font-family: Helvetica, serif;
+    font-family: "Helvetica", serif;
     text-align: center;
     background: #CEE0FC;
     align-self: center;
