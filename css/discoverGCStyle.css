@@ -1,105 +1,117 @@
+/*////////// MUNICIPIOS //////////*/
+.municipios {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.listaMunicipios{
+    display: block;
+}
+/*////////// MUNICIPIO //////////*/
+.conjuntoMunicipio {
+    position: relative;
+    width: 100%;
+}
+.municipio {
+    position: relative;
+    clear: both;
+}
+.imagenMunicipio {
+    width: 100%;
+    object-fit: cover;
+}
+
+.nombreMunicipio {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translate(0, -60%);
+
+    text-transform: uppercase;
+    font-family: "Helvetica", serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.colorFondo{
+    display: inline-block;
+    text-align:center;
+    background: #424242;
+}
+/*////////// Botón //////////*/
+.flechaAbajoMunicipio {
+    position: relative;
+    align-items: center;
+    background-color: rgba(196, 196, 197, 0.7);
+    border-radius:50%;
+}
+.btn {
+    position: relative;
+    border: none;
+    float: right;
+    background: transparent;
+}
+
+/*////////// DROPDOWN MUNICIPIO //////////*/
+.descripcionMunicipio {
+    height: auto;
+}
+.imagenDropdownMunicipio {
+    float:right;
+    vertical-align: center;
+    align-self: center;
+
+}
 
 
 @media (min-width: 960px) {
+    /*////////// MUNICIPIOS //////////*/
     .municipios {
-        position: relative;
-        width: 100%;
         margin-top: 6rem;
-        text-align: center;
     }
 
-    .descripcionMunicipio {
-        position: relative;
-        display: block;
+    /*////////// MUNICIPIO //////////*/
+    .conjuntoMunicipio {
+        margin-top: 3rem;
     }
-
-    .paginaMunicipio {
-        position: relative;
-        display: flex;
-        height: 35rem;
-        width: 100%;
-    }
-
-    .imagen2Municipio {
-        position: relative;
-        height: 24.06rem;
-        width: 100rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        object-fit: cover;
-
-        text-align: center;
-        line-height: 4rem;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
-    .textoMunicipio {
-        position: relative;
-        margin-left: 3rem;
-        margin-right: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        vertical-align: middle;
-        text-align: justify;
-    }
-
-    .flechaAbajoMunicipio { /* Desplega descripcion evento */
-        position: relative;
-        width: 5.25rem;
-        height: 6.20rem;
-        right: 1rem;
-        margin-top: -2rem;
-        align-items: center;
-    }
-
-    .btn {
-        position: relative;
-        padding: 1rem;
-        border: none;
-        float: right;
-        margin-right: 2rem;
-        background: transparent;
-    }
-
-    .nombreMunicipio {
-        position: absolute;
-        text-align: center;
-        line-height: 4rem;
-        width: 100%;
-        top: 60%;
-        transform: translate(0, -60%);
-
-        text-transform: uppercase;
-        text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(0.9375rem);
-
-        font-family: "Helvetica", serif;
-        font-weight: bold;
-        font-size: 3rem;
-        color: #FFFFFF;
-    }
-
-    .municipio {
-        position: relative;
-    }
-
     .imagenMunicipio {
-        width: 100%;
         height: 20rem;
     }
+    .nombreMunicipio {
+        line-height: 4rem;
+        top: 55%;
+        font-size: 3rem;
+    }
+    /*////////// Botón //////////*/
+    .flechaAbajoMunicipio {
+        width: 6rem;
+        height: 6rem;
+        right: 1rem;
+        margin-top: -2rem;
+    }
+    .btn {
+        padding: 1rem;
+        margin-right: 2rem;
+    }
+    /*////////// DROPDOWN MUNICIPIO //////////*/
 
-    .evento { /* Contenedor de evento */
-        position: relative;
-        width: 100%;
-        margin-top: 3rem;
+    .paginaMunicipio {
+        margin-top:3rem;
+        margin-right: 6.25rem;
+        margin-left: 6.25rem;
+    }
+    .imagenDropdownMunicipio {
+        margin-left: 2rem;
+        height: 24rem;
+        margin-bottom:2rem;
+    }
+
+    .colorFondo{
+        height: 3.5rem;
     }
 
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
-        bottom: -20rem;
+        margin-top: 16rem;
     }
 }
 
@@ -109,239 +121,114 @@
 
 
 @media (min-width: 640px) and (max-width: 960px) {
-
-    h2{
-        font-size: 4rem;
-        margin-left: 2rem;
-    }
-
-    p{
-        font-size: 1.5rem;
-    }
-
+    /*////////// MUNICIPIOS //////////*/
     .municipios {
-        position: relative;
-        width: 100%;
         margin-top: 6rem;
-        text-align: center;
+    }
+    .municipio{
+        background-color: red;
     }
 
-    .descripcionMunicipio {
-        position: relative;
-        display: none;
-        right: 2.5rem;
-        margin-top: 1.3rem;
-    }
-
-    .paginaMunicipio {
-        position: relative;
-        display: block;
-        height: auto;
-        width: 100%;
-    }
-
-    .imagen2Municipio {
-        position: relative;
-        height: 20rem;
-        width: 30rem;
-    }
-
-    .textoMunicipio {
-        position: relative;
-        margin-left: 3rem;
-        margin-right: 5rem;
-        margin-top: 4rem;
-        display: block;
-        align-items: center;
-        justify-content: center;
-
-        vertical-align: middle;
-        text-align: justify;
-    }
-
-    .flechaAbajoMunicipio { /* Desplega descripcion evento */
-        position: absolute;
-        width: 4.25rem;
-        height: 5.0rem;
-        right: 1rem;
-        margin-top: -0.6rem;
-        align-items: center;
-    }
-
-    .btn {
-        position: relative;
-        padding: 1rem;
-        border: none;
-        float: right;
-        margin-right: 2rem;
-        background: transparent;
-    }
-
-    .nombreMunicipio {
-        position: absolute;
-        text-align: center;
-        line-height: 4rem;
-        width: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
-
-        text-transform: uppercase;
-        text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(0.9375rem);
-
-        font-family: "Helvetica", serif;
-        font-weight: bold;
-        font-size: 2.4rem;
-        color: #FFFFFF;
-    }
-
-    .municipio {
-        position: relative;
-    }
-
-    .imagenMunicipio {
-        width: 100%;
-        height: 20rem;
-    }
-
-    .evento { /* Contenedor de evento */
-        position: relative;
-        width: 100%;
+    /*////////// MUNICIPIO //////////*/
+    .conjuntoMunicipio {
         margin-top: 3rem;
     }
-
-    .evento:active > ul {
-        display: block;
+    .imagenMunicipio {
+        height: 20rem;
+    }
+    .nombreMunicipio {
+        line-height: 4rem;
+        top: 60%;
+        font-size: 2.5rem;
+    }
+    /*////////// Botón //////////*/
+    .flechaAbajoMunicipio {
+        width: 4rem;
+        height: 4rem;
+        right: 1rem;
+        margin-top: -0.6rem;
+    }
+    .btn {
+        padding: 1rem;
+        margin-right: 3rem;
+    }
+    /*////////// DROPDOWN MUNICIPIO //////////*/
+    .paginaMunicipio {
+        margin-top:3rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        background-color: green;
+    }
+    .imagenDropdownMunicipio {
+        margin-left: 2rem;
+        height: 24rem;
+        margin-bottom:2rem;
     }
 
-    ul, ol {
-        list-style: none;
-        width: 100%;
+    .colorFondo{
+        height: 3.5rem;
     }
 
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
-        bottom: -20rem;
+        margin-top: 16rem;
     }
+
 }
 
 
 
 
 @media (max-width: 640px) {
-    h2{
-        width: 80%;
-        font-size: 2rem;
-        margin-left: 1.8rem;
-    }
-
-    p{
-        font-size: 1rem;
-    }
-
+    /*////////// MUNICIPIOS //////////*/
     .municipios {
-        position: relative;
-        width: 100%;
-        margin-top: 1rem;
-        text-align: center;
+        margin-top: 6rem;
     }
 
-    .descripcionMunicipio {
-        position: relative;
-        display: none;
-        right: 2.5rem;
-        margin-top: 1.3rem;
-    }
-
-    .paginaMunicipio {
-        position: relative;
-        display: block;
-        height: auto;
-        width: 100%;
-    }
-
-    .imagen2Municipio {
-        position: relative;
-        height: 10rem;
-        width: 20rem;
-    }
-
-    .textoMunicipio {
-        position: relative;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 4rem;
-        display: block;
-        align-items: center;
-        justify-content: center;
-
-        vertical-align: middle;
-        text-align: justify;
-    }
-
-    .flechaAbajoMunicipio { /* Desplega descripcion evento */
-        position: absolute;
-        width: 3rem;
-        height: 3.75rem;
-        right: 0.1rem;
-        margin-top: 0.1rem;
-        align-items: center;
-    }
-
-    .btn {
-        position: relative;
-        padding: 1rem;
-        border: none;
-        float: right;
-        margin-right: 2rem;
-        background: transparent;
-    }
-
-    .nombreMunicipio {
-        position: absolute;
-        text-align: center;
-        line-height: 4rem;
-        width: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
-
-        text-transform: uppercase;
-        text-shadow: 0 0.4375rem 3.125rem rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(0.9375rem);
-
-        font-family: "Helvetica", serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        color: #FFFFFF;
-    }
-
-    .municipio {
-        position: relative;
-    }
-
-    .imagenMunicipio {
-        width: 100%;
-        height: 12rem;
-    }
-
-    .evento { /* Contenedor de evento */
-        position: relative;
-        width: 100%;
+    /*////////// MUNICIPIO //////////*/
+    .conjuntoMunicipio {
         margin-top: 3rem;
     }
-
-    .evento:active > ul {
-        display: block;
+    .imagenMunicipio {
+        height: 15rem;
     }
-
-    ul, ol {
-        list-style: none;
-        width: 100%;
+    .nombreMunicipio {
+        line-height: 4rem;
+        top: 55%;
+        font-size: 2.5rem;
+    }
+    .descripcionMunicipio {
+        display: none;
+        margin-top: 1.5rem;
+    }
+    /*////////// Botón //////////*/
+    .flechaAbajoMunicipio {
+        width: 3rem;
+        height: 3rem;
+        right: 1rem;
+    }
+    .btn {
+        padding: 1rem;
+        margin-right: 2rem;
+    }
+    /*////////// DROPDOWN MUNICIPIO //////////*/
+    .paginaMunicipio {
+        margin-top:3rem;
+        margin-right: 1.75rem;
+        margin-left: 1.75rem;
+    }
+    .imagenDropdownMunicipio {
+        margin-left: 2rem;
+        margin-right: 1.75rem;
+        height: 24rem;
+    }
+    .colorFondo{
+        height: 4rem;
     }
 
     /*////////// FOOTER //////////*/
     .footer { /* Posicionamiento del footer en la página*/
-        bottom: -20rem;
+        margin-top: 10rem;
     }
 
 }

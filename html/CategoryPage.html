@@ -27,7 +27,7 @@
             function getJsonActivities(){
                 $.getJSON("../json/datos.json", function (json){
                     $.each(json.categorias, function (i, v){
-                        if(v.titulo.replace(" ", "") === localStorage.getItem("category")){
+                        if(v.titulo.replaceAll(" ", "") === localStorage.getItem("category")){
                             var intro = "<h2>" + this.titulo + "</h2>" +
                                 "<p class='descripcionCategorias'>" + this.descripcion + "</p>" +
                                 "<div class='actividades'></div>"
@@ -35,7 +35,7 @@
                             $(".categoryWrapper").append(intro);
                             $.each(v.actividades, function(i){
                                 var events = "<a href='ActivityPage.html'>" +
-                                    "            <div class='actividad' id=" + this.name.replace(" ", "") + ">" +
+                                    "            <div class='actividad' id=" + this.name.replaceAll(" ", "") + ">" +
                                     "                 <div class='centrado'>" +
                                     "                       <div class='nombreActividadImagen'>" + this.name+ "</div>" +
                                     "                 </div>" +

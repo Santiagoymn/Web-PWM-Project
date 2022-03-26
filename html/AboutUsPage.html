@@ -19,7 +19,7 @@
     <div class="apartadoInformacion">
         <script>
             $(document).ready(function(){
-                $.getJSON("json/data.json", function (json) {
+                $.getJSON("../json/datos.json", function (json) {
                     $.each(json.sobreNosotros, function () {
                         var au = "<p class=\"textoPresentacion\">\n" +
                                     "<img class=\"imgNosotros\" src=\"" + this.foto + "\" alt=\"" + this.alt + "\"/>\n" +
@@ -37,7 +37,7 @@
         <div class="imagenesPersonas">
             <script>
                 $(document).ready(function(){
-                    $.getJSON("json/categorias.json", function (json) {
+                    $.getJSON("../json/datos.json", function (json) {
                         $.each(json.sobreNosotrosPersonas, function () {
                             var persona = "<div class=\"conjuntoImagen\">" +
                                 "               <img src=\"" + this.foto + "\" alt=\"" + this.alt + "\"/>\n" +

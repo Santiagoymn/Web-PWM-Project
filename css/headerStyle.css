@@ -8,7 +8,9 @@ a{
     text-decoration: none;
     color: black;
 }
-
+.logo{
+    z-index: -2;
+}
 
 @media (min-width: 960px) {
     /*////////// HEADER //////////*/

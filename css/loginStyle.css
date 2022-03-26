@@ -5,6 +5,7 @@
     object-fit: cover;
     height: auto;
     justify-content: center;
+    min-height: 100vh;
 }
 .contenedorForm{
     background-color: white;
@@ -167,7 +168,7 @@ input:invalid {
 */
 @media (max-width: 640px) {
     .login{
-        padding: 1rem;
+        padding: 2rem;
     }
     .icono{
         margin-top: 0.9rem;
