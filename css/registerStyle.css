@@ -1,11 +1,12 @@
 /*////////// CUADRO REGISTRO //////////*/
 .register{
     background-image: url("https://marcacanaria.com/wp-content/uploads/2021/04/vista-aerea-de-la-playa-de-gui-gui.jpeg");
-    background-size: 110%;
+    background-size: 180%;
     background-repeat: no-repeat;
     object-fit: cover;
     height: auto;
     justify-content: center;
+    min-height: 100vh;
 }
 .contenedorFormRegistro{
     background-color: white;
