@@ -13,21 +13,26 @@ a{
 }
 
 @media (min-width: 960px) {
+    .tituloApartados{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-between;
+    }
     /*////////// HEADER //////////*/
     .tituloPagina{
         position: relative;
-        width: 50.75rem;
+        width: auto;
         height: 4.625rem;
-        top: 2rem;
         text-align: left;
         margin-left: 2rem;
         display: inline;
+        align-self: center;
     }
     .logo{
         position: relative;
         width: 13.3125rem;
         height: 13.2rem;
-        top: -0.4rem;
         float: left;
         margin-left: 2rem;
     }
@@ -36,7 +41,6 @@ a{
         position: relative;
         width: 100%;
         height: 7.3rem;
-        top: -1.46rem;
         display: inline-block;
         background: #CEE0FC;
         z-index: -1;
@@ -70,20 +74,17 @@ a{
 
         text-transform:uppercase;
         font-family: "Helvetica", serif;
-        margin: auto;
         margin-left: 5rem;
 
         margin-top: -0.1rem;
     }
 
     .loginRegister{
-        position: relative;
-        float: right;
-        right: 2rem;
-        top: -4.2rem;
         font-size: 1.25rem;
-        margin: 0;
-        margin-right: 2rem;
+        float:right;
+        align-self: center;
+        text-align: right;
+        margin-right:2rem;
     }
 
     .iconoLogueado{
@@ -98,12 +99,15 @@ a{
 
     .lineaHeaderOculto{
         position: relative;
-        display: inline-flex;
+        display: flex;
         height: 5rem;
         vertical-align: middle;
         justify-content: center;
         margin-top: 2.5rem;
         margin-left: 1rem;
+        width: auto;
+
+
     }
 
     /* //////// BANDERAS //////// */
@@ -121,7 +125,7 @@ a{
     .dropdown-menu {
         position: absolute;
         top: 70%;
-        left: 94.6rem;
+        left: 113.5rem;
         height: auto;
         z-index: 1000;
         display: none;
@@ -144,7 +148,6 @@ a{
         height: 1.55rem;
         margin-left: 5rem;
     }
-
     .categoriasDropdown{
         width: auto;
         position: relative;
@@ -160,7 +163,7 @@ a{
 
     /*////Dropdown categorías////*/
     .submenuCategorias {
-        position: absolute;
+        position: relative;
         float:none;
         width:auto;
         display: flex;
@@ -176,7 +179,7 @@ a{
 
     .fuenteCategorias{
         font-size: 1.5rem;
-        text-align: center;
+        text-align: justify;
         line-height: normal;
     }
 
@@ -227,7 +230,6 @@ a{
     #menu ul ul { /* Items del menu desplegable */
         display:none;
         position:absolute;
-        top: 4.8rem;
         text-align: center;
         background: white;
 
