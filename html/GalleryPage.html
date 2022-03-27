@@ -26,7 +26,7 @@
             $.getJSON("../json/datos.json", function (json) {
                 var iteracion = 0;
                 var aux = "";
-                $.each(json.imagenes, function () {
+                $.each(json.imagenesGaleria, function () {
                     if (iteracion === 4) {
                         iteracion = 0;
                         aux = '<div class="col-sm-12 col-md-4">\n';
