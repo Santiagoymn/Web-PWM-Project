@@ -70,7 +70,7 @@
                     <p>Debe de escoger otro usuario, ya existe este usuario.</p>
                 </div>
                 <div id="errorEmailUsuario" class="alertaError" role="alert">
-                    <p>El email ya está registrado y el usuario ya existe.</p>
+                    <p> El email ya está registrado y el usuario ya existe.</p>
                 </div>
                 <div id="errorEmail" class="alertaError" role="alert">
                     <p>El email ya está registrado.</p>
@@ -154,6 +154,7 @@
 
         function compruebaUsuarios() {
             $.getJSON("../json/datos.json",function (data){
+                localStorage.setItem("valido", "true");
                 for (var i = 0; i < data.usuarios.length; i++) {
                     var userJson = data.usuarios[i].usuario;
                     var emailJson = data.usuarios[i].email;
@@ -161,30 +162,38 @@
                     var emailInput = $('#email').val();
 
                     if (userJson === userInput && emailJson !== emailInput) {
+                        alert("4");
+                        alert(userJson + " " + userInput+ " " +emailJson + " " + emailInput);
                         localStorage.setItem("valido", "false");
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("ocultar");
                         document.getElementById("errorUsuario").classList.add("mostrar");
                     } else if (emailJson === emailInput && userJson !== userInput) {
+                        alert("1");
+                        alert(userJson + " " + userInput+ " " +emailJson + " " + emailInput);
                         localStorage.setItem("valido", "false");
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmail").classList.remove("ocultar");
                         document.getElementById("errorEmail").classList.add("mostrar");
                     } else if (emailJson === emailInput && userJson === userInput) {
+                        alert("2");
+                        alert(userJson + " " + userInput+ " " +emailJson + " " + emailInput);
                         localStorage.setItem("valido", "false");
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmailUsuario").classList.remove("ocultar");
                         document.getElementById("errorEmailUsuario").classList.add("mostrar");
-                    } else {
-                        localStorage.setItem("valido", "true");
-                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                        document.getElementById("errorEmail").classList.remove("mostrar");
-                        document.getElementById("errorUsuario").classList.remove("mostrar");
                     }
                 }
+                if (localStorage.getItem("valido") === "true"){
+                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                    document.getElementById("errorEmail").classList.remove("mostrar");
+                    document.getElementById("errorUsuario").classList.remove("mostrar");
+                }
+
+
             });
             return localStorage.getItem("valido") === "true";
         }
