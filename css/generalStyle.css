@@ -79,6 +79,9 @@ span{
     }
     .nombreActividadImagen{ /*título de nombre de actividad en Category Page y Activity Page*/
         font-size: 4rem;
+        line-height: 4rem;
+        width: auto;
+        text-align: center;
     }
 }
 
