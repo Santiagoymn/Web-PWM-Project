@@ -12,10 +12,7 @@
 
 <header>
     <a href="index.html"><img src="images/Logo.png" class="logo" alt="Página inicial"></a>
-    <div class="tituloApartados">
-        <h1 class="tituloPagina">Enjoy GC</h1> </div>
-
-
+    <h1 class="tituloPagina">TITULO PÁGINA</h1>
 
     <div class="lineaHeader">
 
@@ -32,9 +29,9 @@
 
         <script>
             if ( sessionStorage.getItem("logged") === "true"){
-                $('.tituloApartados').append("<a href=\"Login.html\"><img src=\"images/icono-usuario.png\" class=\"iconoLogueado\" alt='Icono logueado'></a>");
+                $('.lineaHeader').append("<a href=\"Login.html\"><img src=\"images/icono-usuario.png\" class=\"iconoLogueado\" alt='Icono logueado'></a>");
             }else{
-                $('.tituloApartados').append("<div class='loginRegister'> <a href=\"Login.html\">Login</a>/<a href=\"Register.html\">Register</a></div>");
+                $('.lineaHeader').append("<a href=\"Login.html\" class='loginRegister'>Login/Register</a>");
             }
         </script>
 
@@ -82,7 +79,7 @@
                 if ( sessionStorage.getItem("logged") === "true"){
                     $('.lineaHeaderOculto').append("<a href=\"Login.html\"><img src=\"images/icono-usuario.png\" class=\"iconoLogueadoMovil\" alt='Icono logueado'></a>");
                 }else{
-                    $('.lineaHeaderOculto').append("<div class='loginRegisterMovil'> <a href=\"Login.html\">Login</a>/<a href=\"Register.html\">Register</a></div>");
+                    $('.lineaHeaderOculto').append("<a href=\"Login.html\" class='loginRegisterMovil'>Login/Register</a>");
                 }
             </script>
 
@@ -156,7 +153,6 @@
 
     </div>
     <rect class="rectanguloAzul"></rect>
-
 </header>
 <body>
 </body>
