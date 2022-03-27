@@ -23,7 +23,7 @@
 
     <script>
         function getJsonGaleria() {
-            $.getJSON("json/galeriaImagenes.json", function (json) {
+            $.getJSON("../json/datos.json", function (json) {
                 var iteracion = 0;
                 var aux = "";
                 $.each(json.imagenes, function () {
