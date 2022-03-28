@@ -154,7 +154,7 @@
 
         function compruebaUsuarios() {
             $.getJSON("../json/datos.json",function (data){
-                localStorage.setItem("valido", "true");
+                var valido = "true";
                 for (var i = 0; i < data.usuarios.length; i++) {
                     var userJson = data.usuarios[i].usuario;
                     var emailJson = data.usuarios[i].email;
@@ -162,32 +162,34 @@
                     var emailInput = $('#email').val();
 
                     if (userJson === userInput && emailJson !== emailInput) {
-                        localStorage.setItem("valido", "false");
+                        valido = "false";
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("ocultar");
                         document.getElementById("errorUsuario").classList.add("mostrar");
+                        break;
                     } else if (emailJson === emailInput && userJson !== userInput) {
-                        localStorage.setItem("valido", "false");
+                        valido = "false";
                         document.getElementById("errorEmailUsuario").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmail").classList.remove("ocultar");
                         document.getElementById("errorEmail").classList.add("mostrar");
+                        break;
                     } else if (emailJson === emailInput && userJson === userInput) {
-                        localStorage.setItem("valido", "false");
+                        valido = "false";
                         document.getElementById("errorEmail").classList.remove("mostrar");
                         document.getElementById("errorUsuario").classList.remove("mostrar");
                         document.getElementById("errorEmailUsuario").classList.remove("ocultar");
                         document.getElementById("errorEmailUsuario").classList.add("mostrar");
+                        break;
+                    }else{
+                        valido = "true";
+                        document.getElementById("errorEmailUsuario").classList.remove("mostrar");
+                        document.getElementById("errorEmail").classList.remove("mostrar");
+                        document.getElementById("errorUsuario").classList.remove("mostrar");
                     }
                 }
-                if (localStorage.getItem("valido") === "true"){
-                    document.getElementById("errorEmailUsuario").classList.remove("mostrar");
-                    document.getElementById("errorEmail").classList.remove("mostrar");
-                    document.getElementById("errorUsuario").classList.remove("mostrar");
-                }
-
-
+                localStorage.setItem("valido", valido);
             });
             return localStorage.getItem("valido") === "true";
         }
